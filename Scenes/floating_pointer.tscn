@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbimx2wtcog2l"]
+
+[ext_resource type="Script" path="res://Scripts/Marker.gd" id="1_unxs8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ltost"]
+albedo_color = Color(1, 1, 0.215686, 0.309804)
+
+[sub_resource type="PrismMesh" id="PrismMesh_yeuvx"]
+
+[node name="Pointer Root" type="Node3D"]
+
+[node name="Floating Pointer" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.5, -8.74228e-08, 0, 4.37114e-08, -1, 0, 0, 0, 0.3, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_ltost")
+mesh = SubResource("PrismMesh_yeuvx")
+script = ExtResource("1_unxs8")

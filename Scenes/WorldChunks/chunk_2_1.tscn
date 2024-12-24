@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b61mk85i20qhy"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_g86vo"]
+
+[node name="Chunk" type="Node3D"]
+
+[node name="GridMap" type="GridMap" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_g86vo")

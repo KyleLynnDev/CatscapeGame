@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://bty3qcujjkorg"]
+
+[ext_resource type="Script" path="res://Scenes/start_screen.gd" id="1_uw0fm"]
+
+[node name="StartScreen" type="Control"]
+custom_minimum_size = Vector2(1024, 576)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1128.0
+offset_bottom = 576.0
+script = ExtResource("1_uw0fm")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_right = -107.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+
+[node name="Start Button" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 671.0
+offset_top = 505.0
+offset_right = 761.0
+offset_bottom = 550.0
+text = "START"
+
+[node name="Quit Button" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 793.0
+offset_top = 505.0
+offset_right = 883.0
+offset_bottom = 550.0
+text = "EXIT"
+
+[connection signal="pressed" from="TextureRect/Start Button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="TextureRect/Quit Button" to="." method="_on_quit_button_pressed"]

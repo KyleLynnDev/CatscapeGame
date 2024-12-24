@@ -1,0 +1,99 @@
+[gd_scene load_steps=15 format=3 uid="uid://bequ1vsdge507"]
+
+[ext_resource type="Script" path="res://Scripts/ClickToMove.gd" id="1_3cu0f"]
+[ext_resource type="Script" path="res://Scripts/RotatingCamera3D.gd" id="2_3j5ph"]
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_31l0j"]
+vertices = PackedVector3Array(-12.4383, 0.0553347, -9.144, -12.4383, 0.0553347, 9.106, 12.5617, 0.0553347, 9.106, 12.5617, 0.0553347, -9.144)
+polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1)]
+cell_height = 0.01
+
+[sub_resource type="BoxMesh" id="BoxMesh_ngtji"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_calfd"]
+albedo_color = Color(0.254902, 0.537255, 0.498039, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wdyes"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_vn6l2"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7l73k"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_uym6c"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_u5h1h"]
+
+[sub_resource type="Sky" id="Sky_doidk"]
+sky_material = SubResource("ProceduralSkyMaterial_u5h1h")
+
+[sub_resource type="Environment" id="Environment_wsrd5"]
+background_mode = 2
+background_energy_multiplier = 2.3
+sky = SubResource("Sky_doidk")
+
+[sub_resource type="BoxMesh" id="BoxMesh_i3s7q"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ropl4"]
+albedo_color = Color(0.8, 0.313726, 0.254902, 1)
+
+[node name="World" type="Node3D"]
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_31l0j")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(25.8767, 0, 0, 0, 0.0893307, 0, 0, 0, 19.288, 0, 0, 0)
+mesh = SubResource("BoxMesh_ngtji")
+surface_material_override/0 = SubResource("StandardMaterial3D_calfd")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/MeshInstance3D/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.999986, 0, 0, 0, 0.999989, 0, 0, 0)
+shape = SubResource("BoxShape3D_wdyes")
+
+[node name="Player" type="CharacterBody3D" parent="."]
+script = ExtResource("1_3cu0f")
+
+[node name="Body Root" type="Node3D" parent="Player"]
+
+[node name="Body" type="MeshInstance3D" parent="Player/Body Root"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("CapsuleMesh_vn6l2")
+skeleton = NodePath("../..")
+
+[node name="Body Collider" type="CollisionShape3D" parent="Player/Body Root/Body"]
+shape = SubResource("CapsuleShape3D_7l73k")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Player/Body Root/Body"]
+transform = Transform3D(-3.80076e-16, -2.76996e-08, -0.239667, -0.231467, -2.76996e-08, 0, -1.01178e-08, 0.633692, -1.04762e-08, 0, 0.5, -0.5)
+mesh = SubResource("CapsuleMesh_uym6c")
+skeleton = NodePath("../../..")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="Player"]
+path_desired_distance = 0.1
+target_desired_distance = 0.1
+
+[node name="Pivot" type="Node3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Player/Pivot" groups=["camera"]]
+transform = Transform3D(1, 0, 0, 0, 0.767076, 0.641557, 0, -0.641557, 0.767076, 0, 9.46586, 14.8874)
+script = ExtResource("2_3j5ph")
+
+[node name="Environment" type="Node3D" parent="."]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Environment"]
+environment = SubResource("Environment_wsrd5")
+
+[node name="Block" type="MeshInstance3D" parent="Environment"]
+transform = Transform3D(5, 0, 0, 0, 12, 0, 0, 0, 5, 22.4538, 0, 0)
+mesh = SubResource("BoxMesh_i3s7q")
+skeleton = NodePath("../../Player/Pivot/Camera3D")
+surface_material_override/0 = SubResource("StandardMaterial3D_ropl4")
+
+[node name="Block2" type="MeshInstance3D" parent="Environment"]
+transform = Transform3D(5, 0, 0, 0, 10, 0, 0, 0, 5, -0.546196, 0, 15)
+mesh = SubResource("BoxMesh_i3s7q")
+skeleton = NodePath("../../Player/Pivot/Camera3D")
+surface_material_override/0 = SubResource("StandardMaterial3D_ropl4")

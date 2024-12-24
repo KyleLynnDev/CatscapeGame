@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://chxtpowsxnfh4"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_xlqy4"]
+size = Vector2(64, 64)
+
+[node name="Chunk" type="Node3D"]
+
+[node name="GridMap" type="GridMap" parent="."]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("PlaneMesh_xlqy4")
