@@ -1,0 +1,116 @@
+[gd_scene load_steps=11 format=3 uid="uid://dyuxfetvfuxmq"]
+
+[ext_resource type="Script" path="res://Scenes/chunkTrigger.gd" id="1_d11vd"]
+[ext_resource type="Script" path="res://character_body_3d.gd" id="1_svdo4"]
+[ext_resource type="Script" path="res://Scenes/node.gd" id="2_yy22c"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ox837"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_quykr"]
+sky_material = SubResource("ProceduralSkyMaterial_ox837")
+
+[sub_resource type="Environment" id="Environment_awupa"]
+background_mode = 2
+sky = SubResource("Sky_quykr")
+tonemap_mode = 2
+
+[sub_resource type="BoxMesh" id="BoxMesh_w5kyj"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_caaik"]
+data = PackedVector3Array(-4, 4, 4, 4, 4, 4, -4, -4, 4, 4, 4, 4, 4, -4, 4, -4, -4, 4, 4, 4, -4, -4, 4, -4, 4, -4, -4, -4, 4, -4, -4, -4, -4, 4, -4, -4, 4, 4, 4, 4, 4, -4, 4, -4, 4, 4, 4, -4, 4, -4, -4, 4, -4, 4, -4, 4, -4, -4, 4, 4, -4, -4, -4, -4, 4, 4, -4, -4, 4, -4, -4, -4, 4, 4, 4, -4, 4, 4, 4, 4, -4, -4, 4, 4, -4, 4, -4, 4, 4, -4, -4, -4, 4, 4, -4, 4, -4, -4, -4, 4, -4, 4, 4, -4, -4, -4, -4, -4)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_4axfv"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_usvpk"]
+
+[node name="World" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_awupa")
+
+[node name="Chunk 0,0" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Chunk 0,0"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Chunk 0,0/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.259627, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("BoxMesh_w5kyj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Chunk 0,0/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.259627, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("ConcavePolygonShape3D_caaik")
+
+[node name="Area3D" type="Area3D" parent="Chunk 0,0/StaticBody3D"]
+script = ExtResource("1_d11vd")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Chunk 0,0/StaticBody3D/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 0.259627, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("ConcavePolygonShape3D_caaik")
+
+[node name="Chunk 0,1" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 4)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Chunk 0,1"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Chunk 0,1/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.259627, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("BoxMesh_w5kyj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Chunk 0,1/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.259627, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("ConcavePolygonShape3D_caaik")
+
+[node name="Area3D" type="Area3D" parent="Chunk 0,1/StaticBody3D"]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Chunk 0,1/StaticBody3D/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 0.259627, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("ConcavePolygonShape3D_caaik")
+
+[node name="Chunk 0,2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 4)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Chunk 0,2"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Chunk 0,2/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.259627, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("BoxMesh_w5kyj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Chunk 0,2/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.259627, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("ConcavePolygonShape3D_caaik")
+
+[node name="Area3D" type="Area3D" parent="Chunk 0,2/StaticBody3D"]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Chunk 0,2/StaticBody3D/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 0.259627, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("ConcavePolygonShape3D_caaik")
+
+[node name="TestPlayer" type="CharacterBody3D" parent="." groups=["Player"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2754, 2.23718, 5.24281)
+script = ExtResource("1_svdo4")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="TestPlayer"]
+mesh = SubResource("CapsuleMesh_4axfv")
+skeleton = NodePath("../..")
+
+[node name="Camera3D" type="Camera3D" parent="TestPlayer"]
+transform = Transform3D(1, 0, 0, 0, 0.927256, 0.374429, 0, -0.374429, 0.927256, 0, 2.09068, 8.88358)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestPlayer"]
+shape = SubResource("CapsuleShape3D_usvpk")
+
+[node name="detectionRadius" type="Area3D" parent="TestPlayer"]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="TestPlayer/detectionRadius"]
+shape = SubResource("CapsuleShape3D_usvpk")
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource("2_yy22c")

@@ -57,3 +57,5 @@ skeleton = NodePath("../../..")
 
 [node name="Floating Pointer" parent="." instance=ExtResource("4_5ccek")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15.9923)
+
+[node name="ChunkDetector" type="Area3D" parent="."]
