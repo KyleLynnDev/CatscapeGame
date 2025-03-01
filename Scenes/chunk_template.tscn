@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://w0spxswjhgd6"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_l1tf6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ktvgk"]
+
+[node name="Chunk Template" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0040226, -0.0714502, 0.0826015)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(64, 0, 0, 0, 64, 0, 0, 0, 64, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.2, 0, 0, 0, 1, 0, -0.1, 0)
+mesh = SubResource("BoxMesh_l1tf6")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_ktvgk")

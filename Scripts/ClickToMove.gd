@@ -38,7 +38,7 @@ func moveToPoint(delta, speed):
 	#body will face in direction of current target
 	var targetPosition = navigationAgent.target_position; 
 	var direction = global_position.direction_to(targetPosition);
-	faceDirection(targetPosition); 
+	faceDirection(targetPosition, delta); 
 
 	#move agent based on input target
 	pathfindNavAgent()
@@ -77,9 +77,13 @@ func _input(event):
 			
 
 				
-func faceDirection(direction):
-	body.look_at(Vector3(direction.x, global_position.y, direction.z), Vector3.UP)
-	
+func faceDirection(target_position, delta):
+	#body.look_at(Vector3(direction.x, global_position.y, direction.z), Vector3.UP)	
+	var direction = (target_position - global_position).normalized()  # Get direction vector
+	var current_quat = body.transform.basis.get_rotation_quaternion()  # Get current rotation
+	var target_quat = Quaternion(Vector3.UP, atan2(direction.x, direction.z))  # Desired rotation
+
+	body.transform.basis = Basis(current_quat.slerp(target_quat, delta * 5.0))  # Smooth rotation
 	
 func pathfindNavAgent():
 	navigationAgent.target_position = targetPosition; 
