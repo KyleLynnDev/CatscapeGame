@@ -3,12 +3,8 @@ extends CharacterBody3D
 #onready
 
 @onready var body = $"Body Root"
-@onready var navigationAgent = $NavigationAgent3D;
+@onready var navigationAgent : NavigationAgent3D = $NavigationAgent3D;
 @onready var point = $"../Floating Pointer"
-
-
-
-
 
 
 var speed : float  = 5.0; 
@@ -18,13 +14,12 @@ var currentlyNavigating : bool;
 
 
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _physics_process(delta: float) -> void:
 	if(not currentlyNavigating):
 		point.visible = false; 
 		return
@@ -36,9 +31,9 @@ func _process(delta):
 func moveToPoint(delta, speed):
 	
 	#body will face in direction of current target
-	var targetPosition = navigationAgent.target_position; 
-	var direction = global_position.direction_to(targetPosition);
-	faceDirection(targetPosition, delta); 
+	var _targetPosition = navigationAgent.target_position; 
+	var direction = global_position.direction_to(_targetPosition);
+	faceDirection(_targetPosition, delta); 
 
 	#move agent based on input target
 	pathfindNavAgent()
@@ -85,16 +80,26 @@ func faceDirection(target_position, delta):
 
 	body.transform.basis = Basis(current_quat.slerp(target_quat, delta * 5.0))  # Smooth rotation
 	
-func pathfindNavAgent():
-	navigationAgent.target_position = targetPosition; 
+func pathfindNavAgent():	
+	
+	var currentMap = navigationAgent.get_navigation_map(); 
+	var _navmesh_pos = NavigationServer3D.map_get_closest_point(currentMap, targetPosition);
+	
+	
+	navigationAgent.target_position = _navmesh_pos; 
 	#print(targetPosition)
-		
+	
 	var next_location = navigationAgent.get_next_path_position();
+	
+	print("final:", navigationAgent.get_final_position());
+	print("actual:", _navmesh_pos); 
+	
 	var current_location = transform.origin; 
 	var new_velocity = (next_location-current_location).normalized() * speed 
 	velocity = velocity.move_toward(new_velocity, 0.25);
-	
-	
+
 	move_and_slide(); 
 	
+	
+
 	

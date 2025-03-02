@@ -1,18 +1,28 @@
-[gd_scene load_steps=12 format=3 uid="uid://cbpb0sjxy1y6j"]
+[gd_scene load_steps=11 format=3 uid="uid://cbpb0sjxy1y6j"]
 
 [ext_resource type="PackedScene" uid="uid://c01jsjnpo64jq" path="res://Scenes/player.tscn" id="2_t88qc"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_1k3n4"]
-vertices = PackedVector3Array(-28.0785, 0.5, -28, -28.0785, 0.5, 28, 27.9215, 0.5, 28, 27.9215, 0.5, -28, -21.5815, 6.5, -2.01347, -20.0569, 0.5, -3.49802, -20.0965, 6.5, -2.00249, -17.0869, 0.5, -3.47605, -18.5906, 6.5, 0.999569, -17.0952, 0.5, 2.50609, -20.0548, 0.5, 3.97965, -23.0561, 0.5, -0.478926, -21.6002, 6.25, 2.52313, -21.5919, 0.5, -3.50901, -23.0935, 0.5, 8.49429, -18.5802, 6.25, 2.49511, -21.5711, 6.5, -0.517939, -21.5898, 0.5, 4.01867, -18.5615, 6.5, -1.9915)
-polygons = [PackedInt32Array(2, 9, 3), PackedInt32Array(3, 7, 0), PackedInt32Array(0, 11, 1), PackedInt32Array(1, 9, 2), PackedInt32Array(9, 7, 3), PackedInt32Array(7, 5, 0), PackedInt32Array(11, 14, 1), PackedInt32Array(0, 13, 11), PackedInt32Array(1, 14, 9), PackedInt32Array(9, 18, 7), PackedInt32Array(5, 13, 0), PackedInt32Array(7, 18, 5), PackedInt32Array(11, 17, 14), PackedInt32Array(13, 4, 11), PackedInt32Array(14, 10, 9), PackedInt32Array(9, 8, 18), PackedInt32Array(5, 6, 13), PackedInt32Array(18, 6, 5), PackedInt32Array(17, 10, 14), PackedInt32Array(11, 12, 17), PackedInt32Array(4, 16, 11), PackedInt32Array(13, 6, 4), PackedInt32Array(10, 15, 9), PackedInt32Array(8, 6, 18), PackedInt32Array(9, 15, 8), PackedInt32Array(17, 12, 10), PackedInt32Array(11, 16, 12), PackedInt32Array(4, 6, 16), PackedInt32Array(10, 12, 15), PackedInt32Array(8, 16, 6), PackedInt32Array(15, 12, 8), PackedInt32Array(16, 8, 12)]
+vertices = PackedVector3Array(-55.75, 0.5, -6.5, -53.25, 0.5, -7.5, -53.25, 0.5, -28, -57, 0.5, -5.25, -60.25, 0.5, 0.5, -92, 0.5, -28, -92, 0.5, 0.5, -45, 0.5, -0.75, -26.5, 0.5, -0.75, -26.5, 0.5, -2.75, -46, 0.5, -3, -25.5, 0.5, -4.75, -22.75, 0.5, -6.5, -20.75, 0.5, -28, -50.5, 0.5, -6.5, -47.5, 0.5, -4.5, -20.75, 0.5, -6.5, -19, 0.5, -6.5, -19, 0.5, -28, -17, 0.5, -6.5, -15, 0.5, -5.5, -13.25, 0.5, -2.75, 28, 0.5, -1.5, 28, 0.5, -28, -13.25, 0.5, -1.25, -13.25, 0.5, 1.5, 28, 0.5, 1.75, -49.75, 0.5, 6.5, -46.5, 0.5, 15.75, -45.75, 0.5, 14.75, -48.25, 0.5, 5.25, -36.25, 0.5, 13, -35.25, 0.5, 14.25, -25.25, 0.5, 5.25, -26.5, 0.5, 3, -39.25, 0.5, 12, -46.25, 0.5, 2.25, -41.5, 0.5, 28, -41.25, 0.5, 26.75, -44, 0.5, 25.75, -92, 0.5, 28, -51.5, 0.5, 7.5, -52.75, 0.5, 7.5, -47.5, 0.5, 18.25, -54.75, 0.5, 6.5, -59.25, 0.5, 3, -45.75, 0.5, 23, -17, 0.5, 6.75, -18.5, 0.5, 6.75, -18.25, 0.5, 28, -15, 0.5, 5.75, -13.25, 0.5, 3, 28, 0.5, 28, -34.75, 0.5, 24.25, -22.75, 0.5, 6.75, -33, 0.5, 19.25, -32.75, 0.5, 21.25)
+polygons = [PackedInt32Array(2, 1, 0), PackedInt32Array(3, 2, 0), PackedInt32Array(3, 4, 2), PackedInt32Array(2, 4, 6), PackedInt32Array(2, 6, 5), PackedInt32Array(8, 7, 9), PackedInt32Array(9, 7, 10), PackedInt32Array(12, 11, 13), PackedInt32Array(13, 11, 15), PackedInt32Array(13, 15, 14), PackedInt32Array(13, 14, 2), PackedInt32Array(9, 10, 11), PackedInt32Array(11, 10, 15), PackedInt32Array(13, 16, 12), PackedInt32Array(14, 1, 2), PackedInt32Array(13, 18, 16), PackedInt32Array(16, 18, 17), PackedInt32Array(19, 17, 18), PackedInt32Array(20, 19, 18), PackedInt32Array(20, 18, 21), PackedInt32Array(21, 18, 22), PackedInt32Array(22, 18, 23), PackedInt32Array(22, 24, 21), PackedInt32Array(24, 22, 25), PackedInt32Array(25, 22, 26), PackedInt32Array(28, 27, 29), PackedInt32Array(29, 27, 30), PackedInt32Array(32, 31, 33), PackedInt32Array(33, 31, 34), PackedInt32Array(30, 36, 29), PackedInt32Array(29, 36, 35), PackedInt32Array(36, 7, 35), PackedInt32Array(35, 7, 31), PackedInt32Array(31, 7, 34), PackedInt32Array(34, 7, 8), PackedInt32Array(38, 37, 39), PackedInt32Array(39, 37, 40), PackedInt32Array(41, 27, 28), PackedInt32Array(42, 41, 28), PackedInt32Array(42, 28, 44), PackedInt32Array(44, 28, 43), PackedInt32Array(6, 4, 45), PackedInt32Array(43, 46, 44), PackedInt32Array(44, 46, 45), PackedInt32Array(46, 39, 45), PackedInt32Array(45, 39, 6), PackedInt32Array(6, 39, 40), PackedInt32Array(49, 48, 47), PackedInt32Array(49, 47, 50), PackedInt32Array(50, 51, 49), PackedInt32Array(49, 51, 26), PackedInt32Array(49, 26, 52), PackedInt32Array(51, 25, 26), PackedInt32Array(38, 53, 37), PackedInt32Array(37, 53, 49), PackedInt32Array(33, 54, 32), PackedInt32Array(32, 54, 55), PackedInt32Array(56, 55, 49), PackedInt32Array(49, 55, 54), PackedInt32Array(49, 54, 48), PackedInt32Array(49, 53, 56)]
 geometry_parsed_geometry_type = 2
+geometry_collision_mask = 4278190081
+geometry_source_geometry_mode = 1
 agent_radius = 3.92
-agent_max_climb = 6.1
+agent_max_climb = 0.2
 agent_max_slope = 60.0
 detail_sample_max_error = 2.0
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3qn0l"]
-albedo_color = Color(0, 0, 0, 1)
+[sub_resource type="BoxMesh" id="BoxMesh_pdgkj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1x5a4"]
+albedo_color = Color(0.8, 0.164706, 0.254902, 1)
+
+[sub_resource type="Environment" id="Environment_uegat"]
+ambient_light_source = 3
+ambient_light_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3bku4"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_72pmn"]
 
@@ -21,40 +31,13 @@ albedo_color = Color(0.254902, 0.537255, 0.498039, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_f5601"]
 
-[sub_resource type="NavigationMesh" id="NavigationMesh_vhmpk"]
-vertices = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5)
-polygons = [PackedInt32Array(0, 2, 4), PackedInt32Array(2, 6, 4), PackedInt32Array(1, 3, 5), PackedInt32Array(3, 7, 5), PackedInt32Array(8, 10, 12), PackedInt32Array(10, 14, 12), PackedInt32Array(9, 11, 13), PackedInt32Array(11, 15, 13), PackedInt32Array(16, 18, 20), PackedInt32Array(18, 22, 20), PackedInt32Array(17, 19, 21), PackedInt32Array(19, 23, 21)]
-
-[sub_resource type="BoxMesh" id="BoxMesh_pdgkj"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1x5a4"]
-albedo_color = Color(0.8, 0.164706, 0.254902, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3bku4"]
-
-[sub_resource type="Environment" id="Environment_uegat"]
-ambient_light_source = 3
-ambient_light_color = Color(1, 1, 1, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3qn0l"]
+albedo_color = Color(0, 0, 0, 1)
 
 [node name="Chunk Test World" type="Node3D"]
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
 navigation_mesh = SubResource("NavigationMesh_1k3n4")
-
-[node name="Chunk00" type="MeshInstance3D" parent="NavigationRegion3D"]
-transform = Transform3D(64, 0, 0, 0, 0.089, 0, 0, 0, 64, 0, 0, 0)
-material_override = SubResource("StandardMaterial3D_3qn0l")
-mesh = SubResource("BoxMesh_72pmn")
-surface_material_override/0 = SubResource("StandardMaterial3D_7yv3x")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Chunk00"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Chunk00/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 0.999986, 0, 0, 0, 0.999989, 0, 0, 0)
-shape = SubResource("BoxShape3D_f5601")
-
-[node name="NavigationRegion3D" type="NavigationRegion3D" parent="NavigationRegion3D/Chunk00"]
-navigation_mesh = SubResource("NavigationMesh_vhmpk")
 
 [node name="Block" type="MeshInstance3D" parent="NavigationRegion3D"]
 transform = Transform3D(5, 0, 0, 0, 12, 0, 0, 0, 5, -19.8477, 0, 0)
@@ -74,43 +57,6 @@ mesh = SubResource("BoxMesh_pdgkj")
 skeleton = NodePath("../../../playerRoot/Player/Pivot/Camera3D")
 surface_material_override/0 = SubResource("StandardMaterial3D_1x5a4")
 
-[node name="NavigationRegion3D2" type="NavigationRegion3D" parent="."]
-navigation_mesh = SubResource("NavigationMesh_1k3n4")
-
-[node name="Block" type="MeshInstance3D" parent="NavigationRegion3D2"]
-transform = Transform3D(5, 0, 0, 0, 12, 0, 0, 0, 5, -19.8477, 0, 0)
-mesh = SubResource("BoxMesh_pdgkj")
-skeleton = NodePath("../../../playerRoot/Player/Pivot/Camera3D")
-surface_material_override/0 = SubResource("StandardMaterial3D_1x5a4")
-
-[node name="Block2" type="MeshInstance3D" parent="NavigationRegion3D2"]
-transform = Transform3D(4.14348, 0, -2.7985, 0, 12, 0, 2.7985, 0, 4.14348, -52.6075, 0, 0)
-mesh = SubResource("BoxMesh_pdgkj")
-skeleton = NodePath("../../../playerRoot/Player/Pivot/Camera3D")
-surface_material_override/0 = SubResource("StandardMaterial3D_1x5a4")
-
-[node name="Block3" type="MeshInstance3D" parent="NavigationRegion3D2"]
-transform = Transform3D(1.7735, 0, -4.6749, 0, 12, 0, 4.6749, 0, 1.7735, -40.0398, 0, 19.4054)
-mesh = SubResource("BoxMesh_pdgkj")
-skeleton = NodePath("../../../playerRoot/Player/Pivot/Camera3D")
-surface_material_override/0 = SubResource("StandardMaterial3D_1x5a4")
-
-[node name="Chunk01" type="MeshInstance3D" parent="NavigationRegion3D2"]
-transform = Transform3D(64, 0, 0, 0, 0.089, 0, 0, 0, 64, -64, 0, 0)
-material_override = SubResource("StandardMaterial3D_3bku4")
-mesh = SubResource("BoxMesh_72pmn")
-skeleton = NodePath("../../NavigationRegion3D")
-surface_material_override/0 = SubResource("StandardMaterial3D_7yv3x")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D2/Chunk01"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D2/Chunk01/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 0.999986, 0, 0, 0, 0.999989, 0, 0, 0)
-shape = SubResource("BoxShape3D_f5601")
-
-[node name="NavigationRegion3D" type="NavigationRegion3D" parent="NavigationRegion3D2/Chunk01"]
-navigation_mesh = SubResource("NavigationMesh_vhmpk")
-
 [node name="Player" parent="." instance=ExtResource("2_t88qc")]
 
 [node name="NavigationAgent3D" parent="Player/PlayerCharacter" index="0"]
@@ -123,5 +69,33 @@ environment = SubResource("Environment_uegat")
 
 [node name="NavigationLink3D" type="NavigationLink3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.8528, 0, 0)
+
+[node name="Static" type="Node3D" parent="." groups=["Static"]]
+
+[node name="Chunk01" type="MeshInstance3D" parent="Static"]
+transform = Transform3D(64, 0, 0, 0, 0.089, 0, 0, 0, 64, -64, 0, 0)
+material_override = SubResource("StandardMaterial3D_3bku4")
+mesh = SubResource("BoxMesh_72pmn")
+skeleton = NodePath("../../NavigationRegion3D")
+surface_material_override/0 = SubResource("StandardMaterial3D_7yv3x")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Static/Chunk01"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Static/Chunk01/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.999986, 0, 0, 0, 0.999989, 0, 0, 0)
+shape = SubResource("BoxShape3D_f5601")
+
+[node name="Chunk00" type="MeshInstance3D" parent="Static"]
+transform = Transform3D(64, 0, 0, 0, 0.089, 0, 0, 0, 64, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_3qn0l")
+mesh = SubResource("BoxMesh_72pmn")
+skeleton = NodePath("../../NavigationRegion3D")
+surface_material_override/0 = SubResource("StandardMaterial3D_7yv3x")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Static/Chunk00"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Static/Chunk00/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.999986, 0, 0, 0, 0.999989, 0, 0, 0)
+shape = SubResource("BoxShape3D_f5601")
 
 [editable path="Player"]
