@@ -22,7 +22,7 @@ var _is_rotating : bool = false;
 #zoom
 var _zoom_direction = 0;
 @export var minZoom : int = 10;
-@export var maxZoom : int = 90;
+@export var maxZoom : int = 30;
 @export var zoomSpeed : float = 10;
 @export var zoomSpeedDamp : float = 0.5;
 

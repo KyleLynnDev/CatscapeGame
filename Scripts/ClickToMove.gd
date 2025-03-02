@@ -82,17 +82,17 @@ func faceDirection(target_position, delta):
 	
 func pathfindNavAgent():	
 	
-	var currentMap = navigationAgent.get_navigation_map(); 
-	var _navmesh_pos = NavigationServer3D.map_get_closest_point(currentMap, targetPosition);
-	
-	
-	navigationAgent.target_position = _navmesh_pos; 
+	#var currentMap = navigationAgent.get_navigation_map(); 
+	#var _navmesh_pos = NavigationServer3D.map_get_closest_point(currentMap, targetPosition);
+	#navigationAgent.target_position = _navmesh_pos; 
 	#print(targetPosition)
+	
+	navigationAgent.target_position = targetPosition; 
 	
 	var next_location = navigationAgent.get_next_path_position();
 	
-	print("final:", navigationAgent.get_final_position());
-	print("actual:", _navmesh_pos); 
+	#print("final:", navigationAgent.get_final_position());
+	#print("actual:", _navmesh_pos); 
 	
 	var current_location = transform.origin; 
 	var new_velocity = (next_location-current_location).normalized() * speed 
