@@ -5,7 +5,7 @@ extends Camera3D
 @export var movement_speed : float = 20; 
 @export var min_elevation_angle : int = 10; 
 @export var max_elevation_angle : int = 80;
-@export var rotation_speed : float = 10; 
+@export var rotation_speed : float = 20; 
 
 #flags
 
@@ -85,7 +85,7 @@ func _get_mouse_displacement() -> Vector2:
 	return displacement; 
 	
 func _roate_left_right(delta : float, val : float) -> void:
-	pivot.rotation_degrees.y += val * delta * rotation_speed;
+	pivot.rotation_degrees.y -= val * delta * rotation_speed;
 	
 
 func _elevate(delta: float, val: float) -> void:

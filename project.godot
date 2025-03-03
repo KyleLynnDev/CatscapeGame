@@ -8,6 +8,10 @@
 
 config_version=5
 
+[animation]
+
+warnings/check_invalid_track_paths=false
+
 [application]
 
 config/name="Catscape Game"
@@ -20,6 +24,11 @@ config/icon="res://icon.svg"
 window/size/viewport_width=640
 window/size/viewport_height=360
 window/stretch/mode="viewport"
+mouse_cursor/custom_image="res://Assets/UI/mouse_cursor.png"
+
+[dotnet]
+
+project/assembly_name="Catscape Game"
 
 [input]
 
