@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bi8avpporj5lw" path="res://Scenes/responsive_item.tscn" id="2_3lh6l"]
 [ext_resource type="PackedScene" uid="uid://du1xvx1ljeu1s" path="res://Assets/SirFrog.glb" id="5_2w5a1"]
 [ext_resource type="PackedScene" uid="uid://c01jsjnpo64jq" path="res://Scenes/player.tscn" id="5_pqdbo"]
-[ext_resource type="Shader" path="res://Scenes/WWWater.gdshader" id="5_uigp1"]
+[ext_resource type="Shader" uid="uid://b0mobph3ayh5h" path="res://Scenes/WWWater.gdshader" id="5_uigp1"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_31l0j"]
 vertices = PackedVector3Array(-10.4348, 0.534245, -11, -2.4348, 0.534245, -15, -4.4348, 0.534245, -16, -11.4348, 0.534245, -13, -30.4348, 0.534245, -10, -16.4348, 0.534245, -10, -15.4348, 0.534245, -13, -4.4348, 0.534245, -22, -0.434799, 0.534245, -23, -0.434799, 0.534245, -30, -30.4348, 0.534245, -30, 25.5652, 0.534245, -4, 26.5652, 0.534245, 0, 30.5652, 0.534245, 0, 30.5652, 0.534245, -30, 3.5652, 0.534245, -22, 3.5652, 0.534245, -16, 1.5652, 0.534245, -15, 18.5652, 0.534245, -2, 19.5652, 0.534245, -4, -1.4348, 0.534245, -20, -1.4348, 0.534245, -18, 0.565201, 0.534245, -18, 0.565201, 0.534245, -20, -1.4348, 5.53425, -20, -1.4348, 5.53425, -18, 0.565201, 5.53425, -18, 0.565201, 5.53425, -20, 25.5652, 0.534245, 4, 30.5652, 0.534245, 12, 30.5652, 0.534245, 19, 36.5652, 0.534245, 17, 36.5652, 0.534245, 14, -10.4348, 0.534245, -8, -12.4348, 0.534245, -7, -15.4348, 1.78425, 11, -14.1848, 0.534245, 6.25, -14.6848, 0.534245, 6.5, -21.4348, 5.03425, 12, -21.4348, 5.03425, 20, -16.4348, 2.28425, 20, -10.4348, 0.534245, 31, 30.5652, 0.534245, 31, 19.5652, 0.534245, 4, -12.9348, 0.534245, 21, -16.4348, 2.03425, 33, -12.4348, 0.534245, 33, -15.4348, 1.78425, 22, -17.4348, 0.534245, 31, -25.4348, 0.534245, 23, -25.4348, 0.534245, 31, -26.4348, 7.53425, 34, -26.4348, 7.53425, 41, -12.4348, -0.215755, 41, -21.7681, 4.78425, 41, -30.4348, 0.534245, 31, -28.4348, 0.534245, 22, -28.4348, 0.534245, 10, -15.4348, 0.534245, -7, -16.4348, 0.534245, 9, 21.5652, 0.534245, -1, 21.5652, 0.534245, 1, 23.5652, 0.534245, 1, 23.5652, 0.534245, -1, 21.5652, 6.53425, -1, 21.5652, 6.53425, 1, 23.5652, 6.53425, 1, 23.5652, 6.53425, -1, 50.5652, 6.53425, -1, 50.5652, 6.53425, 1, 52.5652, 6.53425, 1, 52.5652, 6.53425, -1, -27.4348, 8.03425, 12, -27.4348, 8.03425, 20, -29.4348, 8.03425, 10, -29.4348, 8.03425, 4, -49.4348, 8.03425, 4, -29.4348, 8.03425, 22, -49.4348, 8.03425, 28, -29.4348, 8.03425, 28, -26.4348, 2.28425, 12, -26.4348, 2.28425, 20, -18.4348, 0.534245, 20, -18.4348, 0.534245, 12, -22.4348, 0.534245, 12, -22.4348, 0.534245, 20)
@@ -44,7 +44,7 @@ albedo_color = Color(0.592157, 1, 0.196078, 1)
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_8lbna"]
 render_priority = 0
 shader = ExtResource("5_uigp1")
-shader_parameter/sync_time = null
+shader_parameter/sync_time = 0.0
 shader_parameter/wave_speed = 0.05
 shader_parameter/caustic_speed = 0.01
 shader_parameter/edge_fade_power = 2.0
@@ -69,13 +69,13 @@ shader_parameter/v_normal_scale = 1.0
 shader_parameter/normal_map_w = 256
 shader_parameter/wobble_power = 0.01
 shader_parameter/sky_color = Color(0.226396, 0.451442, 1, 1)
-shader_parameter/foam_color = null
-shader_parameter/foam_mask_size = null
+shader_parameter/foam_color = Color(0, 0, 0, 1)
+shader_parameter/foam_mask_size = 0.0
 shader_parameter/foam_mask_offset = Vector2(0, 0)
 shader_parameter/foam_wobble = 0.01
 shader_parameter/foam_wobble_size = 10.0
 shader_parameter/high_color = Color(0.427451, 0.584314, 0.803922, 1)
-shader_parameter/low_color = null
+shader_parameter/low_color = Color(0, 0, 0, 1)
 shader_parameter/wave_color_range = 2.0
 shader_parameter/enable_fake_lighting = false
 shader_parameter/shine_strength = 0.17

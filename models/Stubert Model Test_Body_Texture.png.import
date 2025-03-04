@@ -3,10 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5idqa71qkm6m"
-path.s3tc="res://.godot/imported/Stubert Model Test_Body_Texture.png-949333f9ed6dc147451f24c3ce1100b4.s3tc.ctex"
+path="res://.godot/imported/Stubert Model Test_Body_Texture.png-949333f9ed6dc147451f24c3ce1100b4.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 generator_parameters={
 "md5": "bb1688cedfaa8c54ca4e3ef36a62d57f"
@@ -15,11 +14,11 @@ generator_parameters={
 [deps]
 
 source_file="res://models/Stubert Model Test_Body_Texture.png"
-dest_files=["res://.godot/imported/Stubert Model Test_Body_Texture.png-949333f9ed6dc147451f24c3ce1100b4.s3tc.ctex"]
+dest_files=["res://.godot/imported/Stubert Model Test_Body_Texture.png-949333f9ed6dc147451f24c3ce1100b4.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

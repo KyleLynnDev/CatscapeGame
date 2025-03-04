@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://c01jsjnpo64jq"]
 
-[ext_resource type="Script" path="res://Scripts/ClickToMove.gd" id="1_jp55b"]
-[ext_resource type="Script" path="res://Scripts/RotatingCamera3D.gd" id="2_5mwop"]
+[ext_resource type="Script" uid="uid://bi1p4jgd4h1gc" path="res://Scripts/ClickToMove.gd" id="1_jp55b"]
+[ext_resource type="Script" uid="uid://dyjsj7w80pgap" path="res://Scripts/RotatingCamera3D.gd" id="2_5mwop"]
 [ext_resource type="PackedScene" uid="uid://cpu87le6n15r0" path="res://models/Stubert Model Test.glb" id="4_7q0gg"]
 [ext_resource type="PackedScene" uid="uid://bbimx2wtcog2l" path="res://Scenes/floating_pointer.tscn" id="4_wh38k"]
 
@@ -1513,10 +1513,10 @@ tracks/52/keys = PackedFloat32Array(0, 1, 0.0203217, 0.0137446, 0.00757364, 0.99
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_1xtl0"]
 _data = {
-"get_item": SubResource("Animation_bsphh"),
-"idle": SubResource("Animation_7jood"),
-"run": SubResource("Animation_fo25a"),
-"walk": SubResource("Animation_ldtpa")
+&"get_item": SubResource("Animation_bsphh"),
+&"idle": SubResource("Animation_7jood"),
+&"run": SubResource("Animation_fo25a"),
+&"walk": SubResource("Animation_ldtpa")
 }
 
 [node name="Player" type="Node3D"]
@@ -1542,8 +1542,10 @@ transform = Transform3D(1, 0, 0, 0, 0.984808, 0.173648, 0, -0.173648, 0.984808, 
 
 [node name="Camera3D" type="Camera3D" parent="PlayerCharacter/Pivot" groups=["camera"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 16)
+fov = 30.0
 script = ExtResource("2_5mwop")
-minZoom = 5
+minZoom = 15
+maxZoom = 35
 zoomSpeed = 50.0
 
 [node name="Body Root" type="Node3D" parent="PlayerCharacter"]
@@ -1564,7 +1566,7 @@ skeleton = NodePath("../../..")
 
 [node name="MovementAnimation" type="AnimationPlayer" parent="PlayerCharacter/Body Root/Stubert Model Test"]
 libraries = {
-"StubertMove": SubResource("AnimationLibrary_1xtl0")
+&"StubertMove": SubResource("AnimationLibrary_1xtl0")
 }
 playback_default_blend_time = 0.1
 
