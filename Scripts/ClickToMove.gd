@@ -5,12 +5,18 @@ extends CharacterBody3D
 @onready var body = $"Body Root"
 @onready var navigationAgent : NavigationAgent3D = $NavigationAgent3D;
 @onready var point = $"../Floating Pointer"
+@onready var locked_timer: Timer = $"../LockedTimer"
+
+
 
 
 var speed : float  = 5.0; 
 var gravity : float = 9.8;
 var targetPosition : Vector3 ; 
 var currentlyNavigating : bool;
+@onready var player: Node3D = $".."
+@onready var movement_animation: AnimationPlayer = $"Body Root/Stubert Model Test/MovementAnimation"
+var is_locked := false
 
 
 
@@ -20,9 +26,25 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
-	if(not currentlyNavigating):
+	if !movement_animation.is_playing():
+		movement_animation.speed_scale = 1.0
+		is_locked = false
+	
+	if Input.is_action_just_pressed("Interact"):
+		if movement_animation.current_animation != ("StubertMove/get_item"):
+			movement_animation.speed_scale = 2.0
+			movement_animation.play("StubertMove/get_item")
+			is_locked = true
+	
+	if(not currentlyNavigating) and !is_locked:
+		if movement_animation.current_animation != ("StubertMove/idle"):
+			movement_animation.play("StubertMove/idle")
 		point.visible = false; 
 		return
+	
+	if (currentlyNavigating) and !is_locked:
+		if movement_animation.current_animation != ("StubertMove/run"):
+			movement_animation.play("StubertMove/run")
 	
 	moveToPoint(delta, speed );
 	currentlyNavigating = not navigationAgent.is_navigation_finished()
@@ -41,7 +63,7 @@ func moveToPoint(delta, speed):
 func _input(event):
 	# when LM is clicked raycast from current position to mouse pos direction
 	# and the length is rayLength 
-	if Input.is_action_just_pressed("LeftMouse"):
+	if Input.is_action_just_pressed("LeftMouse") and !is_locked:
 		var camera = get_tree().get_nodes_in_group("camera")[0]; 
 		var mousePos = get_viewport().get_mouse_position();
 		var rayLength = 50; 
@@ -98,8 +120,8 @@ func pathfindNavAgent():
 	var new_velocity = (next_location-current_location).normalized() * speed 
 	velocity = velocity.move_toward(new_velocity, 0.25);
 
-	move_and_slide(); 
-	
+	if !is_locked:
+		move_and_slide(); 
 	
 
 	

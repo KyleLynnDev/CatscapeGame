@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://c4u71fc5rdmlm"]
+[gd_scene load_steps=10 format=3 uid="uid://c4u71fc5rdmlm"]
 
 [ext_resource type="PackedScene" uid="uid://c01jsjnpo64jq" path="res://Scenes/player.tscn" id="1_y6bji"]
 [ext_resource type="Script" path="res://Scripts/chunkScript.gd" id="2_la0od"]
@@ -14,14 +14,6 @@ agent_radius = 3.92
 agent_max_climb = 0.2
 agent_max_slope = 60.0
 detail_sample_max_error = 2.0
-
-[sub_resource type="CylinderMesh" id="CylinderMesh_0v2hq"]
-top_radius = 33.0
-bottom_radius = 33.0
-
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_xmfkv"]
-height = 12.17
-radius = 16.774
 
 [sub_resource type="Environment" id="Environment_uegat"]
 ambient_light_source = 3
@@ -46,21 +38,6 @@ navigation_mesh = SubResource("NavigationMesh_1k3n4")
 
 [node name="Player" parent="." instance=ExtResource("1_y6bji")]
 
-[node name="NavigationAgent3D" parent="Player/PlayerCharacter" index="0"]
-path_desired_distance = 2.0
-target_desired_distance = 2.0
-path_height_offset = 1.0
-
-[node name="Chunk detector" type="Area3D" parent="Player/PlayerCharacter" index="4"]
-visible = false
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Player/PlayerCharacter/Chunk detector"]
-visible = false
-mesh = SubResource("CylinderMesh_0v2hq")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Player/PlayerCharacter/Chunk detector"]
-shape = SubResource("CylinderShape3D_xmfkv")
-
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_uegat")
 
@@ -68,15 +45,13 @@ environment = SubResource("Environment_uegat")
 
 [node name="Chunk01" type="MeshInstance3D" parent="World Chunks"]
 transform = Transform3D(64, 0, 0, 0, 0.089, 0, 0, 0, 64, 64, 0, 0)
-visible = false
 material_override = SubResource("StandardMaterial3D_3bku4")
 mesh = SubResource("BoxMesh_72pmn")
 skeleton = NodePath("../../NavigationRegion3D")
 surface_material_override/0 = SubResource("StandardMaterial3D_7yv3x")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="World Chunks/Chunk01" node_paths=PackedStringArray("chunkDetector")]
+[node name="StaticBody3D" type="StaticBody3D" parent="World Chunks/Chunk01"]
 script = ExtResource("2_la0od")
-chunkDetector = NodePath("../../../Player/PlayerCharacter/Chunk detector")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World Chunks/Chunk01/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 0.999986, 0, 0, 0, 0.999989, 0, 0, 0)
@@ -84,15 +59,13 @@ shape = SubResource("BoxShape3D_f5601")
 
 [node name="Chunk03" type="MeshInstance3D" parent="World Chunks"]
 transform = Transform3D(64, 0, 0, 0, 0.089, 0, 0, 0, 64, 0, 0, 64)
-visible = false
 material_override = SubResource("StandardMaterial3D_3bku4")
 mesh = SubResource("BoxMesh_72pmn")
 skeleton = NodePath("../../NavigationRegion3D")
 surface_material_override/0 = SubResource("StandardMaterial3D_7yv3x")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="World Chunks/Chunk03" node_paths=PackedStringArray("chunkDetector")]
+[node name="StaticBody3D" type="StaticBody3D" parent="World Chunks/Chunk03"]
 script = ExtResource("2_la0od")
-chunkDetector = NodePath("../../../Player/PlayerCharacter/Chunk detector")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World Chunks/Chunk03/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 0.999986, 0, 0, 0, 0.999989, 0, 0, 0)
@@ -100,15 +73,13 @@ shape = SubResource("BoxShape3D_f5601")
 
 [node name="Chunk00" type="MeshInstance3D" parent="World Chunks"]
 transform = Transform3D(64, 0, 0, 0, 0.089, 0, 0, 0, 64, 0, 0, 0)
-visible = false
 material_override = SubResource("StandardMaterial3D_3qn0l")
 mesh = SubResource("BoxMesh_72pmn")
 skeleton = NodePath("../../NavigationRegion3D")
 surface_material_override/0 = SubResource("StandardMaterial3D_7yv3x")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="World Chunks/Chunk00" node_paths=PackedStringArray("chunkDetector")]
+[node name="StaticBody3D" type="StaticBody3D" parent="World Chunks/Chunk00"]
 script = ExtResource("2_la0od")
-chunkDetector = NodePath("../../../Player/PlayerCharacter/Chunk detector")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World Chunks/Chunk00/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 0.999986, 0, 0, 0, 0.999989, 0, 0, 0)
@@ -116,21 +87,14 @@ shape = SubResource("BoxShape3D_f5601")
 
 [node name="Chunk02" type="MeshInstance3D" parent="World Chunks"]
 transform = Transform3D(64, 0, 0, 0, 0.089, 0, 0, 0, 64, 64, 0, 64)
-visible = false
 material_override = SubResource("StandardMaterial3D_3qn0l")
 mesh = SubResource("BoxMesh_72pmn")
 skeleton = NodePath("../../NavigationRegion3D")
 surface_material_override/0 = SubResource("StandardMaterial3D_7yv3x")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="World Chunks/Chunk02" node_paths=PackedStringArray("chunkDetector")]
+[node name="StaticBody3D" type="StaticBody3D" parent="World Chunks/Chunk02"]
 script = ExtResource("2_la0od")
-chunkDetector = NodePath("../../../Player/PlayerCharacter/Chunk detector")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World Chunks/Chunk02/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 0.999986, 0, 0, 0, 0.999989, 0, 0, 0)
 shape = SubResource("BoxShape3D_f5601")
-
-[connection signal="body_entered" from="Player/PlayerCharacter/Chunk detector" to="World Chunks/Chunk00" method="_on_chunk_detector_body_entered"]
-[connection signal="body_exited" from="Player/PlayerCharacter/Chunk detector" to="World Chunks/Chunk00" method="_on_chunk_detector_body_exited"]
-
-[editable path="Player"]
