@@ -2,39 +2,42 @@
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
 &"_translation_id": "",
-&"color": Color(1, 1, 1, 1),
+&"color": Color(0, 0.183594, 0.0157776, 1),
 &"custom_info": {
 "prefix": "",
 "sound_mood_default": "",
-"sound_moods": {},
-"style": "",
+"sound_moods": {
+"Talk": {
+"mode": 0,
+"name": "Talk",
+"pitch_base": 1.2,
+"pitch_variance": 0.1,
+"skip_characters": 0.0,
+"sound_path": "res://Assets/sound effects/frog",
+"volume_base": 0.0,
+"volume_variance": 0.0
+}
+},
+"style": "SpeakerBoxStyle",
 "suffix": ""
 },
-&"default_portrait": "SirFrog",
+&"default_portrait": "Sir Frog",
 &"description": "",
-&"display_name": "SirFrog",
+&"display_name": "SIR FROG",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
-"SirFrog": {
+"Sir Frog": {
 "export_overrides": {
 "image": "\"res://Assets/UI/SirFrog.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
-"scene": ""
-},
-"Stubert": {
-"export_overrides": {
-"image": "\"res://Assets/UI/Stubert.png\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
+"scene": "",
+"sound_mood": "Talk"
 }
 },
-&"scale": 1.0
+&"scale": 0.9
 }

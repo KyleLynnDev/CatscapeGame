@@ -1,0 +1,201 @@
+[gd_scene load_steps=25 format=3 uid="uid://6iuaf4a7ltie"]
+
+[ext_resource type="Texture2D" uid="uid://2g5q5w0jhsfr" path="res://Assets/UI/MainMenu/Button_Hover.png" id="1_dnk24"]
+[ext_resource type="Script" uid="uid://bcvx3i2y2v12b" path="res://Scripts/UI/main_menu.gd" id="1_egkbo"]
+[ext_resource type="Texture2D" uid="uid://o87o5cp37oxk" path="res://Assets/UI/MainMenu/Button_Normal.png" id="1_hgr1o"]
+[ext_resource type="FontFile" uid="uid://nhpj3xhlcbkb" path="res://Assets/fonts/KiwiSoda.ttf" id="3_7hf4u"]
+[ext_resource type="Texture2D" uid="uid://bpuv1flv5kjny" path="res://Assets/UI/MainMenu/Exit_Button_Hover.png" id="3_36yma"]
+[ext_resource type="Texture2D" uid="uid://dgs6c8vl7mji0" path="res://Assets/UI/MainMenu/Exit_Button_Pressed.png" id="3_opbom"]
+[ext_resource type="Texture2D" uid="uid://d11x031p3f2ww" path="res://Assets/UI/MainMenu/Exit_Button_Normal.png" id="4_aj7nw"]
+[ext_resource type="Texture2D" uid="uid://dhmb7qnwwumbu" path="res://Assets/UI/MainMenu/Button_Pressed.png" id="7_6kilw"]
+[ext_resource type="Texture2D" uid="uid://qkw50fnwqkoc" path="res://Assets/UI/MainMenu/GameTitle.png" id="9_j6ocu"]
+[ext_resource type="PackedScene" uid="uid://deibs3hqqmeee" path="res://Scenes/UI/options_menu.tscn" id="10_w85c3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qbnl2"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_djrk4"]
+texture = ExtResource("3_36yma")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l1sha"]
+texture = ExtResource("3_opbom")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vyras"]
+texture = ExtResource("4_aj7nw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0c4mm"]
+texture = ExtResource("1_dnk24")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_al4kh"]
+texture = ExtResource("7_6kilw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fbsbb"]
+texture = ExtResource("1_hgr1o")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_66don"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ixmt2"]
+texture = ExtResource("9_j6ocu")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6wrtn"]
+texture = ExtResource("9_j6ocu")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_15x0v"]
+texture = ExtResource("9_j6ocu")
+
+[sub_resource type="Animation" id="Animation_ejqik"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_f1bg6"]
+resource_name = "sign_swing"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.233333, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0715585, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ls0mr"]
+_data = {
+&"RESET": SubResource("Animation_ejqik"),
+&"sign_swing": SubResource("Animation_f1bg6")
+}
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_egkbo")
+
+[node name="MainUI" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ExitButton" type="Button" parent="MainUI"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+offset_left = 31.0
+offset_top = 297.0
+offset_right = 81.0
+offset_bottom = 347.0
+size_flags_horizontal = 4
+theme_override_colors/font_hover_pressed_color = Color(0.986752, 0.986752, 0.986752, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qbnl2")
+theme_override_styles/hover = SubResource("StyleBoxTexture_djrk4")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_l1sha")
+theme_override_styles/normal = SubResource("StyleBoxTexture_vyras")
+text = "
+"
+icon_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainUI"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 30.0
+offset_top = 83.0
+offset_right = 160.0
+offset_bottom = 271.0
+grow_vertical = 2
+
+[node name="Play" type="Button" parent="MainUI/VBoxContainer"]
+custom_minimum_size = Vector2(130, 60)
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.635294, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_7hf4u")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qbnl2")
+theme_override_styles/hover = SubResource("StyleBoxTexture_0c4mm")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_al4kh")
+theme_override_styles/normal = SubResource("StyleBoxTexture_fbsbb")
+text = "PLAY"
+
+[node name="Options" type="Button" parent="MainUI/VBoxContainer"]
+custom_minimum_size = Vector2(130, 60)
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.635294, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_7hf4u")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qbnl2")
+theme_override_styles/hover = SubResource("StyleBoxTexture_0c4mm")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_al4kh")
+theme_override_styles/normal = SubResource("StyleBoxTexture_fbsbb")
+text = "OPTIONS"
+
+[node name="Credits" type="Button" parent="MainUI/VBoxContainer"]
+custom_minimum_size = Vector2(130, 60)
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.635294, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_7hf4u")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qbnl2")
+theme_override_styles/hover = SubResource("StyleBoxTexture_0c4mm")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_al4kh")
+theme_override_styles/normal = SubResource("StyleBoxTexture_fbsbb")
+text = "CREDITS"
+
+[node name="TitleLogo" type="Button" parent="MainUI"]
+custom_minimum_size = Vector2(186, 105)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -35.0
+offset_top = -6.0
+offset_right = 151.0
+offset_bottom = 99.0
+grow_horizontal = 0
+pivot_offset = Vector2(92.505, 0)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_66don")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ixmt2")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_6wrtn")
+theme_override_styles/normal = SubResource("StyleBoxTexture_15x0v")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MainUI/TitleLogo"]
+libraries = {
+&"": SubResource("AnimationLibrary_ls0mr")
+}
+
+[node name="Options_Menu" parent="." instance=ExtResource("10_w85c3")]
+visible = false
+layout_mode = 1
+
+[connection signal="pressed" from="MainUI/ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="MainUI/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MainUI/VBoxContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="MainUI/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="MainUI/TitleLogo" to="." method="_on_title_logo_pressed"]

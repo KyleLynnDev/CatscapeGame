@@ -1,9 +1,19 @@
-[gd_scene load_steps=13 format=3 uid="uid://c01jsjnpo64jq"]
+[gd_scene load_steps=24 format=3 uid="uid://c01jsjnpo64jq"]
 
 [ext_resource type="Script" uid="uid://bi1p4jgd4h1gc" path="res://Scripts/ClickToMove.gd" id="1_jp55b"]
 [ext_resource type="Script" uid="uid://dyjsj7w80pgap" path="res://Scripts/RotatingCamera3D.gd" id="2_5mwop"]
 [ext_resource type="PackedScene" uid="uid://cpu87le6n15r0" path="res://models/Stubert Model Test.glb" id="4_7q0gg"]
 [ext_resource type="PackedScene" uid="uid://bbimx2wtcog2l" path="res://Scenes/floating_pointer.tscn" id="4_wh38k"]
+[ext_resource type="AudioStream" uid="uid://baxinfrrbrx3y" path="res://Assets/sound effects/player/footstep_grass_run_01.wav" id="5_7dp3o"]
+[ext_resource type="AudioStream" uid="uid://vy1rp3eomad4" path="res://Assets/sound effects/player/footstep_grass_run_02.wav" id="6_h4iuc"]
+[ext_resource type="AudioStream" uid="uid://ckg4p17r8jmde" path="res://Assets/sound effects/player/footstep_grass_run_03.wav" id="7_fd4e3"]
+[ext_resource type="AudioStream" uid="uid://dm3mrrajp84l2" path="res://Assets/sound effects/player/footstep_grass_run_04.wav" id="8_qqcod"]
+[ext_resource type="AudioStream" uid="uid://y6mv0rdt3i0n" path="res://Assets/sound effects/player/footstep_grass_run_05.wav" id="9_igrcy"]
+[ext_resource type="AudioStream" uid="uid://c3hdudjsegahh" path="res://Assets/sound effects/player/footstep_grass_run_06.wav" id="10_fs7ks"]
+[ext_resource type="AudioStream" uid="uid://be0vsplax8bra" path="res://Assets/sound effects/player/footstep_grass_run_07.wav" id="11_l6n3p"]
+[ext_resource type="AudioStream" uid="uid://b5u1ehqw1f0kh" path="res://Assets/sound effects/player/footstep_grass_run_08.wav" id="12_olqyp"]
+[ext_resource type="AudioStream" uid="uid://dqxltn3ooys44" path="res://Assets/sound effects/player/footstep_grass_run_09.wav" id="13_wpjfl"]
+[ext_resource type="AudioStream" uid="uid://dlrpsjx3ekwy" path="res://Assets/sound effects/player/footstep_grass_run_10.wav" id="14_bi64h"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7l73k"]
 
@@ -1519,6 +1529,19 @@ _data = {
 &"walk": SubResource("Animation_ldtpa")
 }
 
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_2ijsl"]
+streams_count = 10
+stream_0/stream = ExtResource("5_7dp3o")
+stream_1/stream = ExtResource("6_h4iuc")
+stream_2/stream = ExtResource("7_fd4e3")
+stream_3/stream = ExtResource("8_qqcod")
+stream_4/stream = ExtResource("9_igrcy")
+stream_5/stream = ExtResource("10_fs7ks")
+stream_6/stream = ExtResource("11_l6n3p")
+stream_7/stream = ExtResource("12_olqyp")
+stream_8/stream = ExtResource("13_wpjfl")
+stream_9/stream = ExtResource("14_bi64h")
+
 [node name="Player" type="Node3D"]
 
 [node name="PlayerCharacter" type="CharacterBody3D" parent="."]
@@ -1541,7 +1564,7 @@ shape = SubResource("CapsuleShape3D_7l73k")
 transform = Transform3D(1, 0, 0, 0, 0.984808, 0.173648, 0, -0.173648, 0.984808, 0, 0, 0)
 
 [node name="Camera3D" type="Camera3D" parent="PlayerCharacter/Pivot" groups=["camera"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 16)
+transform = Transform3D(1, 0, 0, 0, 0.984959, 0.172789, 0, -0.172789, 0.984959, 0, 3.38301, 16.5965)
 fov = 30.0
 script = ExtResource("2_5mwop")
 minZoom = 15
@@ -1574,3 +1597,7 @@ playback_default_blend_time = 0.1
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15.9923)
 
 [node name="LockedTimer" type="Timer" parent="."]
+
+[node name="footstep_grass" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_2ijsl")
+volume_db = -27.402

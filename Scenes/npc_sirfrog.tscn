@@ -1,10 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://bdpvcfi8h0qhd"]
+[gd_scene load_steps=9 format=3 uid="uid://bdpvcfi8h0qhd"]
 
 [ext_resource type="PackedScene" uid="uid://dojlc3bne3k51" path="res://models/SirFrog.glb" id="1_k3hiw"]
+[ext_resource type="Script" uid="uid://db3a2ma5c1q77" path="res://Scripts/Characters/npc_sirfrog.gd" id="1_qvco0"]
 
 [sub_resource type="Animation" id="Animation_akjoh"]
 resource_name = "idle"
 length = 10.0
+loop_mode = 1
 tracks/0/type = "rotation_3d"
 tracks/0/imported = true
 tracks/0/enabled = true
@@ -275,6 +277,7 @@ tracks/37/keys = PackedFloat32Array(0, 1, -0.0438187, 0.0144572, 0.00865096, 0.9
 [sub_resource type="Animation" id="Animation_uifwa"]
 resource_name = "talk_give_item"
 length = 3.83333
+loop_mode = 1
 tracks/0/type = "rotation_3d"
 tracks/0/imported = true
 tracks/0/enabled = true
@@ -1096,6 +1099,7 @@ height = 1.86719
 radius = 0.376953
 
 [node name="NPC_sirfrog" type="CharacterBody3D"]
+script = ExtResource("1_qvco0")
 
 [node name="SirFrog" parent="." instance=ExtResource("1_k3hiw")]
 
@@ -1103,7 +1107,10 @@ radius = 0.376953
 libraries = {
 &"SirFrogBasic": SubResource("AnimationLibrary_qvco0")
 }
+autoplay = "SirFrogBasic/idle"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.933594, 0)
 shape = SubResource("CylinderShape3D_srp0b")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]

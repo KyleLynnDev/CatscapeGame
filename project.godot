@@ -15,20 +15,69 @@ warnings/check_invalid_track_paths=false
 [application]
 
 config/name="Catscape Game"
-run/main_scene="res://Scenes/Test World.tscn"
+run/main_scene="uid://6iuaf4a7ltie"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+SoundManager="*res://Scenes/UI/SoundManager.tscn"
+TransitionScreen="*res://Scenes/UI/transition_screen.tscn"
 
 [dialogic]
 
 directories/dch_directory={
-"SirFrog": "res://Dialogic/Characters/SirFrog.dch"
+"Sirfrog": "res://Dialogic/Characters/Sirfrog.dch",
+"Stubert": "res://Dialogic/Characters/Stubert.dch",
+"sir frog": "res://Dialogic/Characters/sir frog.dch"
 }
-directories/dtl_directory={}
+directories/dtl_directory={
+"IntroductionDialogue": "res://Dialogic/Timelines/IntroductionDialogue.dtl"
+}
+layout/style_list=["res://Dialogic/Styles/SpeakerBoxStyle.tres"]
+layout/default_style="res://Dialogic/Styles/SpeakerBoxStyle.tres"
+glossary/default_case_sensitive=true
+variables={}
+extensions_folder="res://addons/dialogic_additions"
+text/letter_speed=0.02
+text/initial_text_reveal_skippable=true
+text/text_reveal_skip_delay=0.1
+text/advance_delay=0.25
+text/autoadvance_per_character_delay=0.1
+text/autoadvance_ignored_characters_enabled=true
+animations/join_default_length=0.2
+animations/join_default_wait=true
+animations/leave_default_length=0.2
+animations/leave_default_wait=true
+animations/cross_fade_default_length=0.2
+choices/autofocus_first=false
+choices/delay=0.2
+choices/reveal_delay=0
+choices/reveal_by_input=false
+save/autosave_delay=60.0
+save/encryption_on_exports_only=true
+animations/join_default="Bounce In"
+animations/leave_default="Bounce Out"
+animations/cross_fade_default="Fade Cross"
+text/autoskip_time_per_event=0.2
+text/autopauses={
+"": 0.1
+}
+audio/channel_defaults={
+"": {
+"audio_bus": "",
+"fade_length": 0.0,
+"loop": false,
+"volume": 0.0
+},
+"music": {
+"audio_bus": "",
+"fade_length": 0.0,
+"loop": true,
+"volume": 0.0
+}
+}
 
 [display]
 
@@ -44,6 +93,10 @@ project/assembly_name="Catscape Game"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+
+[gui]
+
+theme/default_font_multichannel_signed_distance_field=true
 
 [input]
 

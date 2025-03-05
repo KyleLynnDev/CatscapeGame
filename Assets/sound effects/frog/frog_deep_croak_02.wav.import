@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dq4if7ubw6h0f"
+path="res://.godot/imported/frog_deep_croak_02.wav-2873f25dd6020d33538dfd1baadb240b.sample"
+
+[deps]
+
+source_file="res://Assets/sound effects/frog/frog_deep_croak_02.wav"
+dest_files=["res://.godot/imported/frog_deep_croak_02.wav-2873f25dd6020d33538dfd1baadb240b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
