@@ -66,7 +66,7 @@ func _input(event):
 	if Input.is_action_just_pressed("LeftMouse") and !is_locked:
 		var camera = get_tree().get_nodes_in_group("camera")[0]; 
 		var mousePos = get_viewport().get_mouse_position();
-		var rayLength = 50; 
+		var rayLength = 60; 
 		var from = camera.project_ray_origin(mousePos); 
 		var to = from + camera.project_ray_normal(mousePos) * rayLength; 
 		var space = get_world_3d().direct_space_state;
