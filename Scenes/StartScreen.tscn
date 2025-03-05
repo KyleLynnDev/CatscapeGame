@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bty3qcujjkorg"]
 
-[ext_resource type="Script" path="res://Scenes/start_screen.gd" id="1_uw0fm"]
+[ext_resource type="Script" uid="uid://djnfwkrnvbcbf" path="res://Scenes/start_screen.gd" id="1_uw0fm"]
 
 [node name="StartScreen" type="Control"]
 custom_minimum_size = Vector2(1024, 576)

@@ -1,0 +1,95 @@
+[gd_scene load_steps=10 format=3 uid="uid://wj7w6bbqbssk"]
+
+[ext_resource type="Script" uid="uid://jdhheslaqcqn" path="res://Scripts/UI/sound_manager.gd" id="1_6etvu"]
+[ext_resource type="AudioStream" uid="uid://b8odjab85hnlc" path="res://Assets/UI/MainMenu/ui_button_simple_click_01.wav" id="1_td85n"]
+[ext_resource type="AudioStream" uid="uid://be0r6y3kyb15f" path="res://Assets/UI/MainMenu/Main_Menu.mp3" id="2_l3k87"]
+[ext_resource type="AudioStream" uid="uid://che1tn3wmffu6" path="res://Assets/UI/MainMenu/small_box_open_02.wav" id="3_lx3gh"]
+[ext_resource type="AudioStream" uid="uid://hdbg2q6j70h1" path="res://Assets/sound effects/UI/SUCCESS CHIME Bells Sparkle Tune Short 05.wav" id="5_ttmsj"]
+
+[sub_resource type="Animation" id="Animation_ttmsj"]
+resource_name = "out"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Main_Menu:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-5.026, -50.0]
+}
+
+[sub_resource type="Animation" id="Animation_x7tiq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Main_Menu:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-5.026]
+}
+
+[sub_resource type="Animation" id="Animation_pl4b2"]
+resource_name = "in"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Main_Menu:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-50.0, -5.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jxm0o"]
+_data = {
+&"RESET": SubResource("Animation_x7tiq"),
+&"in": SubResource("Animation_pl4b2"),
+&"out": SubResource("Animation_ttmsj")
+}
+
+[node name="Node" type="Node"]
+script = ExtResource("1_6etvu")
+
+[node name="UI button" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_td85n")
+volume_db = -8.588
+pitch_scale = 0.78
+bus = &"SFX"
+
+[node name="Main_Menu" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_l3k87")
+volume_db = -5.026
+bus = &"Music"
+parameters/looping = true
+
+[node name="SignCreak" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_lx3gh")
+volume_db = -10.496
+pitch_scale = 1.2
+bus = &"SFX"
+
+[node name="PlayChime" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_ttmsj")
+volume_db = -15.673
+pitch_scale = 0.86
+bus = &"SFX"
+
+[node name="fade" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_jxm0o")
+}
+
+[node name="player" type="Node" parent="."]

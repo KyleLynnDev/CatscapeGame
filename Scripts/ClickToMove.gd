@@ -6,6 +6,8 @@ extends CharacterBody3D
 @onready var navigationAgent : NavigationAgent3D = $NavigationAgent3D;
 @onready var point = $"../Floating Pointer"
 @onready var locked_timer: Timer = $"../LockedTimer"
+@onready var footstep_grass: AudioStreamPlayer = $"../footstep_grass"
+
 
 
 
@@ -26,6 +28,12 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
+	if currentlyNavigating:
+		if !footstep_grass.playing:
+			footstep_grass.play()
+	if !currentlyNavigating:
+		footstep_grass.stop()
+
 	if !movement_animation.is_playing():
 		movement_animation.speed_scale = 1.0
 		is_locked = false
@@ -45,6 +53,7 @@ func _physics_process(delta: float) -> void:
 	if (currentlyNavigating) and !is_locked:
 		if movement_animation.current_animation != ("StubertMove/run"):
 			movement_animation.play("StubertMove/run")
+			
 	
 	moveToPoint(delta, speed );
 	currentlyNavigating = not navigationAgent.is_navigation_finished()
@@ -66,7 +75,7 @@ func _input(event):
 	if Input.is_action_just_pressed("LeftMouse") and !is_locked:
 		var camera = get_tree().get_nodes_in_group("camera")[0]; 
 		var mousePos = get_viewport().get_mouse_position();
-		var rayLength = 50; 
+		var rayLength = 60; 
 		var from = camera.project_ray_origin(mousePos); 
 		var to = from + camera.project_ray_normal(mousePos) * rayLength; 
 		var space = get_world_3d().direct_space_state;
@@ -99,9 +108,8 @@ func faceDirection(target_position, delta):
 	var direction = (target_position - global_position).normalized()  # Get direction vector
 	var current_quat = body.transform.basis.get_rotation_quaternion()  # Get current rotation
 	var target_quat = Quaternion(Vector3.UP, atan2(direction.x, direction.z))  # Desired rotation
-
+	#player.look_at(global_position + direction, Vector3.UP)
 	body.transform.basis = Basis(current_quat.slerp(target_quat, delta * 5.0))  # Smooth rotation
-	
 func pathfindNavAgent():	
 	
 	#var currentMap = navigationAgent.get_navigation_map(); 

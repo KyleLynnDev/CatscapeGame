@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b36xgh02fie1e"
+path="res://.godot/imported/cat_2_meow_01.wav-12c09b5c4c00f598f12d62468837edda.sample"
+
+[deps]
+
+source_file="res://Assets/sound effects/cat/cat_2_meow_01.wav"
+dest_files=["res://.godot/imported/cat_2_meow_01.wav-12c09b5c4c00f598f12d62468837edda.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

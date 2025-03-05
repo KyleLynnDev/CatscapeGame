@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://c8bt2ootkvtqs"]
 
-[ext_resource type="Script" path="res://Scripts/ClickToMove.gd" id="1_iwbe8"]
-[ext_resource type="Script" path="res://Scripts/RotatingCamera3D.gd" id="2_8jnjt"]
+[ext_resource type="Script" uid="uid://bi1p4jgd4h1gc" path="res://Scripts/ClickToMove.gd" id="1_iwbe8"]
+[ext_resource type="Script" uid="uid://dyjsj7w80pgap" path="res://Scripts/RotatingCamera3D.gd" id="2_8jnjt"]
 [ext_resource type="PackedScene" uid="uid://bc8q61hc0ny7a" path="res://Assets/Stubert Model.glb" id="3_r4n5h"]
 [ext_resource type="PackedScene" uid="uid://bbimx2wtcog2l" path="res://Scenes/floating_pointer.tscn" id="4_5ccek"]
 

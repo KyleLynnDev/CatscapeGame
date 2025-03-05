@@ -1,0 +1,43 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(0.0193024, 0.207391, 0.449219, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {
+"default": {
+"mode": 0,
+"name": "default",
+"pitch_base": 1.0,
+"pitch_variance": 0.0,
+"skip_characters": 0.0,
+"sound_path": "res://Assets/sound effects/cat",
+"volume_base": -1.0,
+"volume_variance": 0.0
+}
+},
+"style": "SpeakerBoxStyle",
+"suffix": ""
+},
+&"default_portrait": "Stubert",
+&"description": "",
+&"display_name": "STUBERT",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(-5, 0),
+&"portraits": {
+"Stubert": {
+"export_overrides": {
+"image": "\"res://Assets/UI/Stubert.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": "",
+"sound_mood": "default"
+}
+},
+&"scale": 1.0
+}
