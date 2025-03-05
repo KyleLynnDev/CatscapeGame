@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3bm50fgexdyy"]
+
+[ext_resource type="PackedScene" uid="uid://dr1lk0i7ytir6" path="res://Assets/Tilesets/Catscape 3D tiles.glb" id="1_pmaqe"]
+
+[node name="Catscape 3D tiles" instance=ExtResource("1_pmaqe")]

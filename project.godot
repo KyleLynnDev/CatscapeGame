@@ -28,7 +28,7 @@ TransitionScreen="*res://Scenes/UI/transition_screen.tscn"
 [dialogic]
 
 directories/dch_directory={
-"Sirfrog": "res://Dialogic/Characters/Sirfrog.dch",
+"SirFrog": "res://Dialogic/Characters/SirFrog.dch",
 "Stubert": "res://Dialogic/Characters/Stubert.dch",
 "sir frog": "res://Dialogic/Characters/sir frog.dch"
 }
