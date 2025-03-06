@@ -1,120 +1,67 @@
-[gd_scene load_steps=52 format=3 uid="uid://deibs3hqqmeee"]
+[gd_scene load_steps=36 format=3 uid="uid://bro8isx4v6mog"]
 
-[ext_resource type="Script" uid="uid://l7pmtf2k7xl5" path="res://Scripts/UI/options_menu.gd" id="1_xjurf"]
-[ext_resource type="Texture2D" uid="uid://b6lgjdtrffp01" path="res://Assets/UI/MainMenu/OptionsTitle.png" id="1_y6slg"]
-[ext_resource type="FontFile" uid="uid://nhpj3xhlcbkb" path="res://Assets/fonts/KiwiSoda.ttf" id="3_cr0o5"]
-[ext_resource type="Texture2D" uid="uid://2g5q5w0jhsfr" path="res://Assets/UI/MainMenu/Button_Hover.png" id="4_ppoa1"]
-[ext_resource type="Texture2D" uid="uid://dhmb7qnwwumbu" path="res://Assets/UI/MainMenu/Button_Pressed.png" id="5_di6vg"]
-[ext_resource type="Texture2D" uid="uid://o87o5cp37oxk" path="res://Assets/UI/MainMenu/Button_Normal.png" id="6_vtg3g"]
-[ext_resource type="Texture2D" uid="uid://c3nghonirdxv1" path="res://Assets/UI/MainMenu/Settings_Left.png" id="7_enn0j"]
-[ext_resource type="Texture2D" uid="uid://csmyfsw1fxqk" path="res://Assets/UI/MainMenu/Settings_Middle.png" id="8_b2ldh"]
-[ext_resource type="Texture2D" uid="uid://ck2m7jma1v708" path="res://Assets/UI/MainMenu/Settings_Right.png" id="9_p56lb"]
-[ext_resource type="Texture2D" uid="uid://dorfj71cn3ax0" path="res://Assets/UI/MainMenu/Settings_Game_Hover.png" id="10_1affg"]
-[ext_resource type="Texture2D" uid="uid://doanyvtc5rylh" path="res://Assets/UI/MainMenu/Settings_Game_Pressed.png" id="11_t1lij"]
-[ext_resource type="Texture2D" uid="uid://bqgbsn03diat2" path="res://Assets/UI/MainMenu/Settings_Game_Normal.png" id="12_xu0hc"]
-[ext_resource type="Texture2D" uid="uid://bk2mdbh1ck56b" path="res://Assets/UI/MainMenu/Settings_Video_Hover.png" id="13_ingbe"]
-[ext_resource type="Texture2D" uid="uid://cjq8nyc83sibr" path="res://Assets/UI/MainMenu/Settings_Video_Pressed.png" id="14_26hpa"]
-[ext_resource type="Texture2D" uid="uid://bqiflcvkeaxos" path="res://Assets/UI/MainMenu/Settings_Video_Normal.png" id="15_gk6jp"]
-[ext_resource type="FontFile" uid="uid://c0n70i3ydi2gk" path="res://Assets/fonts/GrapeSoda.ttf" id="15_ow60w"]
-[ext_resource type="Texture2D" uid="uid://bp7rl6kpvmia3" path="res://Assets/UI/MainMenu/Settings_Audio_Hover.png" id="16_2oxhx"]
-[ext_resource type="Texture2D" uid="uid://d2eta5n673kr1" path="res://Assets/UI/Options/Slider_Icon_Hover.png" id="16_i64yc"]
-[ext_resource type="Texture2D" uid="uid://bc5gmjrr0vulo" path="res://Assets/UI/MainMenu/Settings_Audio_Pressed.png" id="17_5j0m2"]
-[ext_resource type="Texture2D" uid="uid://ddhfeyh0u5k62" path="res://Assets/UI/MainMenu/Settings_Audio_Normal.png" id="18_kbnhh"]
-[ext_resource type="Script" uid="uid://dj83u1rybnd8y" path="res://Scripts/UI/volume.gd" id="18_tu5tv"]
-[ext_resource type="Texture2D" uid="uid://dpuprroaqg4io" path="res://Assets/UI/Options/Slider_Icon_Normal.png" id="19_dgbl0"]
-[ext_resource type="Texture2D" uid="uid://b50nr213esix4" path="res://Assets/UI/Options/Checkbox_Checked.png" id="19_o5gs7"]
-[ext_resource type="Texture2D" uid="uid://cyn4ah5v3wkjo" path="res://Assets/UI/Options/Checkbox_Normal.png" id="20_tn6r3"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t75ct"]
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j8hwy"]
-texture = ExtResource("1_y6slg")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5aemr"]
-texture = ExtResource("1_y6slg")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xhcit"]
-texture = ExtResource("1_y6slg")
-
-[sub_resource type="Animation" id="Animation_ejqik"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-
-[sub_resource type="Animation" id="Animation_f1bg6"]
-resource_name = "sign_swing"
-length = 0.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.233333, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [0.0, 0.0715585, 0.0]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_ls0mr"]
-_data = {
-&"RESET": SubResource("Animation_ejqik"),
-&"sign_swing": SubResource("Animation_f1bg6")
-}
+[ext_resource type="Script" uid="uid://l7pmtf2k7xl5" path="res://Scripts/UI/options_menu_main.gd" id="1_vmdmf"]
+[ext_resource type="Texture2D" uid="uid://ck2m7jma1v708" path="res://Assets/UI/MainMenu/Settings_Right.png" id="3_mklkl"]
+[ext_resource type="Texture2D" uid="uid://csmyfsw1fxqk" path="res://Assets/UI/MainMenu/Settings_Middle.png" id="4_imus4"]
+[ext_resource type="Texture2D" uid="uid://c3nghonirdxv1" path="res://Assets/UI/MainMenu/Settings_Left.png" id="5_jgah8"]
+[ext_resource type="Texture2D" uid="uid://dorfj71cn3ax0" path="res://Assets/UI/MainMenu/Settings_Game_Hover.png" id="6_1o0vj"]
+[ext_resource type="Texture2D" uid="uid://doanyvtc5rylh" path="res://Assets/UI/MainMenu/Settings_Game_Pressed.png" id="7_e481c"]
+[ext_resource type="Texture2D" uid="uid://bqgbsn03diat2" path="res://Assets/UI/MainMenu/Settings_Game_Normal.png" id="8_yx2xe"]
+[ext_resource type="Texture2D" uid="uid://bk2mdbh1ck56b" path="res://Assets/UI/MainMenu/Settings_Video_Hover.png" id="9_ikyed"]
+[ext_resource type="Texture2D" uid="uid://cjq8nyc83sibr" path="res://Assets/UI/MainMenu/Settings_Video_Pressed.png" id="10_7gs33"]
+[ext_resource type="Texture2D" uid="uid://bqiflcvkeaxos" path="res://Assets/UI/MainMenu/Settings_Video_Normal.png" id="11_638e4"]
+[ext_resource type="Texture2D" uid="uid://bp7rl6kpvmia3" path="res://Assets/UI/MainMenu/Settings_Audio_Hover.png" id="12_svsm0"]
+[ext_resource type="Texture2D" uid="uid://bc5gmjrr0vulo" path="res://Assets/UI/MainMenu/Settings_Audio_Pressed.png" id="13_t1mow"]
+[ext_resource type="Texture2D" uid="uid://ddhfeyh0u5k62" path="res://Assets/UI/MainMenu/Settings_Audio_Normal.png" id="14_uw3rk"]
+[ext_resource type="FontFile" uid="uid://c0n70i3ydi2gk" path="res://Assets/fonts/GrapeSoda.ttf" id="15_v6kin"]
+[ext_resource type="Texture2D" uid="uid://b50nr213esix4" path="res://Assets/UI/Options/Checkbox_Checked.png" id="16_i7n6p"]
+[ext_resource type="Texture2D" uid="uid://cyn4ah5v3wkjo" path="res://Assets/UI/Options/Checkbox_Normal.png" id="17_qp00o"]
+[ext_resource type="Texture2D" uid="uid://dpuprroaqg4io" path="res://Assets/UI/Options/Slider_Icon_Normal.png" id="18_xe0y8"]
+[ext_resource type="Texture2D" uid="uid://d2eta5n673kr1" path="res://Assets/UI/Options/Slider_Icon_Hover.png" id="19_blfcs"]
+[ext_resource type="Script" uid="uid://dj83u1rybnd8y" path="res://Scripts/UI/volume.gd" id="20_hew3b"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jj56x"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mkk6m"]
-texture = ExtResource("10_1affg")
+texture = ExtResource("6_1o0vj")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rysnb"]
-texture = ExtResource("11_t1lij")
+texture = ExtResource("7_e481c")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vyiac"]
-texture = ExtResource("12_xu0hc")
+texture = ExtResource("8_yx2xe")
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ee5s6"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7nw7k"]
-texture = ExtResource("13_ingbe")
+texture = ExtResource("9_ikyed")
 texture_margin_left = 10.0
 texture_margin_right = 10.0
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4tclg"]
-texture = ExtResource("14_26hpa")
+texture = ExtResource("10_7gs33")
 texture_margin_left = 10.0
 texture_margin_right = 10.0
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1ja6a"]
-texture = ExtResource("15_gk6jp")
+texture = ExtResource("11_638e4")
 texture_margin_left = 10.0
 texture_margin_right = 10.0
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3ekpp"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xl74p"]
-texture = ExtResource("16_2oxhx")
+texture = ExtResource("12_svsm0")
 texture_margin_left = 10.0
 texture_margin_right = 10.0
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mkxud"]
-texture = ExtResource("17_5j0m2")
+texture = ExtResource("13_t1mow")
 texture_margin_left = 10.0
 texture_margin_right = 10.0
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2nnab"]
-texture = ExtResource("18_kbnhh")
+texture = ExtResource("14_uw3rk")
 texture_margin_left = 10.0
 texture_margin_right = 10.0
 
@@ -136,17 +83,6 @@ corner_radius_bottom_left = 2
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_me5oc"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_43hxf"]
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rx1o4"]
-texture = ExtResource("4_ppoa1")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wuxax"]
-texture = ExtResource("5_di6vg")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3lwy4"]
-texture = ExtResource("6_vtg3g")
-
 [node name="Options_Menu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -154,45 +90,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_xjurf")
-
-[node name="TitleLogo" type="Button" parent="."]
-custom_minimum_size = Vector2(186, 105)
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -635.0
-offset_top = -6.0
-offset_right = -449.0
-offset_bottom = 99.0
-grow_horizontal = 0
-pivot_offset = Vector2(92.505, 0)
-theme_override_styles/focus = SubResource("StyleBoxEmpty_t75ct")
-theme_override_styles/hover = SubResource("StyleBoxTexture_j8hwy")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_5aemr")
-theme_override_styles/normal = SubResource("StyleBoxTexture_xhcit")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="TitleLogo"]
-libraries = {
-&"": SubResource("AnimationLibrary_ls0mr")
-}
-
-[node name="MarginContainer" type="MarginContainer" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 12
-theme_override_constants/margin_top = 12
-theme_override_constants/margin_right = 12
-theme_override_constants/margin_bottom = 12
-
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
-layout_mode = 2
-theme_override_constants/separation = -48
+script = ExtResource("1_vmdmf")
 
 [node name="Settings_Margin" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -208,17 +106,17 @@ theme_override_constants/margin_bottom = 10
 
 [node name="Settings_Right" type="TextureRect" parent="Settings_Margin"]
 layout_mode = 2
-texture = ExtResource("9_p56lb")
+texture = ExtResource("3_mklkl")
 expand_mode = 1
 
 [node name="Settings_Mid" type="TextureRect" parent="Settings_Margin"]
 layout_mode = 2
-texture = ExtResource("8_b2ldh")
+texture = ExtResource("4_imus4")
 expand_mode = 1
 
 [node name="Settings_Left" type="TextureRect" parent="Settings_Margin"]
 layout_mode = 2
-texture = ExtResource("7_enn0j")
+texture = ExtResource("5_jgah8")
 expand_mode = 1
 
 [node name="SettingsTabs" type="HBoxContainer" parent="Settings_Margin"]
@@ -304,14 +202,14 @@ offset_bottom = 195.0
 [node name="ResolutionLabel" type="Label" parent="Settings_Video/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("15_ow60w")
+theme_override_fonts/font = ExtResource("15_v6kin")
 text = "RESOLUTION:"
 
 [node name="ResolutionButton" type="OptionButton" parent="Settings_Video/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.77084, 0.770839, 0.770839, 1)
 theme_override_colors/font_focus_color = Color(0.772549, 0.772549, 0.772549, 1)
-theme_override_fonts/font = ExtResource("15_ow60w")
+theme_override_fonts/font = ExtResource("15_v6kin")
 selected = 2
 item_count = 5
 popup/item_0/text = "1920 x 1080"
@@ -328,14 +226,14 @@ popup/item_4/id = 4
 [node name="FullscreenLabel" type="Label" parent="Settings_Video/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("15_ow60w")
+theme_override_fonts/font = ExtResource("15_v6kin")
 text = "FULLSCREEN:"
 
 [node name="FullscreenBox" type="CheckBox" parent="Settings_Video/VBoxContainer"]
 layout_mode = 2
 theme_override_styles/focus = SubResource("StyleBoxEmpty_tdkwh")
-theme_override_icons/checked = ExtResource("19_o5gs7")
-theme_override_icons/unchecked = ExtResource("20_tn6r3")
+theme_override_icons/checked = ExtResource("16_i7n6p")
+theme_override_icons/unchecked = ExtResource("17_qp00o")
 
 [node name="Settings_Audio" type="Control" parent="."]
 layout_mode = 1
@@ -360,32 +258,32 @@ theme_override_constants/separation = 3
 [node name="VolumeLabel" type="Label" parent="Settings_Audio/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("15_ow60w")
+theme_override_fonts/font = ExtResource("15_v6kin")
 text = "MASTER VOLUME:"
 
 [node name="Volume" type="HSlider" parent="Settings_Audio/VBoxContainer"]
 layout_mode = 2
-theme_override_icons/grabber = ExtResource("19_dgbl0")
-theme_override_icons/grabber_highlight = ExtResource("16_i64yc")
+theme_override_icons/grabber = ExtResource("18_xe0y8")
+theme_override_icons/grabber_highlight = ExtResource("19_blfcs")
 theme_override_styles/grabber_area = SubResource("StyleBoxFlat_m1rmj")
 theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_uoglm")
 max_value = 1.0
 step = 0.01
 value = 1.0
-script = ExtResource("18_tu5tv")
+script = ExtResource("20_hew3b")
 
 [node name="Label" type="Label" parent="Settings_Audio/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("15_ow60w")
+theme_override_fonts/font = ExtResource("15_v6kin")
 text = "MUTE:"
 
 [node name="MuteBox" type="CheckBox" parent="Settings_Audio/VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("15_ow60w")
+theme_override_fonts/font = ExtResource("15_v6kin")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_me5oc")
-theme_override_icons/checked = ExtResource("19_o5gs7")
-theme_override_icons/unchecked = ExtResource("20_tn6r3")
+theme_override_icons/checked = ExtResource("16_i7n6p")
+theme_override_icons/unchecked = ExtResource("17_qp00o")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="Settings_Audio"]
 layout_mode = 1
@@ -409,28 +307,10 @@ theme_override_constants/margin_bottom = 0
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("15_ow60w")
+theme_override_fonts/font = ExtResource("15_v6kin")
 theme_override_font_sizes/font_size = 24
 text = "100%"
 vertical_alignment = 1
-
-[node name="Exit_Button" type="Button" parent="."]
-layout_mode = 0
-offset_left = 31.0
-offset_top = 297.0
-offset_right = 139.0
-offset_bottom = 347.0
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0.635294, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_cr0o5")
-theme_override_font_sizes/font_size = 16
-theme_override_styles/focus = SubResource("StyleBoxEmpty_43hxf")
-theme_override_styles/hover = SubResource("StyleBoxTexture_rx1o4")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_wuxax")
-theme_override_styles/normal = SubResource("StyleBoxTexture_3lwy4")
-text = "BACK"
 
 [connection signal="pressed" from="Game_Settings_Button" to="." method="_on_game_settings_pressed"]
 [connection signal="pressed" from="Video_Settings_Button" to="." method="_on_video_settings_pressed"]
@@ -440,4 +320,3 @@ text = "BACK"
 [connection signal="mouse_exited" from="Settings_Audio/VBoxContainer/Volume" to="Settings_Audio/VBoxContainer/Volume" method="_on_mouse_exited"]
 [connection signal="value_changed" from="Settings_Audio/VBoxContainer/Volume" to="Settings_Audio/VBoxContainer/Volume" method="_on_value_changed"]
 [connection signal="toggled" from="Settings_Audio/VBoxContainer/MuteBox" to="Settings_Audio/VBoxContainer/Volume" method="_on_mute_box_toggled"]
-[connection signal="pressed" from="Exit_Button" to="." method="_on_exit_button_pressed"]

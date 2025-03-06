@@ -44,6 +44,12 @@ func _physics_process(delta: float) -> void:
 			movement_animation.play("StubertMove/get_item")
 			is_locked = true
 	
+	if Input.is_action_just_pressed("Emote"):
+		if movement_animation.current_animation != ("EmoteStubert/fantastic"):
+			movement_animation.play("EmoteStubert/fantastic")
+			SoundManager.fantastic.play()
+			is_locked = true
+	
 	if(not currentlyNavigating) and !is_locked:
 		if movement_animation.current_animation != ("StubertMove/idle"):
 			movement_animation.play("StubertMove/idle")
@@ -75,7 +81,7 @@ func _input(event):
 	if Input.is_action_just_pressed("LeftMouse") and !is_locked:
 		var camera = get_tree().get_nodes_in_group("camera")[0]; 
 		var mousePos = get_viewport().get_mouse_position();
-		var rayLength = 60; 
+		var rayLength = 70; 
 		var from = camera.project_ray_origin(mousePos); 
 		var to = from + camera.project_ray_normal(mousePos) * rayLength; 
 		var space = get_world_3d().direct_space_state;

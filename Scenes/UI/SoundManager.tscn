@@ -1,26 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://wj7w6bbqbssk"]
+[gd_scene load_steps=11 format=3 uid="uid://wj7w6bbqbssk"]
 
 [ext_resource type="Script" uid="uid://jdhheslaqcqn" path="res://Scripts/UI/sound_manager.gd" id="1_6etvu"]
 [ext_resource type="AudioStream" uid="uid://b8odjab85hnlc" path="res://Assets/UI/MainMenu/ui_button_simple_click_01.wav" id="1_td85n"]
 [ext_resource type="AudioStream" uid="uid://be0r6y3kyb15f" path="res://Assets/UI/MainMenu/Main_Menu.mp3" id="2_l3k87"]
 [ext_resource type="AudioStream" uid="uid://che1tn3wmffu6" path="res://Assets/UI/MainMenu/small_box_open_02.wav" id="3_lx3gh"]
 [ext_resource type="AudioStream" uid="uid://hdbg2q6j70h1" path="res://Assets/sound effects/UI/SUCCESS CHIME Bells Sparkle Tune Short 05.wav" id="5_ttmsj"]
-
-[sub_resource type="Animation" id="Animation_ttmsj"]
-resource_name = "out"
-length = 3.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Main_Menu:volume_db")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 3),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [-5.026, -50.0]
-}
+[ext_resource type="AudioStream" uid="uid://dsqf5ey0g2to2" path="res://Assets/UI/MainMenu/fantastic.wav" id="6_x7tiq"]
 
 [sub_resource type="Animation" id="Animation_x7tiq"]
 length = 0.001
@@ -51,6 +36,22 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [-50.0, -5.0]
+}
+
+[sub_resource type="Animation" id="Animation_ttmsj"]
+resource_name = "out"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Main_Menu:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-5.026, -50.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_jxm0o"]
@@ -93,3 +94,7 @@ libraries = {
 }
 
 [node name="player" type="Node" parent="."]
+
+[node name="fantastic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_x7tiq")
+bus = &"Music"
