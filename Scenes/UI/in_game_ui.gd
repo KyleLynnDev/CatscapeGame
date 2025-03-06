@@ -8,6 +8,9 @@ extends CanvasLayer
 var options_open := false
 
 
+func _physics_process(delta: float) -> void:
+	if Input.is_action_just_pressed("escape"):
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
 func _ready() -> void:	
 	mouse_block.visible = false
 	options_menu.visible = false
@@ -26,4 +29,4 @@ func _on_options_pressed() -> void:
 		mouse_block.visible = false
 		options_menu.set_process(false)
 		options_open = false
-		
+	

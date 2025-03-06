@@ -6,7 +6,9 @@ extends CharacterBody3D
 @onready var navigationAgent : NavigationAgent3D = $NavigationAgent3D;
 @onready var point = $"../Floating Pointer"
 @onready var locked_timer: Timer = $"../LockedTimer"
+@onready var footstep_rock: AudioStreamPlayer = $"../footstep_rock"
 @onready var footstep_grass: AudioStreamPlayer = $"../footstep_grass"
+@onready var floortyperay: RayCast3D = $"Body Root/Stubert Model Test/floortyperay"
 
 
 
@@ -29,10 +31,11 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
 	if currentlyNavigating:
-		if !footstep_grass.playing:
-			footstep_grass.play()
+		play_step_sounds()
+		#if !footstep_grass.playing:
+			#footstep_grass.play()
 	if !currentlyNavigating:
-		footstep_grass.stop()
+		pass#footstep_grass.stop()
 
 	if !movement_animation.is_playing():
 		movement_animation.speed_scale = 1.0
@@ -136,5 +139,11 @@ func pathfindNavAgent():
 	if !is_locked:
 		move_and_slide(); 
 	
-
-	
+func play_step_sounds():
+	if floortyperay.is_colliding():
+		var collider = floortyperay.get_collider()
+		if collider.is_in_group("grass"):
+			if !footstep_grass.playing:
+				footstep_grass.play()
+		if collider.is_in_group("rock"):
+			footstep_rock.play()

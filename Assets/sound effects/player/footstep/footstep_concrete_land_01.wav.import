@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b78biuv4kfknl"
+path="res://.godot/imported/footstep_concrete_land_01.wav-75f2b333bae30366d07e459ca953e8fa.sample"
+
+[deps]
+
+source_file="res://Assets/sound effects/player/footstep/footstep_concrete_land_01.wav"
+dest_files=["res://.godot/imported/footstep_concrete_land_01.wav-75f2b333bae30366d07e459ca953e8fa.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
