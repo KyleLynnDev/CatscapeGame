@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://c01jsjnpo64jq"]
+[gd_scene load_steps=26 format=3 uid="uid://c01jsjnpo64jq"]
 
 [ext_resource type="Script" uid="uid://bi1p4jgd4h1gc" path="res://Scripts/ClickToMove.gd" id="1_jp55b"]
 [ext_resource type="Script" uid="uid://dyjsj7w80pgap" path="res://Scripts/RotatingCamera3D.gd" id="2_5mwop"]
@@ -1909,12 +1909,6 @@ _data = {
 &"walk": SubResource("Animation_ldtpa")
 }
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7dp3o"]
-albedo_color = Color(7.9897e-05, 0.47183, 0.910711, 1)
-
-[sub_resource type="SphereMesh" id="SphereMesh_h4iuc"]
-material = SubResource("StandardMaterial3D_7dp3o")
-
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_2ijsl"]
 streams_count = 10
 stream_0/stream = ExtResource("5_7dp3o")
@@ -1950,10 +1944,11 @@ shape = SubResource("CapsuleShape3D_7l73k")
 transform = Transform3D(1, 0, 0, 0, 0.984808, 0.173648, 0, -0.173648, 0.984808, 0, 0, 0)
 
 [node name="Camera3D" type="Camera3D" parent="PlayerCharacter/Pivot" groups=["camera"]]
-transform = Transform3D(1, 0, 0, 0, 0.999092, 0.0426083, 0, -0.0426083, 0.999092, 1.29946, 2.00692, 26.2817)
+transform = Transform3D(1, 0, 0, 0, 0.999092, 0.0426083, 0, -0.0426083, 0.999092, 0, 2.007, 26.282)
 cull_mask = 1048573
 fov = 15.0
 script = ExtResource("2_5mwop")
+movement_speed = 30.0
 minZoom = 15
 maxZoom = 45
 zoomSpeed = 60.0
@@ -1986,11 +1981,6 @@ libraries = {
 &"StubertMove": SubResource("AnimationLibrary_1xtl0")
 }
 playback_default_blend_time = 0.1
-
-[node name="minimapmarker" type="MeshInstance3D" parent="PlayerCharacter"]
-layers = 2
-mesh = SubResource("SphereMesh_h4iuc")
-skeleton = NodePath("../..")
 
 [node name="Floating Pointer" parent="." instance=ExtResource("4_wh38k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15.9923)

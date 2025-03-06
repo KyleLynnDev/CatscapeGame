@@ -70,8 +70,7 @@ func moveToPoint(delta, speed):
 	#body will face in direction of current target
 	var _targetPosition = navigationAgent.target_position; 
 	var direction = global_position.direction_to(_targetPosition);
-	faceDirection(_targetPosition, delta); 
-
+	faceDirection(_targetPosition, delta);
 	#move agent based on input target
 	pathfindNavAgent()
 
