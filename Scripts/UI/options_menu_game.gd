@@ -1,4 +1,4 @@
-class_name OptionsMenu
+#class_name OptionsMenu
 extends Control
 
 @onready var exit_button: Button = $Exit_Button

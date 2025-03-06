@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://d11x031p3f2ww" path="res://Assets/UI/MainMenu/Exit_Button_Normal.png" id="4_aj7nw"]
 [ext_resource type="Texture2D" uid="uid://dhmb7qnwwumbu" path="res://Assets/UI/MainMenu/Button_Pressed.png" id="7_6kilw"]
 [ext_resource type="Texture2D" uid="uid://qkw50fnwqkoc" path="res://Assets/UI/MainMenu/GameTitle.png" id="9_j6ocu"]
-[ext_resource type="PackedScene" uid="uid://deibs3hqqmeee" path="res://Scenes/UI/options_menu.tscn" id="10_w85c3"]
+[ext_resource type="PackedScene" uid="uid://deibs3hqqmeee" path="res://Scenes/UI/options_menu_main.tscn" id="10_w85c3"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qbnl2"]
 

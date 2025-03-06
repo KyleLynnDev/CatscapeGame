@@ -6,7 +6,9 @@ extends CharacterBody3D
 @onready var navigationAgent : NavigationAgent3D = $NavigationAgent3D;
 @onready var point = $"../Floating Pointer"
 @onready var locked_timer: Timer = $"../LockedTimer"
+@onready var footstep_rock: AudioStreamPlayer = $"../footstep_rock"
 @onready var footstep_grass: AudioStreamPlayer = $"../footstep_grass"
+@onready var floortyperay: RayCast3D = $"Body Root/Stubert Model Test/floortyperay"
 
 
 
@@ -29,10 +31,11 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
 	if currentlyNavigating:
-		if !footstep_grass.playing:
-			footstep_grass.play()
+		play_step_sounds()
+		#if !footstep_grass.playing:
+			#footstep_grass.play()
 	if !currentlyNavigating:
-		footstep_grass.stop()
+		pass#footstep_grass.stop()
 
 	if !movement_animation.is_playing():
 		movement_animation.speed_scale = 1.0
@@ -42,6 +45,12 @@ func _physics_process(delta: float) -> void:
 		if movement_animation.current_animation != ("StubertMove/get_item"):
 			movement_animation.speed_scale = 2.0
 			movement_animation.play("StubertMove/get_item")
+			is_locked = true
+	
+	if Input.is_action_just_pressed("Emote"):
+		if movement_animation.current_animation != ("EmoteStubert/fantastic"):
+			movement_animation.play("EmoteStubert/fantastic")
+			SoundManager.fantastic.play()
 			is_locked = true
 	
 	if(not currentlyNavigating) and !is_locked:
@@ -64,8 +73,7 @@ func moveToPoint(delta, speed):
 	#body will face in direction of current target
 	var _targetPosition = navigationAgent.target_position; 
 	var direction = global_position.direction_to(_targetPosition);
-	faceDirection(_targetPosition, delta); 
-
+	faceDirection(_targetPosition, delta);
 	#move agent based on input target
 	pathfindNavAgent()
 
@@ -75,7 +83,7 @@ func _input(event):
 	if Input.is_action_just_pressed("LeftMouse") and !is_locked:
 		var camera = get_tree().get_nodes_in_group("camera")[0]; 
 		var mousePos = get_viewport().get_mouse_position();
-		var rayLength = 60; 
+		var rayLength = 70; 
 		var from = camera.project_ray_origin(mousePos); 
 		var to = from + camera.project_ray_normal(mousePos) * rayLength; 
 		var space = get_world_3d().direct_space_state;
@@ -131,5 +139,11 @@ func pathfindNavAgent():
 	if !is_locked:
 		move_and_slide(); 
 	
-
-	
+func play_step_sounds():
+	if floortyperay.is_colliding():
+		var collider = floortyperay.get_collider()
+		if collider.is_in_group("grass"):
+			if !footstep_grass.playing:
+				footstep_grass.play()
+		if collider.is_in_group("rock"):
+			footstep_rock.play()

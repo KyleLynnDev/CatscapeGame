@@ -5,6 +5,7 @@ extends Node
 @onready var sign_creak_sound: AudioStreamPlayer = $SignCreak
 @onready var fade: AnimationPlayer = $fade
 @onready var play_chime: AudioStreamPlayer = $PlayChime
+@onready var fantastic: AudioStreamPlayer = $fantastic
 
 
 func any_button_pressed():

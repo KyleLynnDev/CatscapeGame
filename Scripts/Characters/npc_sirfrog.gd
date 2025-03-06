@@ -1,4 +1,5 @@
 extends CharacterBody3D
+@onready var froganimation: AnimationPlayer = $SirFrog/froganimation
 
 
 @onready var agent: NavigationAgent3D = $NavigationAgent3D
@@ -10,3 +11,7 @@ func interacted():
 	
 	await get_tree().create_timer(0.2).timeout
 	#uncomment to delete object: self.queue_free()
+func _physics_process(delta: float) -> void:
+	if Input.is_action_just_pressed("Emote"):
+		if froganimation.current_animation != ("EmoteStubert/fantastic"):
+			froganimation.play("EmoteStubert/fantastic")

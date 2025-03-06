@@ -1,0 +1,170 @@
+[gd_scene load_steps=13 format=3 uid="uid://ckppv2i3v7l83"]
+
+[ext_resource type="Script" uid="uid://6sdv45j0cny3" path="res://Scenes/UI/in_game_ui.gd" id="1_l7b6x"]
+[ext_resource type="Texture2D" uid="uid://r5u1tego3yrr" path="res://Assets/UI/inGame/BottomBar.png" id="1_q4ye0"]
+[ext_resource type="Texture2D" uid="uid://clw4k7xvl4es2" path="res://Assets/UI/inGame/SideBar.png" id="1_vjy15"]
+[ext_resource type="FontFile" uid="uid://c0n70i3ydi2gk" path="res://Assets/fonts/GrapeSoda.ttf" id="3_5qd38"]
+[ext_resource type="Texture2D" uid="uid://buapja16p5sem" path="res://Assets/UI/inGame/Button_Hover.png" id="3_qm78u"]
+[ext_resource type="Texture2D" uid="uid://51e8ww3xxnbv" path="res://Assets/UI/inGame/Button_Pressed.png" id="4_5qd38"]
+[ext_resource type="Texture2D" uid="uid://bdtsf85x51gts" path="res://Assets/UI/inGame/Button_Normal.png" id="5_vewak"]
+[ext_resource type="PackedScene" uid="uid://bro8isx4v6mog" path="res://Scenes/UI/options_menu_game.tscn" id="8_1fmmx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l7b6x"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1fmmx"]
+texture = ExtResource("3_qm78u")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hj7ba"]
+texture = ExtResource("4_5qd38")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vjy15"]
+texture = ExtResource("5_vewak")
+
+[node name="in_game_ui" type="CanvasLayer"]
+script = ExtResource("1_l7b6x")
+
+[node name="RightBar" type="TextureRect" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 190.0
+offset_top = -373.0
+offset_right = 355.0
+offset_bottom = 9.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("1_vjy15")
+
+[node name="BottomBar" type="TextureRect" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -336.0
+offset_top = -39.0
+offset_right = 336.0
+offset_bottom = 30.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("1_q4ye0")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -116.0
+offset_top = 5.0
+offset_right = -4.0
+offset_bottom = 117.0
+grow_horizontal = 0
+
+[node name="MenuButtons" type="VBoxContainer" parent="."]
+offset_left = 529.0
+offset_top = 121.0
+offset_right = 631.0
+offset_bottom = 321.0
+
+[node name="Items" type="Button" parent="MenuButtons"]
+custom_minimum_size = Vector2(100, 30)
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.635294, 0.12549, 0, 1)
+theme_override_fonts/font = ExtResource("3_5qd38")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_l7b6x")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1fmmx")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_hj7ba")
+theme_override_styles/normal = SubResource("StyleBoxTexture_vjy15")
+text = "ITEMS"
+
+[node name="Gear" type="Button" parent="MenuButtons"]
+custom_minimum_size = Vector2(100, 30)
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.635294, 0.12549, 0, 1)
+theme_override_fonts/font = ExtResource("3_5qd38")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_l7b6x")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1fmmx")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_hj7ba")
+theme_override_styles/normal = SubResource("StyleBoxTexture_vjy15")
+text = "GEAR"
+
+[node name="Stats" type="Button" parent="MenuButtons"]
+custom_minimum_size = Vector2(100, 30)
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.635294, 0.12549, 0, 1)
+theme_override_fonts/font = ExtResource("3_5qd38")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_l7b6x")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1fmmx")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_hj7ba")
+theme_override_styles/normal = SubResource("StyleBoxTexture_vjy15")
+text = "STATS
+"
+
+[node name="Journal" type="Button" parent="MenuButtons"]
+custom_minimum_size = Vector2(100, 30)
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.635294, 0.12549, 0, 1)
+theme_override_fonts/font = ExtResource("3_5qd38")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_l7b6x")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1fmmx")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_hj7ba")
+theme_override_styles/normal = SubResource("StyleBoxTexture_vjy15")
+text = "JOURNAL
+"
+
+[node name="Map" type="Button" parent="MenuButtons"]
+custom_minimum_size = Vector2(100, 30)
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.635294, 0.12549, 0, 1)
+theme_override_fonts/font = ExtResource("3_5qd38")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_l7b6x")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1fmmx")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_hj7ba")
+theme_override_styles/normal = SubResource("StyleBoxTexture_vjy15")
+text = "MAP"
+
+[node name="Options" type="Button" parent="MenuButtons"]
+custom_minimum_size = Vector2(100, 30)
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.635294, 0.12549, 0, 1)
+theme_override_fonts/font = ExtResource("3_5qd38")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_l7b6x")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1fmmx")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_hj7ba")
+theme_override_styles/normal = SubResource("StyleBoxTexture_vjy15")
+text = "OPTIONS"
+
+[node name="MouseBlock" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 517.0
+offset_bottom = 324.0
+
+[node name="Options_Menu" parent="MouseBlock" instance=ExtResource("8_1fmmx")]
+layout_mode = 1
+offset_left = -65.0
+offset_top = -62.0
+offset_right = -65.0
+offset_bottom = -62.0
+
+[connection signal="pressed" from="MenuButtons/Options" to="." method="_on_options_pressed"]
