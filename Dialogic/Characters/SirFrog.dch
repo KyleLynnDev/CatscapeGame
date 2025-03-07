@@ -18,7 +18,7 @@
 "volume_variance": 0.0
 }
 },
-"style": "SpeakerBoxStyle",
+"style": "DialogueDefault",
 "suffix": ""
 },
 &"default_portrait": "Sir Frog",
@@ -34,7 +34,7 @@
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 1.0,
 "scene": "",
 "sound_mood": "Talk"
 }

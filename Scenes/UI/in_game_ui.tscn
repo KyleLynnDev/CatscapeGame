@@ -1,13 +1,22 @@
-[gd_scene load_steps=13 format=3 uid="uid://ckppv2i3v7l83"]
+[gd_scene load_steps=38 format=3 uid="uid://ckppv2i3v7l83"]
 
 [ext_resource type="Script" uid="uid://6sdv45j0cny3" path="res://Scenes/UI/in_game_ui.gd" id="1_l7b6x"]
 [ext_resource type="Texture2D" uid="uid://r5u1tego3yrr" path="res://Assets/UI/inGame/BottomBar.png" id="1_q4ye0"]
 [ext_resource type="Texture2D" uid="uid://clw4k7xvl4es2" path="res://Assets/UI/inGame/SideBar.png" id="1_vjy15"]
 [ext_resource type="FontFile" uid="uid://c0n70i3ydi2gk" path="res://Assets/fonts/GrapeSoda.ttf" id="3_5qd38"]
 [ext_resource type="Texture2D" uid="uid://buapja16p5sem" path="res://Assets/UI/inGame/Button_Hover.png" id="3_qm78u"]
+[ext_resource type="FontFile" uid="uid://c3yeo51lvai6k" path="res://Assets/fonts/Softizen.ttf" id="4_1fmmx"]
 [ext_resource type="Texture2D" uid="uid://51e8ww3xxnbv" path="res://Assets/UI/inGame/Button_Pressed.png" id="4_5qd38"]
 [ext_resource type="Texture2D" uid="uid://bdtsf85x51gts" path="res://Assets/UI/inGame/Button_Normal.png" id="5_vewak"]
 [ext_resource type="PackedScene" uid="uid://bro8isx4v6mog" path="res://Scenes/UI/options_menu_game.tscn" id="8_1fmmx"]
+[ext_resource type="Texture2D" uid="uid://bpuv1flv5kjny" path="res://Assets/UI/MainMenu/Exit_Button_Hover.png" id="10_a4uew"]
+[ext_resource type="Texture2D" uid="uid://dgs6c8vl7mji0" path="res://Assets/UI/MainMenu/Exit_Button_Pressed.png" id="11_f466h"]
+[ext_resource type="Texture2D" uid="uid://d11x031p3f2ww" path="res://Assets/UI/MainMenu/Exit_Button_Normal.png" id="12_y7wfj"]
+[ext_resource type="Texture2D" uid="uid://dchqy8jvvrufw" path="res://Assets/UI/inGame/ExitConfirmation.png" id="13_f466h"]
+[ext_resource type="FontFile" uid="uid://nhpj3xhlcbkb" path="res://Assets/fonts/KiwiSoda.ttf" id="14_y7wfj"]
+[ext_resource type="Texture2D" uid="uid://ch75wy62fi3w2" path="res://Assets/UI/inGame/SquareButton_Hover.png" id="15_vcabp"]
+[ext_resource type="Texture2D" uid="uid://c0xnpunu4edtq" path="res://Assets/UI/inGame/SquareButton_Pressed.png" id="16_l85wt"]
+[ext_resource type="Texture2D" uid="uid://6s0h8sr5ynbf" path="res://Assets/UI/inGame/SquareButton.png" id="17_2c2xs"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l7b6x"]
 
@@ -19,6 +28,50 @@ texture = ExtResource("4_5qd38")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vjy15"]
 texture = ExtResource("5_vewak")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2sirs"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kk840"]
+texture = ExtResource("10_a4uew")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vcabp"]
+texture = ExtResource("11_f466h")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l85wt"]
+texture = ExtResource("12_y7wfj")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y7wfj"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y7wfj"]
+texture = ExtResource("3_qm78u")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_enixo"]
+texture = ExtResource("4_5qd38")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2sirs"]
+texture = ExtResource("5_vewak")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kk840"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1lvfj"]
+texture = ExtResource("3_qm78u")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ce2yt"]
+texture = ExtResource("4_5qd38")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2c2xs"]
+texture = ExtResource("5_vewak")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_enixo"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1fku1"]
+texture = ExtResource("15_vcabp")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u5ow7"]
+texture = ExtResource("16_l85wt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gil4u"]
+texture = ExtResource("17_2c2xs")
 
 [node name="in_game_ui" type="CanvasLayer"]
 script = ExtResource("1_l7b6x")
@@ -51,15 +104,17 @@ grow_horizontal = 2
 grow_vertical = 0
 texture = ExtResource("1_q4ye0")
 
-[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -116.0
-offset_top = 5.0
-offset_right = -4.0
-offset_bottom = 117.0
-grow_horizontal = 0
+[node name="TimeLabel" type="Label" parent="BottomBar"]
+layout_mode = 0
+offset_left = 562.0
+offset_top = 12.0
+offset_right = 632.0
+offset_bottom = 34.3333
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.866667, 0.227451, 1)
+theme_override_fonts/font = ExtResource("4_1fmmx")
+theme_override_font_sizes/font_size = 16
+text = "12:48:59"
 
 [node name="MenuButtons" type="VBoxContainer" parent="."]
 offset_left = 529.0
@@ -161,10 +216,130 @@ offset_right = 517.0
 offset_bottom = 324.0
 
 [node name="Options_Menu" parent="MouseBlock" instance=ExtResource("8_1fmmx")]
+visible = false
 layout_mode = 1
 offset_left = -65.0
 offset_top = -62.0
 offset_right = -65.0
 offset_bottom = -62.0
 
+[node name="ExitButton" type="Button" parent="."]
+custom_minimum_size = Vector2(25, 25)
+offset_left = 6.0
+offset_top = 333.0
+offset_right = 31.0
+offset_bottom = 358.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2sirs")
+theme_override_styles/hover = SubResource("StyleBoxTexture_kk840")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_vcabp")
+theme_override_styles/normal = SubResource("StyleBoxTexture_l85wt")
+
+[node name="ExitConfirmation" type="Control" parent="."]
+custom_minimum_size = Vector2(517, 325)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ExitConfirmation"]
+custom_minimum_size = Vector2(517, 325)
+layout_mode = 1
+offset_right = 517.0
+offset_bottom = 325.0
+
+[node name="TextureRect" type="TextureRect" parent="ExitConfirmation/MarginContainer"]
+custom_minimum_size = Vector2(250, 150)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("13_f466h")
+expand_mode = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ExitConfirmation/MarginContainer/TextureRect"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -87.5
+offset_top = -54.0
+offset_right = 87.5
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 10
+
+[node name="tomainmenu" type="Button" parent="ExitConfirmation/MarginContainer/TextureRect/HBoxContainer"]
+custom_minimum_size = Vector2(95, 30)
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.635294, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_5qd38")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/focus = SubResource("StyleBoxEmpty_y7wfj")
+theme_override_styles/hover = SubResource("StyleBoxTexture_y7wfj")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_enixo")
+theme_override_styles/normal = SubResource("StyleBoxTexture_2sirs")
+text = "MAIN MENU"
+
+[node name="todesktop" type="Button" parent="ExitConfirmation/MarginContainer/TextureRect/HBoxContainer"]
+custom_minimum_size = Vector2(95, 30)
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.635294, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_5qd38")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_kk840")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1lvfj")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ce2yt")
+theme_override_styles/normal = SubResource("StyleBoxTexture_2c2xs")
+text = "DESKTOP
+"
+
+[node name="Label" type="Label" parent="ExitConfirmation/MarginContainer/TextureRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -92.5
+offset_top = -30.0
+offset_right = 92.5
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("14_y7wfj")
+theme_override_font_sizes/font_size = 36
+text = "EXIT GAME?"
+
+[node name="CloseExit" type="Button" parent="ExitConfirmation/MarginContainer/TextureRect"]
+layout_mode = 0
+offset_left = 215.0
+offset_top = -9.0
+offset_right = 252.0
+offset_bottom = 28.0
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.666667, 0.133333, 0, 0)
+theme_override_fonts/font = ExtResource("3_5qd38")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_enixo")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1fku1")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_u5ow7")
+theme_override_styles/normal = SubResource("StyleBoxTexture_gil4u")
+text = "X"
+
 [connection signal="pressed" from="MenuButtons/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="ExitConfirmation/MarginContainer/TextureRect/HBoxContainer/tomainmenu" to="." method="_on_tomainmenu_pressed"]
+[connection signal="pressed" from="ExitConfirmation/MarginContainer/TextureRect/HBoxContainer/todesktop" to="." method="_on_todesktop_pressed"]
+[connection signal="pressed" from="ExitConfirmation/MarginContainer/TextureRect/CloseExit" to="." method="_on_close_exit_pressed"]

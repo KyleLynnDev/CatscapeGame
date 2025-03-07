@@ -47,11 +47,6 @@ func _physics_process(delta: float) -> void:
 			movement_animation.play("StubertMove/get_item")
 			is_locked = true
 	
-	if Input.is_action_just_pressed("Emote"):
-		if movement_animation.current_animation != ("EmoteStubert/fantastic"):
-			movement_animation.play("EmoteStubert/fantastic")
-			SoundManager.fantastic.play()
-			is_locked = true
 	
 	if(not currentlyNavigating) and !is_locked:
 		if movement_animation.current_animation != ("StubertMove/idle"):

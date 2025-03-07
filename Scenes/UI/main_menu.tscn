@@ -1,8 +1,9 @@
-[gd_scene load_steps=25 format=3 uid="uid://6iuaf4a7ltie"]
+[gd_scene load_steps=32 format=3 uid="uid://6iuaf4a7ltie"]
 
 [ext_resource type="Texture2D" uid="uid://2g5q5w0jhsfr" path="res://Assets/UI/MainMenu/Button_Hover.png" id="1_dnk24"]
 [ext_resource type="Script" uid="uid://bcvx3i2y2v12b" path="res://Scripts/UI/main_menu.gd" id="1_egkbo"]
 [ext_resource type="Texture2D" uid="uid://o87o5cp37oxk" path="res://Assets/UI/MainMenu/Button_Normal.png" id="1_hgr1o"]
+[ext_resource type="Texture2D" uid="uid://cj41lg11qsoap" path="res://Assets/UI/MainMenu/catscaperun.png" id="2_jewm6"]
 [ext_resource type="FontFile" uid="uid://nhpj3xhlcbkb" path="res://Assets/fonts/KiwiSoda.ttf" id="3_7hf4u"]
 [ext_resource type="Texture2D" uid="uid://bpuv1flv5kjny" path="res://Assets/UI/MainMenu/Exit_Button_Hover.png" id="3_36yma"]
 [ext_resource type="Texture2D" uid="uid://dgs6c8vl7mji0" path="res://Assets/UI/MainMenu/Exit_Button_Pressed.png" id="3_opbom"]
@@ -10,6 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://dhmb7qnwwumbu" path="res://Assets/UI/MainMenu/Button_Pressed.png" id="7_6kilw"]
 [ext_resource type="Texture2D" uid="uid://qkw50fnwqkoc" path="res://Assets/UI/MainMenu/GameTitle.png" id="9_j6ocu"]
 [ext_resource type="PackedScene" uid="uid://deibs3hqqmeee" path="res://Scenes/UI/options_menu_main.tscn" id="10_w85c3"]
+[ext_resource type="Texture2D" uid="uid://8ivdmlytwx8m" path="res://Assets/UI/MainMenu/credits.png" id="12_cejvf"]
+[ext_resource type="FontFile" uid="uid://b722p5d7f0lfv" path="res://Assets/fonts/LtKareoke/LTKaraoke-Light.ttf" id="13_ru8vt"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qbnl2"]
 
@@ -79,6 +82,17 @@ _data = {
 &"sign_swing": SubResource("Animation_f1bg6")
 }
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ru8vt"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ypsd1"]
+texture = ExtResource("1_dnk24")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xp0kt"]
+texture = ExtResource("7_6kilw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1yfdm"]
+texture = ExtResource("1_hgr1o")
+
 [node name="MainMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -87,6 +101,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_egkbo")
+
+[node name="MainMenuBackground" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_jewm6")
 
 [node name="MainUI" type="Control" parent="."]
 anchors_preset = 0
@@ -194,8 +217,62 @@ libraries = {
 visible = false
 layout_mode = 1
 
+[node name="Credits" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Credits"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_cejvf")
+
+[node name="Exit_Credits" type="Button" parent="Credits"]
+offset_left = 31.0
+offset_top = 297.0
+offset_right = 139.0
+offset_bottom = 347.0
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.635294, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_7hf4u")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ru8vt")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ypsd1")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_xp0kt")
+theme_override_styles/normal = SubResource("StyleBoxTexture_1yfdm")
+text = "BACK"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Credits"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 19.0
+offset_right = 289.0
+offset_bottom = 271.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("13_ru8vt")
+theme_override_font_sizes/normal_font_size = 23
+theme_override_font_sizes/bold_font_size = 2
+text = "Catscape (Game Jam Version) was created through the hard work of:
+
+- Kyle Lynn
+- Caleb Doggett (Pasta)
+- Darukee
+
+Thank you for playing! 
+See you in the next update!"
+
 [connection signal="pressed" from="MainUI/ExitButton" to="." method="_on_exit_button_pressed"]
 [connection signal="pressed" from="MainUI/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MainUI/VBoxContainer/Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="MainUI/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="MainUI/TitleLogo" to="." method="_on_title_logo_pressed"]
+[connection signal="pressed" from="Credits/Exit_Credits" to="." method="_on_exit_credits_pressed"]

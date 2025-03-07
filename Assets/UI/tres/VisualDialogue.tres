@@ -1,0 +1,92 @@
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=21 format=3 uid="uid://dntwqt58iykix"]
+
+[ext_resource type="PackedScene" uid="uid://cqpb3ie51rwl5" path="res://addons/dialogic/Modules/DefaultLayoutParts/Base_Default/default_layout_base.tscn" id="1_248af"]
+[ext_resource type="Script" uid="uid://4wlr83xhyiom" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="2_lhmf8"]
+[ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn" id="3_ib8m0"]
+[ext_resource type="PackedScene" uid="uid://cy1y14inwkplb" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn" id="4_dajpa"]
+[ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="5_81duf"]
+[ext_resource type="PackedScene" uid="uid://bquja8jyk8kbr" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn" id="6_rabts"]
+[ext_resource type="PackedScene" uid="uid://dsbwnp5hegnu3" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn" id="7_c6bt1"]
+[ext_resource type="PackedScene" uid="uid://dhk6j6eb6e3q" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn" id="8_hpj85"]
+[ext_resource type="PackedScene" uid="uid://cvgf4c6gg0tsy" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn" id="9_syu4u"]
+[ext_resource type="PackedScene" uid="uid://lx24i8fl6uo" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn" id="10_yyejj"]
+[ext_resource type="Script" uid="uid://1a6lsmtj35rf" path="res://addons/dialogic/Resources/dialogic_style.gd" id="11_vfi05"]
+
+[sub_resource type="Resource" id="Resource_1g5t6"]
+script = ExtResource("2_lhmf8")
+scene = ExtResource("1_248af")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_dk3o3"]
+script = ExtResource("2_lhmf8")
+scene = ExtResource("3_ib8m0")
+overrides = {
+"disabled": "true"
+}
+
+[sub_resource type="Resource" id="Resource_sbq5t"]
+script = ExtResource("2_lhmf8")
+scene = ExtResource("4_dajpa")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_3dbtu"]
+script = ExtResource("2_lhmf8")
+scene = ExtResource("5_81duf")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_6vcxo"]
+script = ExtResource("2_lhmf8")
+scene = ExtResource("6_rabts")
+overrides = {
+"box_color_custom": "Color(0.976471, 0.733333, 0.494118, 1)",
+"box_color_use_global": "false",
+"box_size": "Vector2(400, 100)",
+"name_label_box_modulate": "Color(0.976471, 0.733333, 0.494118, 1)",
+"name_label_box_use_global_color": "false",
+"name_label_custom_color": "Color(0, 0, 0, 1)",
+"name_label_font": "\"res://Assets/fonts/Softizen.ttf\"",
+"name_label_use_character_color": "false",
+"name_label_use_global_color": "false",
+"name_label_use_global_font": "false",
+"text_custom_color": "Color(0, 0, 0, 1)",
+"text_use_global_color": "false"
+}
+
+[sub_resource type="Resource" id="Resource_jxwss"]
+script = ExtResource("2_lhmf8")
+scene = ExtResource("7_c6bt1")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_ptwkg"]
+script = ExtResource("2_lhmf8")
+scene = ExtResource("8_hpj85")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_wmtr5"]
+script = ExtResource("2_lhmf8")
+scene = ExtResource("9_syu4u")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_n6nn5"]
+script = ExtResource("2_lhmf8")
+scene = ExtResource("10_yyejj")
+overrides = {}
+
+[resource]
+script = ExtResource("11_vfi05")
+name = "VisualDialogue"
+layer_list = Array[String](["10", "11", "12", "13", "14", "15", "16", "17"])
+layer_info = {
+"": SubResource("Resource_1g5t6"),
+"10": SubResource("Resource_dk3o3"),
+"11": SubResource("Resource_sbq5t"),
+"12": SubResource("Resource_3dbtu"),
+"13": SubResource("Resource_6vcxo"),
+"14": SubResource("Resource_jxwss"),
+"15": SubResource("Resource_ptwkg"),
+"16": SubResource("Resource_wmtr5"),
+"17": SubResource("Resource_n6nn5")
+}
+base_overrides = {}
+layers = Array[ExtResource("2_lhmf8")]([])
+metadata/_latest_layer = "13"
