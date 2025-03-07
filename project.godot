@@ -24,6 +24,7 @@ config/icon="res://icon.svg"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 SoundManager="*res://Scenes/UI/SoundManager.tscn"
 TransitionScreen="*res://Scenes/UI/transition_screen.tscn"
+GlobalScript="*res://Scripts/UI/GlobalScript.gd"
 
 [dialogic]
 
@@ -35,8 +36,8 @@ directories/dch_directory={
 directories/dtl_directory={
 "IntroductionDialogue": "res://Dialogic/Timelines/IntroductionDialogue.dtl"
 }
-layout/style_list=["res://Dialogic/Styles/SpeakerBoxStyle.tres"]
-layout/default_style="res://Dialogic/Styles/SpeakerBoxStyle.tres"
+layout/style_list=["res://Dialogic/Styles/DialogueDefault.tres"]
+layout/default_style="res://Dialogic/Styles/DialogueDefault.tres"
 glossary/default_case_sensitive=true
 variables={}
 extensions_folder="res://addons/dialogic_additions"
@@ -46,11 +47,11 @@ text/text_reveal_skip_delay=0.1
 text/advance_delay=0.25
 text/autoadvance_per_character_delay=0.1
 text/autoadvance_ignored_characters_enabled=true
-animations/join_default_length=0.2
+animations/join_default_length=0.1
 animations/join_default_wait=true
-animations/leave_default_length=0.2
+animations/leave_default_length=0.1
 animations/leave_default_wait=true
-animations/cross_fade_default_length=0.2
+animations/cross_fade_default_length=0.1
 choices/autofocus_first=false
 choices/delay=0.2
 choices/reveal_delay=0

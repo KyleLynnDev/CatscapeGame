@@ -76,3 +76,7 @@ func _on_resolution_button_item_selected(index: int) -> void:
 	elif index == 4:
 		DisplayServer.window_set_size(Vector2i(640, 360))
 		get_window().move_to_center()
+
+
+func _on_music_volume_value_changed(value: float) -> void:
+	pass # Replace with function body.

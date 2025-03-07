@@ -27,6 +27,7 @@
 [ext_resource type="AudioStream" uid="uid://6j0sppu3s8dp" path="res://Assets/sound effects/player/footstep/footstep_concrete_land_10.wav" id="15_p1odr"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7l73k"]
+height = 1.95286
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_vn6l2"]
 
@@ -1962,7 +1963,7 @@ debug_path_custom_color = Color(1, 0.164706, 0, 1)
 debug_path_custom_point_size = 12.55
 
 [node name="Body Collider" type="CollisionShape3D" parent="PlayerCharacter"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.963984, 0)
 shape = SubResource("CapsuleShape3D_7l73k")
 
 [node name="Pivot" type="Node3D" parent="PlayerCharacter"]

@@ -6,6 +6,7 @@ extends Node
 @onready var fade: AnimationPlayer = $fade
 @onready var play_chime: AudioStreamPlayer = $PlayChime
 @onready var fantastic: AudioStreamPlayer = $fantastic
+@onready var overworld: AudioStreamPlayer = $Overworld
 
 
 func any_button_pressed():
@@ -13,14 +14,8 @@ func any_button_pressed():
 		ui_button_sound.play()
 
 func _ready() -> void:
-	fade.animation_finished.connect(fade_out)
 	main_menu.volume_db = -5
-	
+	overworld.volume_db = -8
+
 func sign_pressed():
 	sign_creak_sound.play()
-
-func fade_out():
-	fade.play("out")
-	
-func fade_in():
-	fade.play("in")

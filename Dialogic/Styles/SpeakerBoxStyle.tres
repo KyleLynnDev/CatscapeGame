@@ -11,52 +11,42 @@
 [ext_resource type="PackedScene" uid="uid://lx24i8fl6uo" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn" id="9_eyge4"]
 [ext_resource type="Script" uid="uid://1a6lsmtj35rf" path="res://addons/dialogic/Resources/dialogic_style.gd" id="10_m6tky"]
 
-[sub_resource type="Resource" id="Resource_2secs"]
+[sub_resource type="Resource" id="Resource_llmgd"]
 script = ExtResource("2_8r26t")
 scene = ExtResource("1_llmgd")
 overrides = {}
 
-[sub_resource type="Resource" id="Resource_ghm4p"]
+[sub_resource type="Resource" id="Resource_8r26t"]
 script = ExtResource("2_8r26t")
 scene = ExtResource("3_xb5n1")
 overrides = {}
 
-[sub_resource type="Resource" id="Resource_2250a"]
+[sub_resource type="Resource" id="Resource_xb5n1"]
 script = ExtResource("2_8r26t")
 scene = ExtResource("4_pofdd")
 overrides = {}
 
-[sub_resource type="Resource" id="Resource_llmgd"]
+[sub_resource type="Resource" id="Resource_pofdd"]
 script = ExtResource("2_8r26t")
 scene = ExtResource("5_tiyhf")
-overrides = {
-"box_modulate_custom_color": "Color(0.976563, 0.733235, 0.495911, 1)",
-"box_modulate_global_color": "false",
-"box_size": "Vector2(420, 120)",
-"custom_normal_font": "\"res://Assets/fonts/LtKareoke/LTKaraoke-Bold.ttf\"",
-"name_label_color_mode": "2",
-"name_label_custom_color": "Color(0, 0, 0, 1)",
-"name_label_customfont": "\"res://Assets/fonts/Softizen.ttf\"",
-"text_custom_color": "Color(0, 0, 0, 1)",
-"text_use_global_color": "false"
-}
+overrides = {}
 
-[sub_resource type="Resource" id="Resource_cmyoy"]
+[sub_resource type="Resource" id="Resource_tiyhf"]
 script = ExtResource("2_8r26t")
 scene = ExtResource("6_rwi1d")
 overrides = {}
 
-[sub_resource type="Resource" id="Resource_5ayym"]
+[sub_resource type="Resource" id="Resource_rwi1d"]
 script = ExtResource("2_8r26t")
 scene = ExtResource("7_dmptu")
 overrides = {}
 
-[sub_resource type="Resource" id="Resource_qyu5y"]
+[sub_resource type="Resource" id="Resource_dmptu"]
 script = ExtResource("2_8r26t")
 scene = ExtResource("8_lei5j")
 overrides = {}
 
-[sub_resource type="Resource" id="Resource_eai8f"]
+[sub_resource type="Resource" id="Resource_lei5j"]
 script = ExtResource("2_8r26t")
 scene = ExtResource("9_eyge4")
 overrides = {}
@@ -64,17 +54,16 @@ overrides = {}
 [resource]
 script = ExtResource("10_m6tky")
 name = "SpeakerBoxStyle"
-layer_list = Array[String](["10", "11", "13", "12", "14", "15", "16"])
+layer_list = Array[String](["10", "11", "12", "13", "14", "15", "16"])
 layer_info = {
-"": SubResource("Resource_2secs"),
-"10": SubResource("Resource_ghm4p"),
-"11": SubResource("Resource_2250a"),
-"12": SubResource("Resource_llmgd"),
-"13": SubResource("Resource_cmyoy"),
-"14": SubResource("Resource_5ayym"),
-"15": SubResource("Resource_qyu5y"),
-"16": SubResource("Resource_eai8f")
+"": SubResource("Resource_llmgd"),
+"10": SubResource("Resource_8r26t"),
+"11": SubResource("Resource_xb5n1"),
+"12": SubResource("Resource_pofdd"),
+"13": SubResource("Resource_tiyhf"),
+"14": SubResource("Resource_rwi1d"),
+"15": SubResource("Resource_dmptu"),
+"16": SubResource("Resource_lei5j")
 }
 base_overrides = {}
 layers = Array[ExtResource("2_8r26t")]([])
-metadata/_latest_layer = "12"
