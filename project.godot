@@ -29,6 +29,7 @@ GlobalScript="*res://Scripts/UI/GlobalScript.gd"
 [dialogic]
 
 directories/dch_directory={
+"SirFrog": "res://Dialogic/Characters/SirFrog.dch",
 "Sirfrog": "res://Dialogic/Characters/Sirfrog.dch",
 "Stubert": "res://Dialogic/Characters/Stubert.dch",
 "sir frog": "res://Dialogic/Characters/sir frog.dch"
