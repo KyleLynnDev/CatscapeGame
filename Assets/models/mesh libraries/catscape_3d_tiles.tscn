@@ -1,0 +1,1520 @@
+[gd_scene load_steps=103 format=4 uid="uid://bfpkjavx3s50a"]
+
+[ext_resource type="Texture2D" uid="uid://cfbgau4ahydkf" path="res://Assets/models/tiles/Catscape 3D tiles_CATSCAPE surface textures.png" id="1_xn1ok"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_re517"]
+resource_name = "SurfaceTextures"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_xn1ok")
+roughness = 0.868182
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_1qknj"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.5, 1, 2, 1e-05),
+"format": 34896613377,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAwAEAAEAAwAFAAQA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("//8AAAAAAAAAAP9/AAAAAAAAAAAAAAAA////fwAAAAAAAP//AAAAAP////8AAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_61yjc"]
+resource_name = "Catscape 3D tiles_Plane_001"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.5, 1, 2, 1e-05),
+"attribute_data": PackedByteArray("/x//n/8//3//P/+f/x//f/8//1//H/9f"),
+"format": 34896613399,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAwAEAAEAAwAFAAQA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("//8AAAAA//8AAP9/AAD//wAAAAAAAP//////fwAA//8AAP//AAD///////8AAP///3////9/////f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_1qknj")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_bhqii"]
+data = PackedVector3Array(0.5, 0, 0.5, -0.5, 1, 0.5, -0.5, 0, 0.5, 0.5, 0, 0.5, 0.5, 1, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, -0.5, 2, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, 0.5, 2, 0.5, -0.5, 2, 0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ygdat"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.5, 1, 2, 1e-05),
+"format": 34896613377,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAwAEAAEAAwAFAAQA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("//8AAAAAAAAAAP9/AAAAAAAAAAAAAAAA////fwAAAAAAAP//AAAAAP////8AAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_5p7kp"]
+resource_name = "Catscape 3D tiles_Plane_002"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.5, 1, 2, 1e-05),
+"attribute_data": PackedByteArray("AAD/n/8f/3//H/+fAAD/f/8f/18AAP9f"),
+"format": 34896613399,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAwAEAAEAAwAFAAQA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("//8AAAAA//8AAP9/AAD//wAAAAAAAP//////fwAA//8AAP//AAD///////8AAP///3////9/////f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ygdat")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_5i0ml"]
+data = PackedVector3Array(0.5, 0, 0.5, -0.5, 1, 0.5, -0.5, 0, 0.5, 0.5, 0, 0.5, 0.5, 1, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, -0.5, 2, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, 0.5, 2, 0.5, -0.5, 2, 0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_aqesk"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.5, 1, 2, 1e-05),
+"format": 34896613377,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAwAEAAEAAwAFAAQA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("//8AAAAAAAAAAP9/AAAAAAAAAAAAAAAA////fwAAAAAAAP//AAAAAP////8AAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ojg24"]
+resource_name = "Catscape 3D tiles_Plane_003"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.5, 1, 2, 1e-05),
+"attribute_data": PackedByteArray("/3//H/+fAAD/n/8f/38AAP9//x//nwAA/5//H/9/AAA="),
+"format": 34896613399,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("//8AAAAA//8AAP9/AAD//wAAAAAAAP//////fwAA//////9/AAD//wAA//8AAP//AAD/fwAA////////AAD///9/////f////3////9/////f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_aqesk")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_12dwi"]
+data = PackedVector3Array(0.5, 0, 0.5, -0.5, 1, 0.5, -0.5, 0, 0.5, 0.5, 0, 0.5, 0.5, 1, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, -0.5, 2, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, 0.5, 2, 0.5, -0.5, 2, 0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ulxc6"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.5, 1, 2, 1e-05),
+"format": 34896613377,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAwAEAAEAAwAFAAQA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("//8AAAAAAAAAAP9/AAAAAAAAAAAAAAAA////fwAAAAAAAP//AAAAAP////8AAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_6hga5"]
+resource_name = "Catscape 3D tiles_Plane_004"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.5, 1, 2, 1e-05),
+"attribute_data": PackedByteArray("/3//X/+f/z//n/9f/3//P/9//1//n/8//5//X/9//z8="),
+"format": 34896613399,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("//8AAAAA//8AAP9/AAD//wAAAAAAAP//////fwAA//////9/AAD//wAA//8AAP//AAD/fwAA////////AAD///9/////f////3////9/////f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ulxc6")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_achcm"]
+data = PackedVector3Array(0.5, 0, 0.5, -0.5, 1, 0.5, -0.5, 0, 0.5, 0.5, 0, 0.5, 0.5, 1, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, -0.5, 2, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, 0.5, 2, 0.5, -0.5, 2, 0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_dq0pq"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.5, 1, 1, 1e-05),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("//8AAAAAAAAAAP//AAAAAAAAAAAAAAAA/////wAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ufyas"]
+resource_name = "Catscape 3D tiles_Plane_005"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.5, 1, 1, 1e-05),
+"attribute_data": PackedByteArray("/78AAP/f/x//v/8f/98AAA=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("//8AAAAA//8AAP//AAD//wAAAAAAAP///////wAA////v/+//7//v/+//7//v/+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_dq0pq")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_h1d10"]
+data = PackedVector3Array(0.5, 0, 0.5, -0.5, 1, 0.5, -0.5, 0, 0.5, 0.5, 0, 0.5, 0.5, 1, 0.5, -0.5, 1, 0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_5j3uu"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.5, 1, 1, 1e-05),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("//8AAAAAAAAAAP//AAAAAAAAAAAAAAAA/////wAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_opjoa"]
+resource_name = "Catscape 3D tiles_Plane_006"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.5, 1, 1, 1e-05),
+"attribute_data": PackedByteArray("/1//P/9//x//f/8//1//Hw=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("//8AAAAA//8AAP//AAD//wAAAAAAAP///////wAA////f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_5j3uu")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_khp7q"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.5, 1, 3, 1e-05),
+"format": 34896613377,
+"index_count": 18,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAwAEAAEAAwAFAAQABQAGAAQABQAHAAYA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("//8AAAAAAAAAAFVVAAAAAAAAAAAAAAAA//9VVQAAAAAAAKqqAAAAAP//qqoAAAAAAAD//wAAAAD/////AAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_guipx"]
+resource_name = "Catscape 3D tiles_Plane_007"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.5, 1, 3, 1e-05),
+"attribute_data": PackedByteArray("AAD/X/8f/z//H/9fAAD/PwAA/1//H/8//x//XwAA/z8AAP9f/x//P/8f/18AAP8/"),
+"format": 34896613399,
+"index_count": 18,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("//8AAAAA//8AAFVVAAD//wAAAAAAAP////9VVQAA/////1VVAAD//wAAqqoAAP//AABVVQAA/////6qqAAD/////qqoAAP//AAD//wAA//8AAKqqAAD///////8AAP///3////9/////f////3////9/////f////3////9/////f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_khp7q")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_l54iv"]
+data = PackedVector3Array(0.5, 0, 0.5, -0.5, 1, 0.5, -0.5, 0, 0.5, 0.5, 0, 0.5, 0.5, 1, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, -0.5, 2, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, 0.5, 2, 0.5, -0.5, 2, 0.5, 0.5, 2, 0.5, -0.5, 3, 0.5, -0.5, 2, 0.5, 0.5, 2, 0.5, 0.5, 3, 0.5, -0.5, 3, 0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_fnv1i"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 2, 1),
+"format": 34896613377,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAgADAAAAAgAEAAMAAgAFAAQAAgABAAUAAQAGAAUAAAAHAAEAAQAIAAYABwAIAAEABwAJAAgA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 10,
+"vertex_data": PackedByteArray("//8AAP//AAAAAP9///8AAAAAAAD//wAA//8AAAAAAAAAAAAAAAAAAAAA/38AAAAAAAD//wAAAAD///9///8AAAAA/////wAA////////AAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_udkgh"]
+resource_name = "Catscape 3D tiles_Plane_010"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 2, 1),
+"attribute_data": PackedByteArray("/x//nwAA/38AAP+f/x//fwAA/1//H/9fAAD/n/8f/3//H/+fAAD/f/8f/18AAP9f/381YP+f/z//nzVg/3//Pw=="),
+"format": 34896613399,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAwAEAAEAAwAFAAQABgAHAAgABgAJAAcACQAKAAcACQALAAoADAANAA4ADAAPAA0A"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("//8AAP//AAAAAP9///8AAAAAAAD//wAA////f///AAAAAP////8AAP///////wAAAAAAAP///78AAP9/AAD/vwAAAAAAAP+/AAD/f////78AAP//AAD/vwAA//////+/AAAAAP///7///wAAAAD/v///AAD///+/AAAAAAAA/7////9/////f////3////9/////f////3//fwAA/38AAP9/AAD/fwAA/38AAP9/AAD///9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_fnv1i")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_j43ly"]
+data = PackedVector3Array(0.5, 0, 0.5, -0.5, 1, 0.5, -0.5, 0, 0.5, 0.5, 0, 0.5, 0.5, 1, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, -0.5, 2, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, 0.5, 2, 0.5, -0.5, 2, 0.5, -0.5, 0, 0.5, -0.5, 1, -0.5, -0.5, 0, -0.5, -0.5, 0, 0.5, -0.5, 1, 0.5, -0.5, 1, -0.5, -0.5, 1, 0.5, -0.5, 2, -0.5, -0.5, 1, -0.5, -0.5, 1, 0.5, -0.5, 2, 0.5, -0.5, 2, -0.5, -0.5, 0, 0.5, 0.5, 0, -0.5, 0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, -0.5, 0.5, 0, -0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_vehsh"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//AAD//wAAAAAAAP//AAD//wAAAAAAAAAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_8hqgu"]
+resource_name = "Catscape 3D tiles_Plane_015"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
+"attribute_data": PackedByteArray("/3//X/+f/z//n/9f/3//Pw=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP///7///wAAAAD/v///AAD///+/AAAAAAAA/7////9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_vehsh")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_hr4si"]
+data = PackedVector3Array(-0.5, 0, 0.5, 0.5, 0, -0.5, 0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, -0.5, 0.5, 0, -0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_r60jx"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 2, 1),
+"format": 34896613377,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAgAEAAAAAgAFAAQABQAGAAQABQAHAAYACAAJAAoACAALAAkACwAMAAkACwANAAwA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 14,
+"vertex_data": PackedByteArray("AAAAAP//AAD//wAAAAAAAP//AAD//wAAAAAAAAAAAAAAAP9///8AAP///3///wAAAAD/////AAD///////8AAP//AAAAAAAA////f///AAD//wAA//8AAP///38AAAAA////////AAD/////AAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_20a8s"]
+resource_name = "Catscape 3D tiles_Plane_016"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 2, 1),
+"attribute_data": PackedByteArray("/3//X/+f/z//n/9f/3//P/9//x//nwAA/5//H/9/AAD/f/8f/58AAP+f/x//fwAA/3//H/+fAAD/n/8f/38AAP9//x//nwAA/5//H/9/AAA="),
+"format": 34896613399,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("AAAAAP///7///wAAAAD/v///AAD///+/AAAAAAAA/7///wAA/////wAA/3//////AAAAAP////////9//////////3//////AAD///////8AAP9///////////////////8AAAAA/7////9/////v///AAD///+/////fwAA/7////9/AAD/v/////////+/////f////7//////AAD/v////3////9/////f////3//f////3////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_r60jx")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_rm26m"]
+data = PackedVector3Array(-0.5, 0, 0.5, 0.5, 0, -0.5, 0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, -0.5, 0.5, 0, -0.5, 0.5, 0, 0.5, -0.5, 1, 0.5, -0.5, 0, 0.5, 0.5, 0, 0.5, 0.5, 1, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, -0.5, 2, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, 0.5, 2, 0.5, -0.5, 2, 0.5, 0.5, 0, -0.5, 0.5, 1, 0.5, 0.5, 0, 0.5, 0.5, 0, -0.5, 0.5, 1, -0.5, 0.5, 1, 0.5, 0.5, 1, -0.5, 0.5, 2, 0.5, 0.5, 1, 0.5, 0.5, 1, -0.5, 0.5, 2, -0.5, 0.5, 2, 0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_bb7j1"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.0320718, -0.5, 1, 1, 1),
+"format": 34896613377,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP9/AAD//////38AAAAA////fwAA//8AAP9/AAD/fwAA//8AAP9///8AAAAA/3//////AAD/fwAAAAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_f8fne"]
+resource_name = "Catscape 3D tiles_Plane_018"
+_surfaces = [{
+"aabb": AABB(-0.5, -0.0320718, -0.5, 1, 1, 1),
+"attribute_data": PackedByteArray("8P////jvvr///+m/6u/T//D////4776////pv+rv0/8="),
+"format": 34896613399,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(2.00044, 0.50022, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP9//////////3///wAA////f/////8AAP9/////fwAA////v/9///8AAP+//3///////7//fwAAAAD/vyqA0/8qgNP/KoDT/yqA0/9VgNT/VYDU/1WA1P9VgNT/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_bb7j1")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_o47xo"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.0320718, -0.5, 1, 1, 1),
+"format": 34896613377,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP9/AAD//////38AAAAA////fwAA//8AAP9/AAD/fwAA//8AAP9///8AAAAA/3//////AAD/fwAAAAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_cexat"]
+resource_name = "Catscape 3D tiles_Plane_019"
+_surfaces = [{
+"aabb": AABB(-0.5, -0.0320718, -0.5, 1, 1, 1),
+"attribute_data": PackedByteArray("////X//f4j///+I//9//X////1//4P8////iP//g/18="),
+"format": 34896613399,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP9//////////3///wAA////f/////8AAP9/////fwAA////v/9///8AAP+//3///////7//fwAAAAD/v/9/////f////3////9////if8X/4n/F/8Z/jP//f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_o47xo")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_lrp71"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.0320718, -0.5, 1, 1, 1),
+"format": 34896613377,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP9/AAD//////38AAAAA////fwAA//8AAP9/AAD/fwAA//8AAP9///8AAAAA/3//////AAD/fwAAAAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_xtqnr"]
+resource_name = "Catscape 3D tiles_Plane_020"
+_surfaces = [{
+"aabb": AABB(-0.5, -0.0320718, -0.5, 1, 1, 1),
+"attribute_data": PackedByteArray("BsDxf+Kf/1/wv+Jf+J8NgAbA8X/in/9f8L/iX/ifDYA="),
+"format": 34896613399,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP9//////////3///wAA////f/////8AAP9/////fwAA////v/9///8AAP+//3///////7//fwAAAAD/v8Z/xf/Gf8X/xn/F/8Z/xf/Gf4z/xn+M/8Z/jP/Gf4z/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_lrp71")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_5sqlv"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.0320718, -0.5, 1, 1, 1),
+"format": 34896613377,
+"index_count": 18,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("AAA1CP//AAD//zUIAAAAAP//NQj//wAAAAA1CAAAAAAAAAAA/38AAP//////fwAAAAD///9/AAD//wAA/38AAP9/AAD//wAA/3///wAAAAD/f/////8AAP9/AAAAAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_xr8bp"]
+resource_name = "Catscape 3D tiles_Plane_021"
+_surfaces = [{
+"aabb": AABB(-0.5, -0.0320718, -0.5, 1, 1, 1),
+"attribute_data": PackedByteArray("/7//f//f/1//3/9//7//X////x//3wAA//8AAP/f/x////8f/98AAP//AAD/3/8f"),
+"format": 34896613399,
+"index_count": 18,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("AAA1CP///7///zUIAAD/v///NQj///+/AAA1CAAA/78AAAAA/3//////////f///AAD///9//////wAA/3////9/AAD///+//3///wAA/7//f///////v/9/AAAAAP+/////f////3////9/////f/9/////f////3////9/////f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_5sqlv")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_1kx6y"]
+_surfaces = [{
+"aabb": AABB(-0.216506, -0.25, -0.25, 0.433013, 0.5, 0.5),
+"format": 34896613377,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAAAGAAEAAwACAAEABgADAAEABwAAAAIABwAGAAAABwACAAgABgAJAAMACgAHAAgABgAHAAQABAAHAAoABgAEAAkACQAFAAMACQAEAAUAAgADAAsAAgALAAgACwADAAUACgAIAAsABAALAAUABAAKAAsA"),
+"lods": [0.220743, PackedByteArray("AAABAAIAAwACAAEAAAAEAAEABAADAAEABAAAAAIAAgADAAUABAAFAAMABAACAAUA")],
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("/38AAAAAAAD//////z8AAP9///8AAAAA//////+/AAD/fwAA//8AAP9//////wAA//8AAP8/AAAAAAAA/z8AAAAA////PwAA//8AAP+/AAAAAAAA/78AAAAA////vwAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_hrat5"]
+resource_name = "Catscape 3D tiles_Cylinder"
+_surfaces = [{
+"aabb": AABB(-0.216506, -0.25, -0.25, 0.433013, 0.5, 0.5),
+"attribute_data": PackedByteArray("NsIbac7G43Y2wuN2/88baWfL43b/z+N2O343mP9vj387fseH/29voP/PG2nH3eN2/8/jdsfdG2nOxhtpzsYbaWfL43bOxuN2Z8sbaWfLG2mX1ON2l9QbacNhN5jDYceHl9QbaS/Z43aX1ON2L9kbaS/ZG2kv2eN2yopHoTT1R6H/v46C/79v/cqKt9409bfe"),
+"format": 34896613399,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAAAOAAEADwAQABEADwASABAAEwAFAAQAEwADAAUACgAUAAwACgAVABQABgAHAAgABwAGABYAFgAGAAkABwAWABcAGAAZABoAGAAbABkAHAALAB0AHAANAAsAHgAfACAAHwAeACEAIQAeACIAHwAhACMA"),
+"lods": [0.220743, PackedByteArray("AAABAAIAAAADAAEAAwAEAAEAAwAFAAQABgAHAAgABwAGAAkACgALAAwACgANAAsA")],
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 36,
+"vertex_data": PackedByteArray("/38AAAAA/////////z////9///8AAP///38AAP///////////7////9///////////////+//7//f///AAD/v///////P/+//3///////7//fwAA//////9///8AAP///3//////////fwAAAAD/////AAD/P/////8AAP8//////////7//////////P/////8AAP+//////wAA/7///wAA////v///AAAAAP+///8AAP///7//vwAA////P/+/AAAAAP+///8AAP///z///wAA////v///AAAAAP8///8AAAAA/z///wAA////P///AAAAAP8//z///wAA/z//P/9/AAAAAP8//38AAP///z8AAAAA/7//P///AAD/v/8/8uT/f/Lk/3/y5P9/DJv/fwyb/38Mm/9/////f////3////9/////f/Jk/3///wyb8mT/f///DJvy5P9//7//f/+//3//v/9//7//fwyb/3/yZP9/8mT/f////3////9//z//f/8//3//P/9//z//f///DJv//wybAAD/fwAA/38AAP9/AAD/fwAA/38AAP9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_1kx6y")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_7vyxo"]
+data = PackedVector3Array(0, -0.25, -0.25, 0.216506, 0.25, -0.125, 0, 0.25, -0.25, 0, -0.25, -0.25, 0.216506, -0.25, -0.125, 0.216506, 0.25, -0.125, 0.216506, -0.25, -0.125, 0.216506, 0.25, 0.125, 0.216506, 0.25, -0.125, 0.216506, -0.25, -0.125, 0.216506, -0.25, 0.125, 0.216506, 0.25, 0.125, 0.216506, -0.25, 0.125, 0, 0.25, 0.25, 0.216506, 0.25, 0.125, 0.216506, -0.25, 0.125, 0, -0.25, 0.25, 0, 0.25, 0.25, 0, -0.25, 0.25, -0.216506, 0.25, 0.125, 0, 0.25, 0.25, 0, -0.25, 0.25, -0.216506, -0.25, 0.125, -0.216506, 0.25, 0.125, 0.216506, 0.25, 0.125, 0, 0.25, -0.25, 0.216506, 0.25, -0.125, 0, 0.25, -0.25, -0.216506, 0.25, 0.125, -0.216506, 0.25, -0.125, -0.216506, 0.25, 0.125, 0.216506, 0.25, 0.125, 0, 0.25, 0.25, 0, 0.25, -0.25, 0.216506, 0.25, 0.125, -0.216506, 0.25, 0.125, -0.216506, -0.25, 0.125, -0.216506, 0.25, -0.125, -0.216506, 0.25, 0.125, -0.216506, -0.25, 0.125, -0.216506, -0.25, -0.125, -0.216506, 0.25, -0.125, -0.216506, -0.25, -0.125, 0, 0.25, -0.25, -0.216506, 0.25, -0.125, -0.216506, -0.25, -0.125, 0, -0.25, -0.25, 0, 0.25, -0.25, -0.216506, -0.25, -0.125, 0.216506, -0.25, -0.125, 0, -0.25, -0.25, 0.216506, -0.25, -0.125, 0, -0.25, 0.25, 0.216506, -0.25, 0.125, 0, -0.25, 0.25, -0.216506, -0.25, -0.125, -0.216506, -0.25, 0.125, 0.216506, -0.25, -0.125, -0.216506, -0.25, -0.125, 0, -0.25, 0.25)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_x4om8"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00408, 2, 1.01627),
+"format": 34896613377,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAwAEAAEAAwAFAAQABgAHAAgABgAJAAcACgALAAwACgANAAsADQAOAAsADQAPAA4A"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("9P4AAOX7AAAAAP9/5fsAAAAAAADl+wAA9P7/f+X7AAAAAP//5fsAAPT+///l+wAACgHsAP//AAD//+wAGQQAAP//7AD//wAACgHsABkEAAD0/gAAAAAAAPT+/3/l+wAA9P4AAOX7AAD0/v9/AAAAAPT+///l+wAA9P7//wAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ofe6e"]
+resource_name = "Catscape 3D tiles_Plane_022"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00408, 2, 1.01627),
+"attribute_data": PackedByteArray("/3//X/+f/z//n/9f/3//P/9//1//n/8//5//X/9//z//X/8f/38AAP9//x//XwAA/3//X/+f/z//n/9f/3//P/9//1//n/8//5//X/9//z8="),
+"format": 34896613399,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("9P4AAOX7//8AAP9/5fv//wAAAADl+///9P7/f+X7///0/v9/5fv//wAA///l+///AAD/f+X7///0/v//5fv//woB7AD///+////sABkE/7///+wA////vwoB7AAZBP+/9P4AAAAA/7/0/v9/5fv/v/T+AADl+/+/9P7/fwAA/7/0/v9/AAD/v/T+///l+/+/9P7/f+X7/7/0/v//AAD/v/9/////f////3////9/////f////3////9/////f///////f////3////9/////f/9/////f////3////9/////f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_x4om8")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_78r7i"]
+data = PackedVector3Array(0.5, 0, 0.5, -0.5, 1, 0.5, -0.5, 0, 0.5, 0.5, 0, 0.5, 0.5, 1, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, -0.5, 2, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, 0.5, 2, 0.5, -0.5, 2, 0.5, -0.495918, 0.00720467, 0.51627, 0.504082, 0.00720467, -0.48373, 0.504082, 0.00720467, 0.51627, -0.495918, 0.00720467, 0.51627, -0.495918, 0.00720467, -0.48373, 0.504082, 0.00720467, -0.48373, 0.5, 0, -0.5, 0.5, 1, 0.5, 0.5, 0, 0.5, 0.5, 0, -0.5, 0.5, 1, -0.5, 0.5, 1, 0.5, 0.5, 1, -0.5, 0.5, 2, 0.5, 0.5, 1, 0.5, 0.5, 1, -0.5, 0.5, 2, -0.5, 0.5, 2, 0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_txcfk"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//AAD//wAAAAAAAP//AAD//wAAAAAAAAAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_75dm1"]
+resource_name = "Catscape 3D tiles_Plane_024"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
+"attribute_data": PackedByteArray("/1//H/9/AAD/f/8f/18AAA=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP///7///wAAAAD/v///AAD///+/AAAAAAAA/7////9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_txcfk")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_6bjap"]
+data = PackedVector3Array(-0.5, 0, 0.5, 0.5, 0, -0.5, 0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, -0.5, 0.5, 0, -0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_qhof7"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.5, 1, 2, 1e-05),
+"format": 34896613377,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAwAEAAEAAwAFAAQA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("//8AAAAAAAAAAP9/AAAAAAAAAAAAAAAA////fwAAAAAAAP//AAAAAP////8AAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_83ya7"]
+resource_name = "Catscape 3D tiles_Plane_026"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.5, 1, 2, 1e-05),
+"attribute_data": PackedByteArray("/x//n/8//3//P/+f/x//f/+//5//3/9//9//n/+//38="),
+"format": 34896613399,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("//8AAAAA//8AAP9/AAD//wAAAAAAAP//////fwAA//////9/AAD//wAA//8AAP//AAD/fwAA////////AAD///9/////f////3////9/////f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_qhof7")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_jqlgt"]
+data = PackedVector3Array(0.5, 0, 0.5, -0.5, 1, 0.5, -0.5, 0, 0.5, 0.5, 0, 0.5, 0.5, 1, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, -0.5, 2, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, 0.5, 2, 0.5, -0.5, 2, 0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_rne2q"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.5, 1, 2, 1e-05),
+"format": 34896613377,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAwAEAAEAAwAFAAQA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("//8AAAAAAAAAAP9/AAAAAAAAAAAAAAAA////fwAAAAAAAP//AAAAAP////8AAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_y2g05"]
+resource_name = "Catscape 3D tiles_Plane_027"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.5, 1, 2, 1e-05),
+"attribute_data": PackedByteArray("/3//H/+fAAD/n/8f/38AAP+f/5//v/9//7//n/+f/38="),
+"format": 34896613399,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("//8AAAAA//8AAP9/AAD//wAAAAAAAP//////fwAA//////9/AAD//wAA//8AAP//AAD/fwAA////////AAD///9/////f////3////9/////f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_rne2q")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_gf7fm"]
+data = PackedVector3Array(0.5, 0, 0.5, -0.5, 1, 0.5, -0.5, 0, 0.5, 0.5, 0, 0.5, 0.5, 1, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, -0.5, 2, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, 0.5, 2, 0.5, -0.5, 2, 0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_4paoh"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.5, 1, 2, 1e-05),
+"format": 34896613377,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAwAEAAEAAwAFAAQA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("//8AAAAAAAAAAP9/AAAAAAAAAAAAAAAA////fwAAAAAAAP//AAAAAP////8AAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_mqqlt"]
+resource_name = "Catscape 3D tiles_Plane_028"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.5, 1, 2, 1e-05),
+"attribute_data": PackedByteArray("/3//X/+f/z//n/9f/3//P/+//1//3/8//9//X/+//z8="),
+"format": 34896613399,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("//8AAAAA//8AAP9/AAD//wAAAAAAAP//////fwAA//////9/AAD//wAA//8AAP//AAD/fwAA////////AAD///9/////f////3////9/////f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_4paoh")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_kp3jn"]
+data = PackedVector3Array(0.5, 0, 0.5, -0.5, 1, 0.5, -0.5, 0, 0.5, 0.5, 0, 0.5, 0.5, 1, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, -0.5, 2, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, 0.5, 2, 0.5, -0.5, 2, 0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_vcmvt"]
+_surfaces = [{
+"aabb": AABB(-0.504082, -0.00720467, -0.51627, 1.00408, 3, 1.01627),
+"format": 34896613377,
+"index_count": 42,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUABwAIAAUABwAJAAgACQAKAAgACQALAAoADAANAA4ADAAPAA0ADwAQAA0ADwARABAAEQASABAAEQATABIA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("CgGdAP//AAD//50AGQQAAP//nQD//wAACgGdABkEAAD0/gAA5fsAAAAAVFXl+wAAAAAAAOX7AAD0/lRV5fsAAAAAqarl+wAA9P6pquX7AAAAAP//5fsAAPT+///l+wAA9P4AAAAAAAD0/lRV5fsAAPT+AADl+wAA9P5UVQAAAAD0/qmq5fsAAPT+qaoAAAAA9P7//+X7AAD0/v//AAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_fatfv"]
+resource_name = "Catscape 3D tiles_Plane_031"
+_surfaces = [{
+"aabb": AABB(-0.504082, -0.00720467, -0.51627, 1.00408, 3, 1.01627),
+"attribute_data": PackedByteArray("/1//H/9/AAD/f/8f/18AAAAA/1//H/8//x//XwAA/z8AAP9f/x//P/8f/18AAP8/AAD/X/8f/z//H/9fAAD/PwAA/1//H/8//x//XwAA/z//H/8/AAD/XwAA/z//H/9fAAD/X/8f/z//H/9fAAD/Pw=="),
+"format": 34896613399,
+"index_count": 42,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 28,
+"vertex_data": PackedByteArray("CgGdAP///7///50AGQT/v///nQD///+/CgGdABkE/7/0/gAA5fv//wAAVFXl+///AAAAAOX7///0/lRV5fv///T+VFXl+///AACpquX7//8AAFRV5fv///T+qarl+///9P4AAAAA/7/0/lRV5fv/v/T+AADl+/+/9P5UVQAA/7/0/lRVAAD/v/T+qarl+/+/9P5UVeX7/7/0/qmqAAD/v/T+qaoAAP//9P7//+X7///0/qmq5fv///T+//8AAP//9P6pquX7//8AAP//5fv//wAAqarl+///9P7//+X7//////9/////f////3////9//3////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/////f////3////8//3//P/9//z//f/8//3//f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_vcmvt")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_80pej"]
+data = PackedVector3Array(-0.5, 0, 0.5, 0.5, 0, -0.5, 0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, -0.5, 0.5, 0, -0.5, 0.495918, -0.00720467, 0.48373, -0.504082, 0.992795, 0.48373, -0.504082, -0.00720467, 0.48373, 0.495918, -0.00720467, 0.48373, 0.495918, 0.992795, 0.48373, -0.504082, 0.992795, 0.48373, 0.495918, 0.992795, 0.48373, -0.504082, 1.9928, 0.48373, -0.504082, 0.992795, 0.48373, 0.495918, 0.992795, 0.48373, 0.495918, 1.9928, 0.48373, -0.504082, 1.9928, 0.48373, 0.495918, -0.00720467, -0.51627, 0.495918, 0.992795, 0.48373, 0.495918, -0.00720467, 0.48373, 0.495918, -0.00720467, -0.51627, 0.495918, 0.992795, -0.51627, 0.495918, 0.992795, 0.48373, 0.495918, 0.992795, -0.51627, 0.495918, 1.9928, 0.48373, 0.495918, 0.992795, 0.48373, 0.495918, 0.992795, -0.51627, 0.495918, 1.9928, -0.51627, 0.495918, 1.9928, 0.48373, 0.495918, 1.9928, -0.51627, 0.495918, 2.9928, 0.48373, 0.495918, 1.9928, 0.48373, 0.495918, 1.9928, -0.51627, 0.495918, 2.9928, -0.51627, 0.495918, 2.9928, 0.48373, 0.495918, 1.9928, 0.48373, -0.504082, 2.9928, 0.48373, -0.504082, 1.9928, 0.48373, 0.495918, 1.9928, 0.48373, 0.495918, 2.9928, 0.48373, -0.504082, 2.9928, 0.48373)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_0v332"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.5, 1, 2, 1e-05),
+"format": 34896613377,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAwAEAAEAAwAFAAQA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("//8AAAAAAAAAAP9/AAAAAAAAAAAAAAAA////fwAAAAAAAP//AAAAAP////8AAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_0r4nb"]
+resource_name = "Catscape 3D tiles_Plane_032"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.5, 1, 2, 1e-05),
+"attribute_data": PackedByteArray("/9//n////3////+f/9//f////1//3/9f"),
+"format": 34896613399,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAwAEAAEAAwAFAAQA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("//8AAAAA//8AAP9/AAD//wAAAAAAAP//////fwAA//8AAP//AAD///////8AAP///3////9/////f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_0v332")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_pxqqy"]
+data = PackedVector3Array(0.5, 0, 0.5, -0.5, 1, 0.5, -0.5, 0, 0.5, 0.5, 0, 0.5, 0.5, 1, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, -0.5, 2, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, 0.5, 2, 0.5, -0.5, 2, 0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_qfyy6"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//AAD//wAAAAAAAP//AAD//wAAAAAAAAAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_j3647"]
+resource_name = "Catscape 3D tiles_Plane_033"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
+"attribute_data": PackedByteArray("/5//H/+/AAD/v/8f/58AAA=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP///7///wAAAAD/v///AAD///+/AAAAAAAA/7////9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_qfyy6")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ifnvb"]
+data = PackedVector3Array(-0.5, 0, 0.5, 0.5, 0, -0.5, 0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, -0.5, 0.5, 0, -0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_1hjbc"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//AAD//wAAAAAAAP//AAD//wAAAAAAAAAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_dh663"]
+resource_name = "Catscape 3D tiles_Plane_034"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
+"attribute_data": PackedByteArray("/z//n/9f/3//X/+f/z//fw=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP///7///wAAAAD/v///AAD///+/AAAAAAAA/7////9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_1hjbc")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ej35h"]
+data = PackedVector3Array(-0.5, 0, 0.5, 0.5, 0, -0.5, 0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, -0.5, 0.5, 0, -0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_3qodf"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 3, 1),
+"format": 34896613377,
+"index_count": 21,
+"index_data": PackedByteArray("AAABAAIAAAACAAMAAAAEAAEABAAFAAEABAAGAAUABgAHAAUABgAIAAcA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 9,
+"vertex_data": PackedByteArray("//8AAAAAAAAAAFVV//8AAAAAAAD//wAAAAAAAAAAAAD//1VVAAAAAAAAqqr//wAA//+qqgAAAAAAAP////8AAP////8AAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_kynr2"]
+resource_name = "Catscape 3D tiles_Plane_035"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 3, 1),
+"attribute_data": PackedByteArray("AAD/X/8f/z//H/9fAAD/P/9/AAD/X/8f/18AAAAA/1//H/8//x//XwAA/z8AALxf/x9DQP8fvF8AAENA"),
+"format": 34896613399,
+"index_count": 21,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABwAIAAkABwAKAAgACwAMAA0ACwAOAAwA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 15,
+"vertex_data": PackedByteArray("//8AAAAA/98AAFVV////3wAAAAD////f//9VVQAA/9///wAAAAD/vwAAAAD///+/AAAAAAAA/7///1VVAAD/3wAAqqr////fAABVVf///9///6qqAAD/3///qqoAAP/fAAD//////98AAKqq////3/////8AAP/f/3/+//9/////f////3/+/////3////9/////f/9/////f/7//3/+//9/////f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_3qodf")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_23wvi"]
+data = PackedVector3Array(0.5, 0, -0.5, -0.5, 1, 0.5, -0.5, 0, 0.5, 0.5, 0, -0.5, 0.5, 1, -0.5, -0.5, 1, 0.5, 0.5, 0, -0.5, -0.5, 0, 0.5, -0.5, 0, -0.5, 0.5, 1, -0.5, -0.5, 2, 0.5, -0.5, 1, 0.5, 0.5, 1, -0.5, 0.5, 2, -0.5, -0.5, 2, 0.5, 0.5, 2, -0.5, -0.5, 3, 0.5, -0.5, 2, 0.5, 0.5, 2, -0.5, 0.5, 3, -0.5, -0.5, 3, 0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_h83u4"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAAAAAACAAEA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 3,
+"vertex_data": PackedByteArray("//8AAP//AAD//wAAAAAAAAAAAAAAAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_gel6l"]
+resource_name = "Catscape 3D tiles_Plane_036"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
+"attribute_data": PackedByteArray("/z//n/9P/4//X/+f/z//fw=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("//8AAP///MX//wAAAAD8xf//AAD///+/AAAAAAAA/MX/4gFG/+IBRv///3//4gFG")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_h83u4")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_kvp3l"]
+data = PackedVector3Array(0.5, 0, 0.5, 0.5, 0, -0.5, 0.5, 0, 0.5, 0.5, 0, 0.5, -0.5, 0, -0.5, 0.5, 0, -0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_wh8r2"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.207922, 1, 1, 0.415844),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQAAAAIAAwAAAAUABAAGAAIABQACAAYAAwAHAAQAAwAFAAcABwAGAAQABwAFAAYA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAP//AAAAAAAA/////wAAAAAAAAAAAAD/////AAAAAP//AAD//wAA////////AAD//wAAAAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_sypmo"]
+resource_name = "Catscape 3D tiles_Cube_001"
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.207922, 1, 1, 0.415844),
+"attribute_data": PackedByteArray("/3//X/+f/0//n/9f/3//T/9//1//n/9//3//f/+f/1//f/9f/5//T/+f/1//f/9P/3//X/+f/3//f/9//5//X/8f/3//X/8//1//f/8f/z//f/9f/5//T/+f/1//f/9P"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAP//VNUAAP//AABU1QAA/////1TVAAAAAAAAVNUAAAAAAAD///////8AAP//AAD//wAA/////wAAAAD/////AAAAAFTV////////VNX/////AABU1f//AAD//1TV//8AAP////8AAP//////////////////AAAAAP////8AAAAAAAD/v///AAD///+///8AAAAA/78AAAAA////v/////8AAP//AAD///////8AAP//AAD/////////////VNVU1VTVVNVU1VTVVNVU1f///3////9/////f////3+qKqoqqiqqKqoqqiqqKqoq/3//f/9//3//f/9//3//fwAA/38AAP9/AAD/fwAA/3//f/+//3//v/9//7//f/+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_wh8r2")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_8egmb"]
+data = PackedVector3Array(-0.5, -0.5, 0.207922, -0.5, 0.5, -0.207922, -0.5, 0.5, 0.207922, -0.5, -0.5, 0.207922, -0.5, -0.5, -0.207922, -0.5, 0.5, -0.207922, -0.5, -0.5, -0.207922, 0.5, 0.5, -0.207922, -0.5, 0.5, -0.207922, -0.5, -0.5, -0.207922, 0.5, -0.5, -0.207922, 0.5, 0.5, -0.207922, 0.5, -0.5, -0.207922, 0.5, 0.5, 0.207922, 0.5, 0.5, -0.207922, 0.5, -0.5, -0.207922, 0.5, -0.5, 0.207922, 0.5, 0.5, 0.207922, 0.5, -0.5, 0.207922, -0.5, 0.5, 0.207922, 0.5, 0.5, 0.207922, 0.5, -0.5, 0.207922, -0.5, -0.5, 0.207922, -0.5, 0.5, 0.207922, -0.5, -0.5, -0.207922, 0.5, -0.5, 0.207922, 0.5, -0.5, -0.207922, -0.5, -0.5, -0.207922, -0.5, -0.5, 0.207922, 0.5, -0.5, 0.207922, 0.5, 0.5, -0.207922, -0.5, 0.5, 0.207922, -0.5, 0.5, -0.207922, 0.5, 0.5, -0.207922, 0.5, 0.5, 0.207922, -0.5, 0.5, 0.207922)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_bltkb"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//AAD//wAAAAAAAP//AAD//wAAAAAAAAAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_msp3l"]
+resource_name = "Catscape 3D tiles_Plane_037"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
+"attribute_data": PackedByteArray("/5//P/+//x//v/8//5//Hw=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP///7///wAAAAD/v///AAD///+/AAAAAAAA/7////9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_bltkb")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_5kdyy"]
+data = PackedVector3Array(-0.5, 0, 0.5, 0.5, 0, -0.5, 0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, -0.5, 0.5, 0, -0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ecanu"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 1, 1, 1),
+"format": 34896613377,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAAAAAABAAEAAgAAAAEAAgADAAAA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAAAAAAAAAP////8AAAAA////////AAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_nmyvv"]
+resource_name = "Catscape 3D tiles_Cube_002"
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 1, 1, 1),
+"attribute_data": PackedByteArray("/1////+f/7//n////1//v/+f/z//v/8f/7//P/+f/x8="),
+"format": 34896613399,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP///78AAAAAAAD/vwAAAAD///+/AAAAAAAA/7//////AACq6QAAAAD//6rpAAAAAAAAqun///////+q6f///3////9/////f////38JagS1CWoEtQlqBLUJagS1")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ecanu")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_7sgvs"]
+data = PackedVector3Array(-0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_r7ur5"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 1, 1, 1),
+"format": 34896613377,
+"index_count": 15,
+"index_data": PackedByteArray("AAABAAAAAAABAAEAAgAAAAEAAgADAAAAAgAEAAUA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAAAAAAAAAP///////wAA////////AAAAAAAAAAAAAP//AAAAAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_71vda"]
+resource_name = "Catscape 3D tiles_Cube_003"
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 1, 1, 1),
+"attribute_data": PackedByteArray("/1////+f/7//n////1//v/+f/z//v/8f/7//P/+f/x//n/8//7//H/+//z8="),
+"format": 34896613399,
+"index_count": 15,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 11,
+"vertex_data": PackedByteArray("AAAAAP///78AAAAAAAD/vwAAAAD///+/AAAAAAAA/7////////9e7AAAAAD//xn7AAAAAAAAGvv///////+q6f///////6rpAAAAAAAAqun//wAAAACq6f///3////9/////f////3/xZ+yytF2uqLNdrqgJagS1+soENfrKBDX6ygQ1")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_r7ur5")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ajelb"]
+data = PackedVector3Array(-0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_s33gs"]
+_surfaces = [{
+"aabb": AABB(-0.500134, -3.33786e-05, -0.502476, 1, 1.28645, 1.00704),
+"format": 34896613377,
+"index_count": 78,
+"index_data": PackedByteArray("AAAIAAIAAQACAAgACQAAAAIAAAAKAAgACgABAAgAAwAAAAkAAAAGAAoABgAAAAMACQACAAsAAwAJAAsAAgAFAAsAAQAFAAIAAwALAAwACwAFAAwADQADAAwABgADAA0ADAAFAA4ADQAMAA4ABQABAA4ABgANAA4ADgABAAcABgAOAAcABAAHAAEABAAGAAcACgAEAAEACgAGAAQA"),
+"lods": [0.286326, PackedByteArray("AAABAAIAAwAAAAIAAAAEAAEAAgAFAAMAAQAFAAIABgAAAAMAAAAGAAQABgADAAUABAAHAAEABAAGAAcABQABAAcABgAFAAcA")],
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 15,
+"vertex_data": PackedByteArray("hRIAAP//AAAsMNySeCoAAIcXR28qxQAAgN4AAMK3AAAQTAAAygEAAF05//8+pQAA//8AAMoBAAD97p5qAAAAAMQiRntndQAADYwAAP//AAAAAAAAgX4AAHxZ6b6G2gAA58d2aaSkAAD//wAAYVkAAAHfiK2ENgAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_gu183"]
+resource_name = "Catscape 3D tiles_Cube_004"
+_surfaces = [{
+"aabb": AABB(-0.500134, -3.33786e-05, -0.502476, 1, 1.28645, 1.00704),
+"attribute_data": PackedByteArray("/7//f//f/1//3/9//7//X/+//3//3/9f/9//f/+//1//x/9r/9//X/+//3//v/9//9//X//f/3//v/9f/0//X/9v/3//T/9//2//X//f/1//3/9//7//f/+//1//3+ps/7+yb//f/Hb/v/h0/9+0as3J/3//v4Fx/09McIFh/1//b/h0/7/8dv/f/39K1f9f/7//f//ftGrNyf9/zcn/X//f/Hb/v4Fx/9+0av+/sm//3+ps/7/4dM3J/1//3/x2"),
+"format": 34896613399,
+"index_count": 78,
+"index_data": PackedByteArray("AAAXAAIAAAAYABcABAAFAAYABAAHAAUACwAZAA0ACwAaABkAFQAbABwAFQAdABsAHgAQABEADwAQAB4AEAAPABIAEgAPAB8AEAASACAAIQAiAAoACAAiACEAIgAIAAkACQAIACMAIgAJACQAJQAUACYAJwAMACgAKQATACoAKQAWABMAKwABACwAKwADAAEALQAuAC8ALQAOAC4A"),
+"lods": [0.286326, PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUABgAIAAkACAAGAAoACwAMAA0ACwAOAAwADwAQABEAEAAPABIAEwAUABUAFQAWABMA")],
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 48,
+"vertex_data": PackedByteArray("hRIAAP//+tEsMNySeCpx3IcXR28qxb7aEEwAAMoBOtoQTAAAygEb+v3unmoAABv6LDDckngqHPr//wAAygEZ+l05//8+pYHuhxdHbyrF9fn97p5qAABL4f//AADKAVnWXTn//z6l6t797p5qAADQ14DeAADCt5fPhRIAAP//JMD//wAAygExwBBMAADKAf+/gN4AAMK3LsGHF0dvKsXtwV05//8+pXbggN4AAMK3zMSFEgAA//9GwsQiRntndY/UAAAAAIF+Cs8B34ithDbg1v//AABhWRXWfFnpvobaD8bnx3ZppKSKyQ2MAAD//wjDAAAAAIF+/78NjAAA////v///AABhWf+/Ad+IrYQ2w+EsMNySeCrR6HxZ6b6G2nL1xCJGe2d13Bd8Wem+htp24OfHdmmkpHbg58d2aaSk6t4B34ithDbq3g2MAAD//xzCfFnpvobazMEAAAAAgX4928QiRntnddbe//8AAGFZ1s/nx3ZppKQG0AHfiK2ENjLQQ9lV0dbMVtAt4y7NF8gY0yK7NsRHuxXEkbq5xPq7c8PvZ9LDxliXtJqFkNk1LkMlbSaKE5MsMCZFKzQesg0mebAPJ3gAAP9/5iCMb43/8OgMKlwVxiSlEKf//+hg3AfQbNXx0pwtmiWCLhglAiQREQIiLBLiJQgQAAD/fwAA/38AAP9/JIQz2t5xzM1NXiS6cfQUUAwqXBUMKlwVbSaKE20mihOb//johP/q6FfKydFl0bDNDitRHuMqaR69Kn0e")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_s33gs")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_0bvot"]
+data = PackedVector3Array(-0.427785, -3.33786e-05, 0.504567, -0.364316, 0.619457, -0.0406232, -0.408215, 0.559185, 0.273136, -0.427785, -3.33786e-05, 0.504567, -0.500134, -3.33786e-05, -0.00482798, -0.364316, 0.619457, -0.0406232, -0.203011, -3.33786e-05, -0.495433, 0.433439, 0.535757, -0.502476, -0.311947, 0.737988, -0.335397, -0.203011, -3.33786e-05, -0.495433, 0.499866, -3.33786e-05, -0.495433, 0.433439, 0.535757, -0.502476, 0.499866, -3.33786e-05, -0.495433, 0.371002, 0.872014, -0.288009, 0.433439, 0.535757, -0.502476, 0.499866, -3.33786e-05, -0.495433, 0.499866, -3.33786e-05, -0.150872, 0.371002, 0.872014, -0.288009, 0.369033, -3.33786e-05, 0.220405, -0.150573, 0.959359, 0.357164, 0.280755, 0.529941, 0.145195, 0.369033, -3.33786e-05, 0.220405, 0.0469484, -3.33786e-05, 0.504567, -0.150573, 0.959359, 0.357164, -0.500134, -3.33786e-05, -0.00482798, 0.499866, -3.33786e-05, -0.495433, -0.203011, -3.33786e-05, -0.495433, 0.499866, -3.33786e-05, -0.495433, 0.369033, -3.33786e-05, 0.220405, 0.499866, -3.33786e-05, -0.150872, 0.369033, -3.33786e-05, 0.220405, -0.427785, -3.33786e-05, 0.504567, 0.0469484, -3.33786e-05, 0.504567, -0.427785, -3.33786e-05, 0.504567, 0.499866, -3.33786e-05, -0.495433, -0.500134, -3.33786e-05, -0.00482798, 0.499866, -3.33786e-05, -0.495433, -0.427785, -3.33786e-05, 0.504567, 0.369033, -3.33786e-05, 0.220405, 0.371002, 0.872014, -0.288009, -0.311947, 0.737988, -0.335397, 0.433439, 0.535757, -0.502476, -0.311947, 0.737988, -0.335397, -0.408215, 0.559185, 0.273136, -0.364316, 0.619457, -0.0406232, -0.408215, 0.559185, 0.273136, -0.27605, 1.28642, 0.147561, -0.150573, 0.959359, 0.357164, -0.27605, 1.28642, 0.147561, -0.311947, 0.737988, -0.335397, 0.371002, 0.872014, -0.288009, -0.311947, 0.737988, -0.335397, -0.27605, 1.28642, 0.147561, -0.408215, 0.559185, 0.273136, -0.150573, 0.959359, 0.357164, -0.27605, 1.28642, 0.147561, 0.280755, 0.529941, 0.145195, 0.280755, 0.529941, 0.145195, -0.27605, 1.28642, 0.147561, 0.371002, 0.872014, -0.288009, 0.0469484, -3.33786e-05, 0.504567, -0.408215, 0.559185, 0.273136, -0.150573, 0.959359, 0.357164, 0.0469484, -3.33786e-05, 0.504567, -0.427785, -3.33786e-05, 0.504567, -0.408215, 0.559185, 0.273136, -0.500134, -3.33786e-05, -0.00482798, -0.311947, 0.737988, -0.335397, -0.364316, 0.619457, -0.0406232, -0.500134, -3.33786e-05, -0.00482798, -0.203011, -3.33786e-05, -0.495433, -0.311947, 0.737988, -0.335397, 0.499866, -3.33786e-05, -0.150872, 0.280755, 0.529941, 0.145195, 0.371002, 0.872014, -0.288009, 0.499866, -3.33786e-05, -0.150872, 0.369033, -3.33786e-05, 0.220405, 0.280755, 0.529941, 0.145195)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_8jwgy"]
+_surfaces = [{
+"aabb": AABB(-0.57261, -0.00904131, -0.691791, 1.09326, 0.812752, 1.18203),
+"format": 34896613377,
+"index_count": 90,
+"index_data": PackedByteArray("CQAKAAsADAAJAAsADAAKAAkADAALAAYACwAEAAYACwAKAAQACAAMAAYADQAKAAwADQAMAAgACAAGAA4ADgANAAgABAAOAAYAAQAEAAoADgAPAA0ACgAQAAEACgANABAAEAANAAcABwANAA8AEAAHAA8AEAAAAAEABAABAAAAAAAQAA8ADgAEAAMABAAAAAMADgADAAUADwAOAAUAAgADAAAAAAAPAAIAAgAFAAMADwAFAAIA"),
+"lods": [0.16558, PackedByteArray("AAABAAIAAgADAAAABAABAAAABAAAAAMAAgAFAAMABQAEAAMABAAFAAYABQACAAcAAQAHAAIACAAGAAUABQAHAAgACQAEAAYAAQAEAAkACAAJAAYACQAHAAEABwAJAAgA")],
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 17,
+"vertex_data": PackedByteArray("uRXcfwAAAAAuFSMDBTMAABy1D8/5MgAAYjxTt1n2AAArOiWtjfcAACSO///JhQAACmiEZf//AACm6s8EuDMAAP//AACM9gAAgxMcA+fnAAAuFSMDb2EAAAAAkTGIzwAAsqcAAIz2AABX/yMDA70AAM2VT6lX0gAAms3pYh0dAACHZCMDBTMAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ysqd7"]
+resource_name = "Catscape 3D tiles_Cube_005"
+_surfaces = [{
+"aabb": AABB(-0.57261, -0.00904131, -0.691791, 1.09326, 0.812752, 1.18203),
+"attribute_data": PackedByteArray("/9//f/+//3//3/9f/7//X/+//3930WVo/9//f/+//18w3v9fMN7/X//f/1//T/9f/2//f/9P/3//b/9f/7//f//f/1//3/9//7//X//f/1//3/9//7//f/+//1//v/9fMN7/f/+//3//3/9f/9//f/+/22ajxv9//78ndZPR/1//v5trk9H/f4TM/3//v+5z/08jedda/3//b5tr7mP/X4TM/1+T0f9//7+ba/+/J3WT0f9fMN7/f/+/22b/v+5zo8b/X3fRZWiEzP9f/7+ba4TM/3930WVoo8b/X3fRZWg="),
+"format": 34896613399,
+"index_count": 90,
+"index_data": PackedByteArray("GQAcAB0AHQAcABgAHgAAAAEAAAAeAB8AAAAfAAIAFQAgACEABAAFACIABAAjAAUAJAAlAA0AJAAmACUAJQAmAAwAJgAkACcAJwAkAAsAJgAnAA4ADwAQABEADwASABAAKAApACoAKQAoABMAKQATABQAKwADACwAFwAtAC4ALQAXABoALQAaABsALwAwADEALwAHADAAMgAzABYACQA0ADUANAAJAAoANAAKAAYANgAIADcA"),
+"lods": [0.16558, PackedByteArray("AAABAAIAAQADAAIABAAFAAYABAAHAAUABwAIAAUACQAGAAUABgAJAAoACwAMAA0ADAALAA4ADwAQABEADwASABAAEwAUABUAEwAVABYAFwAYABkAGAAXABoAGAAaABsA")],
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 56,
+"vertex_data": PackedByteArray("uRXcfwAANvcuFSMDBTMU9xy1D8/5MlX3purPBLgzGfj//wAAjPYzywpohGX//6TTJI7//8mF6MGDExwD5+cx2ys6Ja2N99CqKzolrY33RcdiPFO3WfaBv4MTHAPn54bApurPBLgzaMAuFSMDBTNowP//AACM9mjAHLUPz/ky7/ViPFO3WfbI9LkV3H8AANv6JI7//8mFVd4kjv//yYVLzBy1D8/5MvznpurPBLgzMtn//wAAjPbl4C4VIwMFMzjbKzolrY33w9CDExwD5+cV4bkV3H8AAMHdYjxTt1n2ctMuFSMDb2Gt1AAAkTGIz6/Xh2QjAwUzM/eazeliHR1P91f/IwMDvTLZms3pYh0dMtnNlU+pV9KZ2rKnAACM9u24LhUjA29hbMCHZCMDBTNowFf/IwMDvWrAsqcAAIz2dcDNlU+pV9LJz5rN6WIdHZ7WV/8jAwO9o9eHZCMDBTMZ+JrN6WIdHRn4KzolrY33ZdUuFSMDb2Fy07KnAACM9sewAACRMYjPHcUKaIRl//+Xp82VT6lX0uXgV/8jAwO95eDNlU+pV9KzxgpohGX//+vSAACRMYjP0KoKaIRl///QqsNG4TuvQmA/8kkoOcZQqTpN5n4BRRguAcHUUg+M9p3zydYK/unUlQuu1BsRHwZIjEsAs4AOAOJ/DgDifxhuqLtKb528QmnJt76NHsWXRYAJqCmZH3E6XhwpObYS4eT8zaDMQ8x96lG/Uuf9zNjcQ9HI1UvIhtvOxXNGJjxeSaY5cTpeHHE6XhzOFiADzeN0CC0CcIQHACuArAFwgxkEQohiQJ4NTzgBFEQ31RTGUKk6xlCpOvbeZtDX3EPRe+on93/xGPWV5Zb4KTm2Eik5thLl1PcLONU4BMnWCv7J1gr+")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_8jwgy")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_kwbq4"]
+data = PackedVector3Array(-0.489279, 0.000841916, 0.378992, -0.482155, 0.000923395, -0.241899, -0.57261, 0.148335, 0.266473, -0.57261, 0.148335, 0.266473, -0.482155, 0.000923395, -0.241899, -0.324193, 0.540677, 0.45124, -0.143286, 0.000923395, -0.456207, -0.479826, 0.396904, -0.691791, -0.482155, 0.000923395, -0.456207, -0.479826, 0.396904, -0.691791, 0.305436, 0.304995, -0.557354, 0.20085, 0.648352, -0.456422, -0.479826, 0.396904, -0.691791, -0.143286, 0.000923395, -0.456207, 0.305436, 0.304995, -0.557354, 0.429483, 0.0062373, -0.452974, 0.517845, 0.000923395, 0.180955, 0.305436, 0.304995, -0.557354, 0.520646, -0.00904131, 0.446622, -0.1283, 0.313266, 0.490235, 0.0671423, 0.528497, 0.279437, 0.520646, -0.00904131, 0.446622, 0.143555, -0.00904131, 0.446622, -0.1283, 0.313266, 0.490235, -0.482155, 0.000923395, -0.241899, -0.143286, 0.000923395, -0.456207, -0.482155, 0.000923395, -0.456207, -0.143286, 0.000923395, -0.456207, 0.517845, 0.000923395, 0.180955, 0.429483, 0.0062373, -0.452974, 0.517845, 0.000923395, 0.180955, 0.143555, -0.00904131, 0.446622, 0.520646, -0.00904131, 0.446622, 0.143555, -0.00904131, 0.446622, -0.482155, 0.000923395, -0.241899, -0.489279, 0.000841916, 0.378992, -0.482155, 0.000923395, -0.241899, 0.517845, 0.000923395, 0.180955, -0.143286, 0.000923395, -0.456207, 0.517845, 0.000923395, 0.180955, -0.482155, 0.000923395, -0.241899, 0.143555, -0.00904131, 0.446622, 0.20085, 0.648352, -0.456422, -0.314735, 0.572995, 0.445698, -0.479826, 0.396904, -0.691791, 0.20085, 0.648352, -0.456422, 0.0344243, 0.80371, -0.07405, -0.314735, 0.572995, 0.445698, 0.0671423, 0.528497, 0.279437, 0.305436, 0.304995, -0.557354, 0.517845, 0.000923395, 0.180955, 0.305436, 0.304995, -0.557354, 0.0344243, 0.80371, -0.07405, 0.20085, 0.648352, -0.456422, 0.305436, 0.304995, -0.557354, 0.0671423, 0.528497, 0.279437, 0.0344243, 0.80371, -0.07405, -0.143286, 0.000923395, -0.456207, 0.429483, 0.0062373, -0.452974, 0.305436, 0.304995, -0.557354, -0.482155, 0.000923395, -0.456207, -0.324193, 0.540677, 0.45124, -0.482155, 0.000923395, -0.241899, -0.324193, 0.540677, 0.45124, -0.479826, 0.396904, -0.691791, -0.314735, 0.572995, 0.445698, -0.324193, 0.540677, 0.45124, -0.482155, 0.000923395, -0.456207, -0.479826, 0.396904, -0.691791, 0.143555, -0.00904131, 0.446622, -0.57261, 0.148335, 0.266473, -0.1283, 0.313266, 0.490235, 0.143555, -0.00904131, 0.446622, -0.489279, 0.000841916, 0.378992, -0.57261, 0.148335, 0.266473, 0.0671423, 0.528497, 0.279437, 0.517845, 0.000923395, 0.180955, 0.520646, -0.00904131, 0.446622, -0.324193, 0.540677, 0.45124, 0.0671423, 0.528497, 0.279437, -0.1283, 0.313266, 0.490235, 0.0671423, 0.528497, 0.279437, -0.314735, 0.572995, 0.445698, 0.0344243, 0.80371, -0.07405, 0.0671423, 0.528497, 0.279437, -0.324193, 0.540677, 0.45124, -0.314735, 0.572995, 0.445698, -0.57261, 0.148335, 0.266473, -0.324193, 0.540677, 0.45124, -0.1283, 0.313266, 0.490235)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_4te22"]
+_surfaces = [{
+"aabb": AABB(-4.5, -0.5, 7.49296, 1, 1.72982, 1.00704),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAwAAAAIAAAAEAAEABAAAAAMABAAFAAEABAADAAYABAAGAAUAAwACAAcAAQAHAAIABgADAAcABQAHAAEABgAHAAUA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP//AAAsMDhteCoAANsqqVQP5wAA//8AAP//AAAAAAAAygEAAP3uSk8AAAAA//8AAMoBAAA7tv//l8EAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_33qrx"]
+resource_name = "Catscape 3D tiles_Cube_006"
+_surfaces = [{
+"aabb": AABB(-4.5, -0.5, 7.49296, 1, 1.72982, 1.00704),
+"attribute_data": PackedByteArray("/7//f//f/1//3/9//7//X/+//3//3/9f/9//f/+//1//v/9//9//X//f/3//v/9f/7//f//f/1//3/9//7//X/9P/3//b/9f/2//f/9P/1//v/9//7//X//f/3//3/9f"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFgAVABcA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAP//Y84sMDhteCpDzdsqqVQP56XSAAAAAMoB2coAAAAAygH4+f3uSk8AAAL6LDA4bXgq6fn//wAAygEd+v//AADKASPWO7b//5fBAdb97kpPAABm2P//AAD//1fV//8AAP//IL/bKqlUD+dsvzu2//+XwePGAAAAAP//6bQAAAAAygH/v///AAD///+///8AAMoB/78AAAAA////v/3uSk8AADXiO7b//5fBEeosMDhteCo26dsqqVQP5wTzfNj5zcTWnc5l3sfLxtIZ0ILCU7wRwIe+FMczuFa7zMJ3L2Akny9IJO4s1yVmMNUjrvhSCav4Qwlx+O0HEPmWCwAA/38AAP9/AAD/fwAA/39XhYbYunHPzGpzeM5rY7u+")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_4te22")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_jnr62"]
+data = PackedVector3Array(-4.5, -0.5, 8.5, -4.31181, 0.238021, 7.66004, -4.33258, 0.0720713, 8.40191, -4.5, -0.5, 8.5, -4.5, -0.5, 7.5, -4.31181, 0.238021, 7.66004, -4.5, -0.5, 7.5, -3.56643, 0.0357901, 7.49296, -4.31181, 0.238021, 7.66004, -4.5, -0.5, 7.5, -3.5, -0.5, 7.5, -3.56643, 0.0357901, 7.49296, -3.5, -0.5, 7.5, -3.78814, 1.22982, 8.25452, -3.56643, 0.0357901, 7.49296, -3.5, -0.5, 7.5, -3.5, -0.5, 8.5, -3.78814, 1.22982, 8.25452, -3.5, -0.5, 8.5, -4.33258, 0.0720713, 8.40191, -3.78814, 1.22982, 8.25452, -3.5, -0.5, 8.5, -4.5, -0.5, 8.5, -4.33258, 0.0720713, 8.40191, -4.5, -0.5, 7.5, -3.5, -0.5, 8.5, -3.5, -0.5, 7.5, -4.5, -0.5, 7.5, -4.5, -0.5, 8.5, -3.5, -0.5, 8.5, -3.56643, 0.0357901, 7.49296, -3.78814, 1.22982, 8.25452, -4.31181, 0.238021, 7.66004, -4.31181, 0.238021, 7.66004, -3.78814, 1.22982, 8.25452, -4.33258, 0.0720713, 8.40191)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_km65j"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 1, 1, 1),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQAAAAIAAwAAAAUABAAGAAIABQACAAYAAwAHAAQAAwAFAAcABwAGAAQABwAFAAYA"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAP//AAAAAAAA/////wAAAAAAAAAAAAD/////AAAAAP//AAD//wAA////////AAD//wAAAAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_7gukm"]
+resource_name = "Catscape 3D tiles_Cube_007"
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 1, 1, 1),
+"attribute_data": PackedByteArray("/z//H/9fAAD/X/8f/z8AAP+//1//n/8//7//P/+f/1//n/9f/7//P/+f/z//v/9f/z//H/9fAAD/X/8f/z8AAP8//x//XwAA/1//H/8/AAD/n/8f/78AAP+//x//nwAA"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAP//VNUAAP//AABU1QAA/////1TVAAAAAAAAVNUAAAAAAAD///////8AAP//AAD//wAA/////wAAAAD/////AAAAAAAA////////AAD/////AAAAAP//AAD//wAA//8AAP///78AAP//////v/////////+/AAAAAP///78AAAAAAAD/v///AAD///+///8AAAAA/78AAAAA////v/////8AAP//AAD///////8AAP//AAD/////////////VNVU1VTVVNVU1VTVVNVU1f9/////f////3////9/////v/9//7//f/+//3//v/9//////////////////////wAA/38AAP9/AAD/fwAA/3//f/+//3//v/9//7//f/+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_km65j")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_oidhq"]
+data = PackedVector3Array(-0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_hc2ob"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.25, -0.5, 1, 0.679145, 1),
+"format": 34359742465,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAAACAAMAAwACAAEAAAADAAQABQAEAAMAAwABAAUABgAAAAQABgABAAAABgAEAAcABQAHAAQACAAFAAEACQAHAAUACQAFAAgACAABAAoACQAIAAoAAQALAAoAAQAGAAsACQAKAAsADAAGAAcACwAGAAwABwAJAA0ADAAHAA0ACwAMAA4ADgAJAAsADgAMAA0ADQAJAA8ADgAPAAkADgANAA8A"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("AAAAv9O42z43KXi+AAAAv/X/f74BAAC/AAAAvwUAgD79//++AAAAPwUAgD79//++AAAAP9O42z7X2HO+AAAAP/X/f74BAAC/AAAAv9C42z41QvK8AAAAP9C42z56zC28AAAAPwAAgL68ssq6AAAAPwUAgL79//8+AAAAvwAAgL5M766zAAAAvwUAgL79//8+AAAAv8242z4VSos+AAAAP8242z61Zo8+AAAAv/X/fz4BAAA/AAAAP/X/fz4BAAA/")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_wdn1v"]
+resource_name = "Catscape 3D tiles_Cube_008"
+_surfaces = [{
+"aabb": AABB(-0.5, -0.25, -0.5, 1, 0.679145, 1),
+"attribute_data": PackedByteArray("5k0IP0TDfz4wDwA/ouG/PjAPAD9Ew38+7hwPP0TDfz4wDyA/ouG/PjAPED+i4b8+0cMYP0TDfz4wDyA/RMN/PgAAwD4AAAA/ZhmAPiJE5D5mGcA+IkTkPgAAgD4AAAA/vgUZP6YegD5TDyA/ph7APlMPID+mHoA+bbgPP6YegD5TDwA/ph7APqgCED+mHsA+jHAIP6YegD5TDwA/ph6APrwfgD4eu9k+NuC/PkLb/z6aeIA+yoX/PvDsvz5ixNk+AACAPoq//z4AAMA+YqzxPgAAwD6Kv/8+AACAPswo8T4AACA/AAAAPgAAQD8AAIA9AABAPwAAAD4AACA/UDV/PQAAQD8AAAAAAAAgPwAAAAAAAIA+di3YPgAAwD4KsMc+AADAPnxy2D4AAIA+CrDHPgAAgD5OONk+AADAPkAhxz4AAMA+5LvZPgAAgD6I6sU+AACAPhhw1j4AAMA+DhfJPgAAwD7Qptc+AACAPgjSyD4="),
+"format": 34359742487,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAwABAAAAAQADAAQAAQAEAAUABAADAAYABAAGAAcACAAJAAoACAALAAkADAANAA4ADwANAAwADQAPABAADQAQABEAEAAPABIAEAASABMAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AHwAgAB0AHwAhACAAIgAjACQAIgAlACMAJgAnACgAJgApACcAKgArACwAKgAtACsA"),
+"material": SubResource("StandardMaterial3D_re517"),
+"name": "SurfaceTextures",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 46,
+"vertex_data": PackedByteArray("AAAAv9O42z43KXi+AAAAv/X/f74BAAC/AAAAvwUAgD79//++AAAAv9C42z41QvK8AAAAvwUAgL79//8+AAAAvwAAgL5M766zAAAAv8242z4VSos+AAAAv/X/fz4BAAA/AAAAv/X/fz4BAAA/AAAAPwUAgL79//8+AAAAvwUAgL79//8+AAAAP/X/fz4BAAA/AAAAP8242z61Zo8+AAAAPwUAgL79//8+AAAAP/X/fz4BAAA/AAAAP9C42z56zC28AAAAP/X/f74BAAC/AAAAPwAAgL68ssq6AAAAP9O42z7X2HO+AAAAPwUAgD79//++AAAAPwUAgD79//++AAAAv/X/f74BAAC/AAAAP/X/f74BAAC/AAAAvwUAgD79//++AAAAv/X/fz4BAAA/AAAAP8242z61Zo8+AAAAP/X/fz4BAAA/AAAAv8242z4VSos+AAAAPwUAgL79//8+AAAAvwAAgL5M766zAAAAvwUAgL79//8+AAAAPwAAgL68ssq6AAAAv/X/f74BAAC/AAAAP/X/f74BAAC/AAAAv9O42z43KXi+AAAAPwUAgD79//++AAAAP9O42z7X2HO+AAAAvwUAgD79//++AAAAv8242z4VSos+AAAAP9C42z56zC28AAAAP8242z61Zo8+AAAAv9C42z41QvK8AAAAv9C42z41QvK8AAAAP9O42z7X2HO+AAAAP9C42z56zC28AAAAv9O42z43KXi+AAD/f/9/68cAAP9//3+7xwAA/3//fz7aAAD/f/9//78AAP9//394uAAA/3////+/AAD/f/9/hbcAAP9//3/Vo/9//38AAP+//3//fwAA/7//f/9/AAD/v/9//38AAP+/////f/9/nkj///9//39zR////3//f7pc////f/9//z////9//389OP///3////+/////f/9/Jzj///9//38AJv////9qADTA/////zUAGsD/////kABHwP////8PAAfAxX/7xn3/UMDFf/vGj/8mwMV/+8aM/x/AxX/7xm//X8D/fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/79OtOL/y//sv0604v/G/9y/TrTi/8D/1b9OtOL/yP/vv/9///////+//3///////7//f///////v/9///////+//3///////7//f///////v/9///////+//3///////78=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_hc2ob")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_bfutm"]
+data = PackedVector3Array(-0.5, 0.429144, -0.242345, -0.5, -0.25, -0.5, -0.5, 0.25, -0.5, -0.5, -0.25, -0.5, -0.5, -0.25, 0.5, -0.5, -0.25, -8.14603e-08, -0.5, -0.25, 0.5, -0.5, 0.429144, 0.27205, -0.5, 0.25, 0.5, -0.5, 0.429144, -0.0295726, -0.5, -0.25, -0.5, -0.5, 0.429144, -0.242345, -0.5, -0.25, 0.5, -0.5, 0.429144, -0.0295726, -0.5, 0.429144, 0.27205, -0.5, -0.25, -0.5, -0.5, 0.429144, -0.0295726, -0.5, -0.25, 0.5, -0.5, 0.25, 0.5, 0.5, -0.25, 0.5, -0.5, -0.25, 0.5, -0.5, 0.25, 0.5, 0.5, 0.25, 0.5, 0.5, -0.25, 0.5, 0.5, 0.429144, 0.28008, 0.5, -0.25, 0.5, 0.5, 0.25, 0.5, 0.5, -0.25, 0.5, 0.5, -0.25, -0.5, 0.5, -0.25, -0.00154646, 0.5, -0.25, -0.5, 0.5, 0.429144, -0.238132, 0.5, 0.25, -0.5, 0.5, 0.429144, -0.0106078, 0.5, -0.25, 0.5, 0.5, 0.429144, 0.28008, 0.5, -0.25, -0.5, 0.5, 0.429144, -0.0106078, 0.5, 0.429144, -0.238132, 0.5, -0.25, 0.5, 0.5, 0.429144, -0.0106078, 0.5, -0.25, -0.5, 0.5, 0.25, -0.5, -0.5, -0.25, -0.5, 0.5, -0.25, -0.5, 0.5, 0.25, -0.5, -0.5, 0.25, -0.5, -0.5, -0.25, -0.5, -0.5, 0.25, 0.5, 0.5, 0.429144, 0.28008, 0.5, 0.25, 0.5, -0.5, 0.25, 0.5, -0.5, 0.429144, 0.27205, 0.5, 0.429144, 0.28008, 0.5, -0.25, 0.5, -0.5, -0.25, -8.14603e-08, -0.5, -0.25, 0.5, 0.5, -0.25, 0.5, 0.5, -0.25, -0.00154646, -0.5, -0.25, -8.14603e-08, 0.5, -0.25, -0.00154646, -0.5, -0.25, -0.5, -0.5, -0.25, -8.14603e-08, 0.5, -0.25, -0.00154646, 0.5, -0.25, -0.5, -0.5, -0.25, -0.5, -0.5, 0.429144, -0.242345, 0.5, 0.25, -0.5, 0.5, 0.429144, -0.238132, -0.5, 0.429144, -0.242345, -0.5, 0.25, -0.5, 0.5, 0.25, -0.5, -0.5, 0.429144, 0.27205, 0.5, 0.429144, -0.0106078, 0.5, 0.429144, 0.28008, -0.5, 0.429144, 0.27205, -0.5, 0.429144, -0.0295726, 0.5, 0.429144, -0.0106078, -0.5, 0.429144, -0.0295726, 0.5, 0.429144, -0.238132, 0.5, 0.429144, -0.0106078, -0.5, 0.429144, -0.0295726, -0.5, 0.429144, -0.242345, 0.5, 0.429144, -0.238132)
+
+[node name="Catscape 3D tiles" type="Node3D"]
+
+[node name="Timber1Wall" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_61yjc")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Timber1Wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Timber1Wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_bhqii")
+
+[node name="Timber2Wall" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_5p7kp")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Timber2Wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Timber2Wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_5i0ml")
+
+[node name="stoneWall" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_ojg24")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="stoneWall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="stoneWall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_12dwi")
+
+[node name="plankWall" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_6hga5")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="plankWall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="plankWall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_achcm")
+
+[node name="fence" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_ufyas")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="fence"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="fence/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_h1d10")
+
+[node name="PAINTING" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_opjoa")
+skeleton = NodePath("")
+
+[node name="cavewall" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_guipx")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="cavewall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cavewall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_l54iv")
+
+[node name="timberCorner" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_udkgh")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="timberCorner"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="timberCorner/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_j43ly")
+
+[node name="plankFloor" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_8hqgu")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="plankFloor"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="plankFloor/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_hr4si")
+
+[node name="stoneWallCorner" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_20a8s")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="stoneWallCorner"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="stoneWallCorner/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_rm26m")
+
+[node name="BUSH" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_f8fne")
+skeleton = NodePath("")
+
+[node name="FLOWER" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_cexat")
+skeleton = NodePath("")
+
+[node name="FERN" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_xtqnr")
+skeleton = NodePath("")
+
+[node name="WHEAT" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_xr8bp")
+skeleton = NodePath("")
+
+[node name="stump" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_hrat5")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="stump"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="stump/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_7vyxo")
+
+[node name="plankWallCorner" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_ofe6e")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="plankWallCorner"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="plankWallCorner/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_78r7i")
+
+[node name="caveGround" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_75dm1")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="caveGround"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="caveGround/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_6bjap")
+
+[node name="timberWallWindow" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_83ya7")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="timberWallWindow"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="timberWallWindow/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_jqlgt")
+
+[node name="stoneWallWindow" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_y2g05")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="stoneWallWindow"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="stoneWallWindow/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_gf7fm")
+
+[node name="plankWallWindow" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_mqqlt")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="plankWallWindow"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="plankWallWindow/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_kp3jn")
+
+[node name="caveWallCorner" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_fatfv")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="caveWallCorner"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="caveWallCorner/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_80pej")
+
+[node name="stoneWallStainedGlass" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_0r4nb")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="stoneWallStainedGlass"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="stoneWallStainedGlass/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_pxqqy")
+
+[node name="cloth" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_j3647")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="cloth"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cloth/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_ifnvb")
+
+[node name="path" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_dh663")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="path"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="path/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_ej35h")
+
+[node name="caveCorner" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_kynr2")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="caveCorner"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="caveCorner/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_23wvi")
+
+[node name="pathCorner" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_gel6l")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pathCorner"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pathCorner/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_kvp3l")
+
+[node name="bookShelf" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_sypmo")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="bookShelf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="bookShelf/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_8egmb")
+
+[node name="roofTop" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_msp3l")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="roofTop"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="roofTop/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_5kdyy")
+
+[node name="roofSlope" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_nmyvv")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="roofSlope"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="roofSlope/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_7sgvs")
+
+[node name="roofCorner" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_71vda")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="roofCorner"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="roofCorner/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_ajelb")
+
+[node name="rock1" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_gu183")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="rock1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="rock1/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_0bvot")
+
+[node name="rock2" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_ysqd7")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="rock2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="rock2/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_kwbq4")
+
+[node name="rock3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -8)
+mesh = SubResource("ArrayMesh_33qrx")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="rock3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="rock3/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_jnr62")
+
+[node name="tableCorner" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_7gukm")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="tableCorner"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="tableCorner/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_oidhq")
+
+[node name="chest" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_wdn1v")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="chest"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="chest/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_bfutm")

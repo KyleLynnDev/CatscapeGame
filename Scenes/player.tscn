@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bi1p4jgd4h1gc" path="res://Scripts/ClickToMove.gd" id="1_jp55b"]
 [ext_resource type="Script" uid="uid://dyjsj7w80pgap" path="res://Scripts/RotatingCamera3D.gd" id="2_5mwop"]
-[ext_resource type="PackedScene" uid="uid://cpu87le6n15r0" path="res://models/Stubert Model Test.glb" id="4_7q0gg"]
+[ext_resource type="PackedScene" uid="uid://cpu87le6n15r0" path="res://Assets/models/char/Stubert Model Test.glb" id="4_7q0gg"]
 [ext_resource type="PackedScene" uid="uid://bbimx2wtcog2l" path="res://Scenes/floating_pointer.tscn" id="4_wh38k"]
 [ext_resource type="AudioStream" uid="uid://baxinfrrbrx3y" path="res://Assets/sound effects/player/footstep_grass_run_01.wav" id="5_7dp3o"]
 [ext_resource type="AudioStream" uid="uid://b78biuv4kfknl" path="res://Assets/sound effects/player/footstep/footstep_concrete_land_01.wav" id="5_h4iuc"]

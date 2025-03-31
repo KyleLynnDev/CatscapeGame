@@ -3,7 +3,6 @@ extends Node
 @onready var ui_button_sound: AudioStreamPlayer = $"UI button"
 @onready var main_menu: AudioStreamPlayer = $Main_Menu
 @onready var sign_creak_sound: AudioStreamPlayer = $SignCreak
-@onready var fade: AnimationPlayer = $fade
 @onready var play_chime: AudioStreamPlayer = $PlayChime
 @onready var fantastic: AudioStreamPlayer = $fantastic
 @onready var overworld: AudioStreamPlayer = $Overworld

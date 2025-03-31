@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://rnfkryatudxc"]
+
+[ext_resource type="PackedScene" uid="uid://d1tuebbqkxvvg" path="res://models/tiles/Terrain Tiles.glb" id="1_ny7gc"]
+
+[node name="Terrain Tiles" instance=ExtResource("1_ny7gc")]
+
+[node name="grass center" parent="." index="0"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="grass edge" parent="." index="1"]
+transform = Transform3D(8.9407e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, 8.9407e-08, 0, 0, 0)
+
+[node name="grass corner out" parent="." index="2"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="grass corner in" parent="." index="3"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="grass slant full" parent="." index="4"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="grass slant half 01" parent="." index="5"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="grass slant half 02" parent="." index="6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="7"]

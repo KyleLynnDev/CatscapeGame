@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://bdpvcfi8h0qhd"]
 
-[ext_resource type="PackedScene" uid="uid://dojlc3bne3k51" path="res://models/SirFrog.glb" id="1_k3hiw"]
+[ext_resource type="PackedScene" uid="uid://dojlc3bne3k51" path="res://Assets/models/char/SirFrog.glb" id="1_k3hiw"]
 [ext_resource type="Script" uid="uid://db3a2ma5c1q77" path="res://Scripts/Characters/npc_sirfrog.gd" id="1_qvco0"]
 
 [sub_resource type="Animation" id="Animation_qvco0"]

@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 #onready
 
-@onready var body = $"Body Root"
+@onready var body: Node3D = $"Body Root"
 @onready var navigationAgent : NavigationAgent3D = $NavigationAgent3D;
 @onready var point = $"../Floating Pointer"
 @onready var locked_timer: Timer = $"../LockedTimer"
@@ -107,11 +107,11 @@ func _input(event):
 
 				
 func faceDirection(target_position, delta):
-	#body.look_at(Vector3(direction.x, global_position.y, direction.z), Vector3.UP)	
-	var direction = (target_position - global_position).normalized()  # Get direction vector
+	var direction = Vector3.ZERO
+	body.rotation.y = atan2(velocity.x, velocity.z)
+	#var direction = (target_position - global_position).normalized()  # Get direction vector
 	var current_quat = body.transform.basis.get_rotation_quaternion()  # Get current rotation
 	var target_quat = Quaternion(Vector3.UP, atan2(direction.x, direction.z))  # Desired rotation
-	#player.look_at(global_position + direction, Vector3.UP)
 	body.transform.basis = Basis(current_quat.slerp(target_quat, delta * 5.0))  # Smooth rotation
 func pathfindNavAgent():	
 	

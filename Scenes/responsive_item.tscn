@@ -1,20 +1,19 @@
 [gd_scene load_steps=4 format=3 uid="uid://bi8avpporj5lw"]
 
 [ext_resource type="Script" uid="uid://desatj2lw6efs" path="res://Scripts/clickedItem.gd" id="1_5dtpd"]
-
-[sub_resource type="CylinderMesh" id="CylinderMesh_dtk3a"]
+[ext_resource type="PackedScene" uid="uid://bonqkbrc8y83f" path="res://Assets/models/prop models/wood.glb" id="2_gk1ga"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_fmor2"]
+size = Vector3(0.6, 0.5, 0.8)
 
 [node name="ResponsiveItem" type="CharacterBody3D"]
 script = ExtResource("1_5dtpd")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -1.00989e-08, -1, 0, 0.231036, -4.37114e-08, 0, 1.07245, 0)
-mesh = SubResource("CylinderMesh_dtk3a")
+[node name="wood" parent="." instance=ExtResource("2_gk1ga")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
 
 [node name="Area3D" type="Area3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(2.48572, 0, 0, 0, 1, 0, 0, 0, 2.66232, 0, 1.04743, 0)
+transform = Transform3D(2.5, 0, 0, 0, 1.006, 0, 0, 0, 2.677, 0, 0.198359, 0)
 shape = SubResource("BoxShape3D_fmor2")

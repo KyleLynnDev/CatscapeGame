@@ -235,6 +235,7 @@ grow_vertical = 2
 texture = ExtResource("12_cejvf")
 
 [node name="Exit_Credits" type="Button" parent="Credits"]
+layout_mode = 0
 offset_left = 31.0
 offset_top = 297.0
 offset_right = 139.0
