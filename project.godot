@@ -26,6 +26,10 @@ SoundManager="*res://Scenes/UI/SoundManager.tscn"
 TransitionScreen="*res://Scenes/UI/transition_screen.tscn"
 GlobalScript="*res://Scripts/UI/GlobalScript.gd"
 
+[debug]
+
+gdscript/warnings/inferred_declaration=1
+
 [dialogic]
 
 directories/dch_directory={
@@ -90,7 +94,9 @@ translation/add_separator=false
 
 window/size/viewport_width=640
 window/size/viewport_height=360
+window/subwindows/embed_subwindows=false
 window/stretch/mode="viewport"
+window/per_pixel_transparency/allowed=true
 mouse_cursor/custom_image="res://Assets/UI/mouse_cursor.png"
 
 [dotnet]
@@ -100,6 +106,12 @@ project/assembly_name="Catscape Game"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+
+[global_group]
+
+player=""
+tree=""
+interactable=""
 
 [gui]
 

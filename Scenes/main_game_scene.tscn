@@ -18,3 +18,7 @@ render_target_update_mode = 4
 [node name="Chunk Test World" parent="GameScreen/SubViewport" instance=ExtResource("1_7wq01")]
 
 [node name="in_game_ui" parent="." instance=ExtResource("2_vbejk")]
+
+[editable path="GameScreen/SubViewport/Chunk Test World"]
+[editable path="GameScreen/SubViewport/Chunk Test World/GameWorld/NavigationRegion3D/World Chunks/Chunk00/GridMaps/Tree"]
+[editable path="GameScreen/SubViewport/Chunk Test World/Player"]

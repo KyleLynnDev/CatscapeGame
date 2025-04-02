@@ -1,26 +1,25 @@
 extends CharacterBody3D
-
+class_name Player
 #onready
 
 @onready var body: Node3D = $"Body Root"
 @onready var navigationAgent : NavigationAgent3D = $NavigationAgent3D;
-@onready var point = $"../Floating Pointer"
-@onready var locked_timer: Timer = $"../LockedTimer"
-@onready var footstep_rock: AudioStreamPlayer = $"../footstep_rock"
-@onready var footstep_grass: AudioStreamPlayer = $"../footstep_grass"
+@onready var point: Node3D = $"Floating Pointer"
+@onready var locked_timer: Timer = $LockedTimer
+@onready var footstep_rock: AudioStreamPlayer = $footstep_rock
+@onready var footstep_grass: AudioStreamPlayer = $footstep_grass
 @onready var floortyperay: RayCast3D = $"Body Root/Stubert Model Test/floortyperay"
-
-
-
-
+@export var distance_to_interact: float = 2
+signal on_dest_reached
 
 var speed : float  = 5.0; 
 var gravity : float = 9.8;
 var targetPosition : Vector3 ; 
 var currentlyNavigating : bool;
 @onready var player: Node3D = $".."
-@onready var movement_animation: AnimationPlayer = $"Body Root/Stubert Model Test/MovementAnimation"
-var is_locked := false
+@onready var anim_tree: AnimationTree = $"Body Root/Stubert Model Test/AnimationTree"
+@onready var anim_sm : AnimationNodeStateMachinePlayback = anim_tree["parameters/playback"]
+var is_locked: bool = false
 
 
 
@@ -36,27 +35,18 @@ func _physics_process(delta: float) -> void:
 			#footstep_grass.play()
 	if !currentlyNavigating:
 		pass#footstep_grass.stop()
-
-	if !movement_animation.is_playing():
-		movement_animation.speed_scale = 1.0
-		is_locked = false
 	
-	if Input.is_action_just_pressed("Interact"):
-		if movement_animation.current_animation != ("StubertMove/get_item"):
-			movement_animation.speed_scale = 2.0
-			movement_animation.play("StubertMove/get_item")
-			is_locked = true
-	
+	if Input.is_action_just_pressed("Interact"):	
+			#is_locked = true
+			pass
 	
 	if(not currentlyNavigating) and !is_locked:
-		if movement_animation.current_animation != ("StubertMove/idle"):
-			movement_animation.play("StubertMove/idle")
+		anim_sm.travel("Idle")
 		point.visible = false; 
 		return
 	
 	if (currentlyNavigating) and !is_locked:
-		if movement_animation.current_animation != ("StubertMove/run"):
-			movement_animation.play("StubertMove/run")
+		anim_sm.travel("Run")
 			
 	
 	moveToPoint(delta, speed );
@@ -72,9 +62,10 @@ func moveToPoint(delta, speed):
 	#move agent based on input target
 	pathfindNavAgent()
 
-func _input(event):
+func _unhandled_input(event):
 	# when LM is clicked raycast from current position to mouse pos direction
 	# and the length is rayLength 
+
 	if Input.is_action_just_pressed("LeftMouse") and !is_locked:
 		var camera = get_tree().get_nodes_in_group("camera")[0]; 
 		var mousePos = get_viewport().get_mouse_position();
@@ -90,22 +81,35 @@ func _input(event):
 		
 		var result = space.intersect_ray(rayQuery);
 		#print(result); 
-		
-		
-	
 		if(result.has("position")):
 			#navigationAgent.target_position = Vector3(floor(result.position.x),result.position.y,floor(result.position.z));
 			targetPosition = result.position;
-			
-			if result.collider.has_method("interacted"):
-				result.collider.interacted(); 	
+			#if result.collider.has_method("interacted"):
+				#result.collider.interacted() 	
+			if result.collider is InteractionManager:
+				if result.collider.global_position.distance_to(global_position) < distance_to_interact: 
+					result.collider.interaction()
+				else:
+					currentlyNavigating = true;
+					point.position = targetPosition;
+					point.visible = true;
+					on_dest_reached.connect(dest_reach_interact)
+					lastresult = result
 			else: 
 				currentlyNavigating = true;
 				point.position = targetPosition;
 				point.visible = true; 
-			
-
 				
+
+
+func _on_navigation_agent_3d_navigation_finished() -> void:
+	on_dest_reached.emit()
+
+var lastresult
+func dest_reach_interact():
+	if lastresult.collider.global_position.distance_to(global_position) <= distance_to_interact: 
+		lastresult.collider.interaction()
+
 func faceDirection(target_position, delta):
 	var direction = Vector3.ZERO
 	body.rotation.y = atan2(velocity.x, velocity.z)
@@ -142,3 +146,8 @@ func play_step_sounds():
 				footstep_grass.play()
 		if collider.is_in_group("rock"):
 			footstep_rock.play()
+
+func _action_func():
+	currentlyNavigating = true;
+	point.position = targetPosition;
+	point.visible = true; 

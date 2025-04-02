@@ -212,8 +212,8 @@ text = "OPTIONS"
 visible = false
 layout_mode = 3
 anchors_preset = 0
-offset_right = 517.0
-offset_bottom = 324.0
+offset_right = 639.0
+offset_bottom = 363.0
 
 [node name="Options_Menu" parent="MouseBlock" instance=ExtResource("8_1fmmx")]
 visible = false

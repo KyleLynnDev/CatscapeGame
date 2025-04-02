@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b44ou7tfk6cy7"]
+
+[ext_resource type="Script" uid="uid://cyjsdkih166qn" path="res://Scripts/UI/context_menu.gd" id="1_euxju"]
+
+[node name="ContextMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_euxju")
+
+[node name="PopupMenu" type="PopupMenu" parent="."]
