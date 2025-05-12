@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmimue62lfj6f"]
+
+[ext_resource type="PackedScene" uid="uid://bivbn0c3pwxon" path="res://landscapes/KingdomOfCalica/Chunk 12.glb" id="1_qm8ef"]
+
+[node name="Chunk 122" instance=ExtResource("1_qm8ef")]

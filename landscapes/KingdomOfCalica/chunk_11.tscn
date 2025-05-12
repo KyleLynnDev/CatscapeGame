@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://bqqf82qxvesmf"]
+
+[ext_resource type="PackedScene" uid="uid://ccb0sjh6bxfcd" path="res://landscapes/KingdomOfCalica/Chunk 11.glb" id="1_osl4x"]
+[ext_resource type="Texture2D" uid="uid://bajd3gg3p33kd" path="res://landscapes/KingdomOfCalica/Chunk 11_grass texture.png" id="2_odjmk"]
+[ext_resource type="MeshLibrary" uid="uid://cs0vgldxrfeg2" path="res://Assets/models/tiles/Catscape 3D tiles.tres" id="3_nddcv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u6yme"]
+albedo_texture = ExtResource("2_odjmk")
+metallic_specular = 0.0
+roughness = 0.0
+texture_filter = 0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_x08a0"]
+
+[node name="Chunk 11" instance=ExtResource("1_osl4x")]
+
+[node name="Chunk 11" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_u6yme")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Chunk 11" index="0"]
+shape = SubResource("ConvexPolygonShape3D_x08a0")
+
+[node name="GridMap" type="GridMap" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.501, 0)
+mesh_library = ExtResource("3_nddcv")
+cell_size = Vector3(1, 2, 1)
+data = {
+"cells": PackedInt32Array(65488, 65425, 1441800, 65489, 65425, 1441800, 65490, 65425, 1441800, 65487, 65425, 1441800, -131113, 65416, 786432, -131112, 65422, 786435, 65490, 65424, 1441800, 65489, 65424, 1441800, 65490, 65423, 1441800, 65489, 65423, 1441800, 65488, 65423, 1441800, 65487, 65423, 1441800, 65487, 65424, 1441800, 65486, 65424, 1441800, 65488, 65424, 1441800, 65486, 65425, 1441800, 65486, 65423, 1048584)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)

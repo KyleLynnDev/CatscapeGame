@@ -91,6 +91,10 @@ func _input(event):
 		var result = space.intersect_ray(rayQuery);
 		#print(result); 
 		
+		#var result = space_state.intersect_ray(ray_origin, ray_target, [], collision_mask)
+		if result:
+			print("Hit Position: ", result.position)
+			print("Hit Object: ", result.collider)
 		
 	
 		if(result.has("position")):

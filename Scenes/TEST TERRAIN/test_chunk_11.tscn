@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://6e1tyddcbhav"]
+
+[ext_resource type="PackedScene" uid="uid://cyx5b2htlx2au" path="res://landscapes/KingdomOfCalica/test chunk 11.glb" id="1_0ggp5"]
+
+[node name="test chunk 11" instance=ExtResource("1_0ggp5")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="2"]

@@ -31,7 +31,8 @@ func _on_play_pressed() -> void:
 	TransitionScreen.transition()
 	await TransitionScreen.on_transition_finished
 	SoundManager.main_menu.stop()
-	get_tree().change_scene_to_file("res://Scenes/main_game_scene.tscn")
+	#get_tree().change_scene_to_file("res://Scenes/main_game_scene.tscn")
+	get_tree().change_scene_to_file("res://landscapes/KingdomOfCalica/KingdomOfCalica.tscn")
 
 func _on_credits_pressed() -> void:
 	credits.visible = true

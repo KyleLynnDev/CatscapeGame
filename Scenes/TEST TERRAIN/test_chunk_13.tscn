@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cufi76krbn4o6"]
+
+[ext_resource type="PackedScene" uid="uid://k1bkun0pp07j" path="res://landscapes/KingdomOfCalica/test chunk 13.glb" id="1_41v63"]
+
+[node name="test chunk 13" instance=ExtResource("1_41v63")]

@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bqgbg1fycbp57"
+path.s3tc="res://.godot/imported/StartingChunks test_chunk 22 texture.png-fb64dd982c6e064ce14962eb333871ee.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "a63d746c952c3a86847e8ef2b9ef867c"
+}
+
+[deps]
+
+source_file="res://landscapes/KingdomOfCalica/StartingChunks test_chunk 22 texture.png"
+dest_files=["res://.godot/imported/StartingChunks test_chunk 22 texture.png-fb64dd982c6e064ce14962eb333871ee.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0
